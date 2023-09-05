@@ -592,7 +592,10 @@ Linear Regression Outputs
 Model
 </th>
 <th style="text-align:left;">
-term
+outcome
+</th>
+<th style="text-align:left;">
+covariate
 </th>
 <th style="text-align:right;">
 estimate
@@ -606,6 +609,9 @@ conf.low
 <th style="text-align:right;">
 conf.high
 </th>
+<th style="text-align:right;">
+p.value
+</th>
 </tr>
 </thead>
 <tbody>
@@ -614,39 +620,25 @@ conf.high
 Model:1~1
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-0.9784464
-</td>
-<td style="text-align:right;">
-0.2039838
-</td>
-<td style="text-align:right;">
-0.5754579
-</td>
-<td style="text-align:right;">
-1.3814349
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:1~1
+memory_cs
 </td>
 <td style="text-align:left;">
 age
 </td>
 <td style="text-align:right;">
--0.0185396
+-0.019
 </td>
 <td style="text-align:right;">
-0.0037335
+0.004
 </td>
 <td style="text-align:right;">
--0.0259153
+-0.026
 </td>
 <td style="text-align:right;">
--0.0111638
+-0.011
+</td>
+<td style="text-align:right;">
+0.0000018
 </td>
 </tr>
 <tr>
@@ -654,39 +646,25 @@ age
 Model:1~2
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
--0.0231549
-</td>
-<td style="text-align:right;">
-0.0827379
-</td>
-<td style="text-align:right;">
--0.1866111
-</td>
-<td style="text-align:right;">
-0.1403012
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:1~2
+memory_cs
 </td>
 <td style="text-align:left;">
 sex2
 </td>
 <td style="text-align:right;">
-0.0421918
+0.042
 </td>
 <td style="text-align:right;">
-0.1130658
+0.113
 </td>
 <td style="text-align:right;">
--0.1811798
+-0.181
 </td>
 <td style="text-align:right;">
-0.2655635
+0.266
+</td>
+<td style="text-align:right;">
+0.7095444
 </td>
 </tr>
 <tr>
@@ -694,119 +672,129 @@ sex2
 Model:1~3
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
--0.1959002
-</td>
-<td style="text-align:right;">
-0.4682034
-</td>
-<td style="text-align:right;">
--1.1211274
-</td>
-<td style="text-align:right;">
-0.7293270
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:1~3
+memory_cs
 </td>
 <td style="text-align:left;">
 race2
 </td>
 <td style="text-align:right;">
-0.6615711
+0.662
 </td>
 <td style="text-align:right;">
-0.5539857
+0.554
 </td>
 <td style="text-align:right;">
--0.4331725
+-0.433
 </td>
 <td style="text-align:right;">
-1.7563147
+1.756
+</td>
+<td style="text-align:right;">
+0.2343092
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:1~3
+</td>
+<td style="text-align:left;">
+memory_cs
 </td>
 <td style="text-align:left;">
 race3
 </td>
 <td style="text-align:right;">
-0.3744336
+0.374
 </td>
 <td style="text-align:right;">
-0.4835583
+0.484
 </td>
 <td style="text-align:right;">
--0.5811369
+-0.581
 </td>
 <td style="text-align:right;">
-1.3300041
+1.330
+</td>
+<td style="text-align:right;">
+0.4399711
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:1~3
+</td>
+<td style="text-align:left;">
+memory_cs
 </td>
 <td style="text-align:left;">
 race5
 </td>
 <td style="text-align:right;">
-0.7733273
+0.773
 </td>
 <td style="text-align:right;">
-0.4966047
+0.497
 </td>
 <td style="text-align:right;">
--0.2080244
+-0.208
 </td>
 <td style="text-align:right;">
-1.7546789
+1.755
+</td>
+<td style="text-align:right;">
+0.1215519
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:1~3
+</td>
+<td style="text-align:left;">
+memory_cs
 </td>
 <td style="text-align:left;">
 race6
 </td>
 <td style="text-align:right;">
-0.0130193
+0.013
 </td>
 <td style="text-align:right;">
-0.4732110
+0.473
 </td>
 <td style="text-align:right;">
--0.9221037
+-0.922
 </td>
 <td style="text-align:right;">
-0.9481422
+0.948
+</td>
+<td style="text-align:right;">
+0.9780880
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:1~3
+</td>
+<td style="text-align:left;">
+memory_cs
 </td>
 <td style="text-align:left;">
 race7
 </td>
 <td style="text-align:right;">
-0.2126892
+0.213
 </td>
 <td style="text-align:right;">
-0.5406347
+0.541
 </td>
 <td style="text-align:right;">
--0.8556711
+-0.856
 </td>
 <td style="text-align:right;">
-1.2810496
+1.281
+</td>
+<td style="text-align:right;">
+0.6945853
 </td>
 </tr>
 <tr>
@@ -814,19 +802,25 @@ race7
 Model:1~3
 </td>
 <td style="text-align:left;">
+memory_cs
+</td>
+<td style="text-align:left;">
 race8
 </td>
 <td style="text-align:right;">
-0.2921372
+0.292
 </td>
 <td style="text-align:right;">
-0.6044479
+0.604
 </td>
 <td style="text-align:right;">
--0.9023259
+-0.902
 </td>
 <td style="text-align:right;">
-1.4866004
+1.487
+</td>
+<td style="text-align:right;">
+0.6295881
 </td>
 </tr>
 <tr>
@@ -834,39 +828,25 @@ race8
 Model:1~4
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
--0.1256066
-</td>
-<td style="text-align:right;">
-0.0621579
-</td>
-<td style="text-align:right;">
--0.2484116
-</td>
-<td style="text-align:right;">
--0.0028016
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:1~4
+memory_cs
 </td>
 <td style="text-align:left;">
 ethnicity2
 </td>
 <td style="text-align:right;">
-0.4869953
+0.487
 </td>
 <td style="text-align:right;">
-0.1251310
+0.125
 </td>
 <td style="text-align:right;">
-0.2397747
+0.240
 </td>
 <td style="text-align:right;">
-0.7342158
+0.734
+</td>
+<td style="text-align:right;">
+0.0001485
 </td>
 </tr>
 <tr>
@@ -874,19 +854,25 @@ ethnicity2
 Model:1~4
 </td>
 <td style="text-align:left;">
+memory_cs
+</td>
+<td style="text-align:left;">
 ethnicity3
 </td>
 <td style="text-align:right;">
-0.8761158
+0.876
 </td>
 <td style="text-align:right;">
-0.6723405
+0.672
 </td>
 <td style="text-align:right;">
--0.4522232
+-0.452
 </td>
 <td style="text-align:right;">
-2.2044548
+2.204
+</td>
+<td style="text-align:right;">
+0.1945168
 </td>
 </tr>
 <tr>
@@ -894,39 +880,25 @@ ethnicity3
 Model:1~5
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-0.2784073
-</td>
-<td style="text-align:right;">
-0.0789489
-</td>
-<td style="text-align:right;">
-0.1224365
-</td>
-<td style="text-align:right;">
-0.4343780
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:1~5
+memory_cs
 </td>
 <td style="text-align:left;">
 language_primary2
 </td>
 <td style="text-align:right;">
--0.5027932
+-0.503
 </td>
 <td style="text-align:right;">
-0.1059895
+0.106
 </td>
 <td style="text-align:right;">
--0.7121851
+-0.712
 </td>
 <td style="text-align:right;">
--0.2934014
+-0.293
+</td>
+<td style="text-align:right;">
+0.0000048
 </td>
 </tr>
 <tr>
@@ -934,139 +906,155 @@ language_primary2
 Model:1~6
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
--1.6889260
-</td>
-<td style="text-align:right;">
-0.6056537
-</td>
-<td style="text-align:right;">
--2.8858390
-</td>
-<td style="text-align:right;">
--0.4920130
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:1~6
+memory_cs
 </td>
 <td style="text-align:left;">
 education1
 </td>
 <td style="text-align:right;">
-1.0016287
+1.002
 </td>
 <td style="text-align:right;">
-0.6232125
+0.623
 </td>
 <td style="text-align:right;">
--0.2299847
+-0.230
 </td>
 <td style="text-align:right;">
-2.2332420
+2.233
+</td>
+<td style="text-align:right;">
+0.1101558
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:1~6
+</td>
+<td style="text-align:left;">
+memory_cs
 </td>
 <td style="text-align:left;">
 education2
 </td>
 <td style="text-align:right;">
-1.0193223
+1.019
 </td>
 <td style="text-align:right;">
-0.6771414
+0.677
 </td>
 <td style="text-align:right;">
--0.3188671
+-0.319
 </td>
 <td style="text-align:right;">
-2.3575118
+2.358
+</td>
+<td style="text-align:right;">
+0.1343846
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:1~6
+</td>
+<td style="text-align:left;">
+memory_cs
 </td>
 <td style="text-align:left;">
 education3
 </td>
 <td style="text-align:right;">
-1.6464551
+1.646
 </td>
 <td style="text-align:right;">
-0.6111348
+0.611
 </td>
 <td style="text-align:right;">
-0.4387100
+0.439
 </td>
 <td style="text-align:right;">
-2.8542001
+2.854
+</td>
+<td style="text-align:right;">
+0.0078794
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:1~6
+</td>
+<td style="text-align:left;">
+memory_cs
 </td>
 <td style="text-align:left;">
 education4
 </td>
 <td style="text-align:right;">
-1.7571156
+1.757
 </td>
 <td style="text-align:right;">
-0.6140079
+0.614
 </td>
 <td style="text-align:right;">
-0.5436927
+0.544
 </td>
 <td style="text-align:right;">
-2.9705386
+2.971
+</td>
+<td style="text-align:right;">
+0.0048287
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:1~6
+</td>
+<td style="text-align:left;">
+memory_cs
 </td>
 <td style="text-align:left;">
 education5
 </td>
 <td style="text-align:right;">
-1.8984520
+1.898
 </td>
 <td style="text-align:right;">
-0.6160075
+0.616
 </td>
 <td style="text-align:right;">
-0.6810774
+0.681
 </td>
 <td style="text-align:right;">
-3.1158266
+3.116
+</td>
+<td style="text-align:right;">
+0.0024567
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:1~6
+</td>
+<td style="text-align:left;">
+memory_cs
 </td>
 <td style="text-align:left;">
 education6
 </td>
 <td style="text-align:right;">
-2.4406763
+2.441
 </td>
 <td style="text-align:right;">
-0.6325847
+0.633
 </td>
 <td style="text-align:right;">
-1.1905414
+1.191
 </td>
 <td style="text-align:right;">
-3.6908111
+3.691
+</td>
+<td style="text-align:right;">
+0.0001704
 </td>
 </tr>
 <tr>
@@ -1074,19 +1062,25 @@ education6
 Model:1~6
 </td>
 <td style="text-align:left;">
+memory_cs
+</td>
+<td style="text-align:left;">
 education7
 </td>
 <td style="text-align:right;">
-2.4388629
+2.439
 </td>
 <td style="text-align:right;">
-0.7417713
+0.742
 </td>
 <td style="text-align:right;">
-0.9729498
+0.973
 </td>
 <td style="text-align:right;">
-3.9047759
+3.905
+</td>
+<td style="text-align:right;">
+0.0012629
 </td>
 </tr>
 <tr>
@@ -1094,39 +1088,25 @@ education7
 Model:1~7
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-0.0043433
-</td>
-<td style="text-align:right;">
-0.0748708
-</td>
-<td style="text-align:right;">
--0.1435708
-</td>
-<td style="text-align:right;">
-0.1522574
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:1~7
+memory_cs
 </td>
 <td style="text-align:left;">
 pmh_neuro1
 </td>
 <td style="text-align:right;">
--0.0113478
+-0.011
 </td>
 <td style="text-align:right;">
-0.1138784
+0.114
 </td>
 <td style="text-align:right;">
--0.2363247
+-0.236
 </td>
 <td style="text-align:right;">
-0.2136292
+0.214
+</td>
+<td style="text-align:right;">
+0.9207542
 </td>
 </tr>
 <tr>
@@ -1134,39 +1114,25 @@ pmh_neuro1
 Model:1~8
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-0.0318824
-</td>
-<td style="text-align:right;">
-0.0683889
-</td>
-<td style="text-align:right;">
--0.1032260
-</td>
-<td style="text-align:right;">
-0.1669908
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:1~8
+memory_cs
 </td>
 <td style="text-align:left;">
 pmh_enc_is_ich1
 </td>
 <td style="text-align:right;">
--0.1005772
+-0.101
 </td>
 <td style="text-align:right;">
-0.1204111
+0.120
 </td>
 <td style="text-align:right;">
--0.3384601
+-0.338
 </td>
 <td style="text-align:right;">
-0.1373058
+0.137
+</td>
+<td style="text-align:right;">
+0.4048616
 </td>
 </tr>
 <tr>
@@ -1174,39 +1140,25 @@ pmh_enc_is_ich1
 Model:1~9
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-0.1955982
-</td>
-<td style="text-align:right;">
-0.1109658
-</td>
-<td style="text-align:right;">
--0.0236247
-</td>
-<td style="text-align:right;">
-0.4148211
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:1~9
+memory_cs
 </td>
 <td style="text-align:left;">
 pmh_covid_severe1
 </td>
 <td style="text-align:right;">
--0.2621104
+-0.262
 </td>
 <td style="text-align:right;">
-0.1282702
+0.128
 </td>
 <td style="text-align:right;">
--0.5155199
+-0.516
 </td>
 <td style="text-align:right;">
--0.0087010
+-0.009
+</td>
+<td style="text-align:right;">
+0.0427261
 </td>
 </tr>
 <tr>
@@ -1214,39 +1166,77 @@ pmh_covid_severe1
 Model:1~10
 </td>
 <td style="text-align:left;">
-(Intercept)
+memory_cs
+</td>
+<td style="text-align:left;">
+icu1
 </td>
 <td style="text-align:right;">
--0.0206075
+-0.018
 </td>
 <td style="text-align:right;">
-0.0709001
+0.118
 </td>
 <td style="text-align:right;">
--0.1606770
+-0.252
 </td>
 <td style="text-align:right;">
-0.1194621
+0.216
+</td>
+<td style="text-align:right;">
+0.8795935
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Model:1~10
+Model:1~11
+</td>
+<td style="text-align:left;">
+memory_cs
+</td>
+<td style="text-align:left;">
+icu_2weeks1
+</td>
+<td style="text-align:right;">
+-0.048
+</td>
+<td style="text-align:right;">
+0.125
+</td>
+<td style="text-align:right;">
+-0.295
+</td>
+<td style="text-align:right;">
+0.199
+</td>
+<td style="text-align:right;">
+0.6991606
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Model:1~12
+</td>
+<td style="text-align:left;">
+memory_cs
 </td>
 <td style="text-align:left;">
 steroids1
 </td>
 <td style="text-align:right;">
-0.0545100
+0.055
 </td>
 <td style="text-align:right;">
-0.1169164
+0.117
 </td>
 <td style="text-align:right;">
--0.1764688
+-0.176
 </td>
 <td style="text-align:right;">
-0.2854888
+0.285
+</td>
+<td style="text-align:right;">
+0.6417134
 </td>
 </tr>
 <tr>
@@ -1254,39 +1244,25 @@ steroids1
 Model:1~13
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-0.0935423
-</td>
-<td style="text-align:right;">
-0.0769800
-</td>
-<td style="text-align:right;">
--0.0585548
-</td>
-<td style="text-align:right;">
-0.2456394
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:1~13
+memory_cs
 </td>
 <td style="text-align:left;">
-ucla
+ad8_14
 </td>
 <td style="text-align:right;">
--0.0069275
+-0.080
 </td>
 <td style="text-align:right;">
-0.0035513
+0.021
 </td>
 <td style="text-align:right;">
--0.0139442
+-0.122
 </td>
 <td style="text-align:right;">
-0.0000891
+-0.038
+</td>
+<td style="text-align:right;">
+0.0002211
 </td>
 </tr>
 <tr>
@@ -1294,39 +1270,25 @@ ucla
 Model:1~14
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-0.3115434
-</td>
-<td style="text-align:right;">
-0.1337196
-</td>
-<td style="text-align:right;">
-0.0473403
-</td>
-<td style="text-align:right;">
-0.5757465
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:1~14
+memory_cs
 </td>
 <td style="text-align:left;">
-stress
+ecog_15
 </td>
 <td style="text-align:right;">
--0.0187924
+-0.296
 </td>
 <td style="text-align:right;">
-0.0071217
+0.067
 </td>
 <td style="text-align:right;">
--0.0328633
+-0.430
 </td>
 <td style="text-align:right;">
--0.0047214
+-0.163
+</td>
+<td style="text-align:right;">
+0.0000204
 </td>
 </tr>
 <tr>
@@ -1334,39 +1296,25 @@ stress
 Model:1~15
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-0.1071076
-</td>
-<td style="text-align:right;">
-0.1321658
-</td>
-<td style="text-align:right;">
--0.1540829
-</td>
-<td style="text-align:right;">
-0.3682981
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:1~15
+memory_cs
 </td>
 <td style="text-align:left;">
-sleep
+ucla
 </td>
 <td style="text-align:right;">
--0.0117986
+-0.007
 </td>
 <td style="text-align:right;">
-0.0129973
+0.004
 </td>
 <td style="text-align:right;">
--0.0374843
+-0.014
 </td>
 <td style="text-align:right;">
-0.0138871
+0.000
+</td>
+<td style="text-align:right;">
+0.0529435
 </td>
 </tr>
 <tr>
@@ -1374,39 +1322,25 @@ sleep
 Model:1~16
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-0.2058845
-</td>
-<td style="text-align:right;">
-0.0896377
-</td>
-<td style="text-align:right;">
-0.0287495
-</td>
-<td style="text-align:right;">
-0.3830196
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:1~16
+memory_cs
 </td>
 <td style="text-align:left;">
-dsm_depression
+stress
 </td>
 <td style="text-align:right;">
--0.1274905
+-0.019
 </td>
 <td style="text-align:right;">
-0.0414942
+0.007
 </td>
 <td style="text-align:right;">
--0.2094881
+-0.033
 </td>
 <td style="text-align:right;">
--0.0454929
+-0.005
+</td>
+<td style="text-align:right;">
+0.0091934
 </td>
 </tr>
 <tr>
@@ -1414,39 +1348,25 @@ dsm_depression
 Model:1~17
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-0.1647617
-</td>
-<td style="text-align:right;">
-0.0864513
-</td>
-<td style="text-align:right;">
--0.0060766
-</td>
-<td style="text-align:right;">
-0.3356000
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:1~17
+memory_cs
 </td>
 <td style="text-align:left;">
-dsm_anxiety
+sleep
 </td>
 <td style="text-align:right;">
--0.0974504
+-0.012
 </td>
 <td style="text-align:right;">
-0.0366855
+0.013
 </td>
 <td style="text-align:right;">
--0.1699455
+-0.037
 </td>
 <td style="text-align:right;">
--0.0249554
+0.014
+</td>
+<td style="text-align:right;">
+0.3654824
 </td>
 </tr>
 <tr>
@@ -1454,59 +1374,25 @@ dsm_anxiety
 Model:1~18
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-0.2990531
-</td>
-<td style="text-align:right;">
-0.0908252
-</td>
-<td style="text-align:right;">
-0.1191625
-</td>
-<td style="text-align:right;">
-0.4789438
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:1~18
+memory_cs
 </td>
 <td style="text-align:left;">
-language_secondary2
+dsm_depression
 </td>
 <td style="text-align:right;">
--0.6475214
+-0.127
 </td>
 <td style="text-align:right;">
-0.1290868
+0.041
 </td>
 <td style="text-align:right;">
--0.9031940
+-0.209
 </td>
 <td style="text-align:right;">
--0.3918487
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:1~18
-</td>
-<td style="text-align:left;">
-language_secondary3
+-0.045
 </td>
 <td style="text-align:right;">
--0.1387010
-</td>
-<td style="text-align:right;">
-0.1778257
-</td>
-<td style="text-align:right;">
--0.4909072
-</td>
-<td style="text-align:right;">
-0.2135051
+0.0025274
 </td>
 </tr>
 <tr>
@@ -1514,39 +1400,103 @@ language_secondary3
 Model:1~19
 </td>
 <td style="text-align:left;">
-(Intercept)
+memory_cs
+</td>
+<td style="text-align:left;">
+dsm_anxiety
 </td>
 <td style="text-align:right;">
-0.0418928
+-0.097
 </td>
 <td style="text-align:right;">
-0.1475010
+0.037
 </td>
 <td style="text-align:right;">
--0.2502251
+-0.170
 </td>
 <td style="text-align:right;">
-0.3340108
+-0.025
+</td>
+<td style="text-align:right;">
+0.0087649
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Model:1~19
+Model:1~20
+</td>
+<td style="text-align:left;">
+memory_cs
+</td>
+<td style="text-align:left;">
+language_secondary2
+</td>
+<td style="text-align:right;">
+-0.648
+</td>
+<td style="text-align:right;">
+0.129
+</td>
+<td style="text-align:right;">
+-0.903
+</td>
+<td style="text-align:right;">
+-0.392
+</td>
+<td style="text-align:right;">
+0.0000019
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Model:1~20
+</td>
+<td style="text-align:left;">
+memory_cs
+</td>
+<td style="text-align:left;">
+language_secondary3
+</td>
+<td style="text-align:right;">
+-0.139
+</td>
+<td style="text-align:right;">
+0.178
+</td>
+<td style="text-align:right;">
+-0.491
+</td>
+<td style="text-align:right;">
+0.214
+</td>
+<td style="text-align:right;">
+0.4369893
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Model:1~21
+</td>
+<td style="text-align:left;">
+memory_cs
 </td>
 <td style="text-align:left;">
 vaccine
 </td>
 <td style="text-align:right;">
--0.0120981
+-0.012
 </td>
 <td style="text-align:right;">
-0.0445413
+0.045
 </td>
 <td style="text-align:right;">
--0.1003098
+-0.100
 </td>
 <td style="text-align:right;">
-0.0761137
+0.076
+</td>
+<td style="text-align:right;">
+0.7863974
 </td>
 </tr>
 <tr>
@@ -1554,39 +1504,25 @@ vaccine
 Model:2~1
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-0.3320695
-</td>
-<td style="text-align:right;">
-0.1584238
-</td>
-<td style="text-align:right;">
-0.0190889
-</td>
-<td style="text-align:right;">
-0.6450501
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:2~1
+executive_cs
 </td>
 <td style="text-align:left;">
 age
 </td>
 <td style="text-align:right;">
--0.0063777
+-0.006
 </td>
 <td style="text-align:right;">
-0.0028996
+0.003
 </td>
 <td style="text-align:right;">
--0.0121060
+-0.012
 </td>
 <td style="text-align:right;">
--0.0006493
+-0.001
+</td>
+<td style="text-align:right;">
+0.0293424
 </td>
 </tr>
 <tr>
@@ -1594,39 +1530,25 @@ age
 Model:2~2
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
--0.0333774
-</td>
-<td style="text-align:right;">
-0.0605124
-</td>
-<td style="text-align:right;">
--0.1529252
-</td>
-<td style="text-align:right;">
-0.0861704
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:2~2
+executive_cs
 </td>
 <td style="text-align:left;">
 sex2
 </td>
 <td style="text-align:right;">
-0.0535322
+0.054
 </td>
 <td style="text-align:right;">
-0.0826935
+0.083
 </td>
 <td style="text-align:right;">
--0.1098363
+-0.110
 </td>
 <td style="text-align:right;">
-0.2169007
+0.217
+</td>
+<td style="text-align:right;">
+0.5183712
 </td>
 </tr>
 <tr>
@@ -1634,119 +1556,129 @@ sex2
 Model:2~3
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-0.0815934
-</td>
-<td style="text-align:right;">
-0.3549142
-</td>
-<td style="text-align:right;">
--0.6197604
-</td>
-<td style="text-align:right;">
-0.7829473
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:2~3
+executive_cs
 </td>
 <td style="text-align:left;">
 race2
 </td>
 <td style="text-align:right;">
--0.3055621
+-0.306
 </td>
 <td style="text-align:right;">
-0.4199401
+0.420
 </td>
 <td style="text-align:right;">
--1.1354152
+-1.135
 </td>
 <td style="text-align:right;">
-0.5242909
+0.524
+</td>
+<td style="text-align:right;">
+0.4679880
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:2~3
+</td>
+<td style="text-align:left;">
+executive_cs
 </td>
 <td style="text-align:left;">
 race3
 </td>
 <td style="text-align:right;">
--0.3300537
+-0.330
 </td>
 <td style="text-align:right;">
-0.3665538
+0.367
 </td>
 <td style="text-align:right;">
--1.0544088
+-1.054
 </td>
 <td style="text-align:right;">
-0.3943014
+0.394
+</td>
+<td style="text-align:right;">
+0.3693576
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:2~3
+</td>
+<td style="text-align:left;">
+executive_cs
 </td>
 <td style="text-align:left;">
 race5
 </td>
 <td style="text-align:right;">
--0.1663147
+-0.166
 </td>
 <td style="text-align:right;">
-0.3764433
+0.376
 </td>
 <td style="text-align:right;">
--0.9102128
+-0.910
 </td>
 <td style="text-align:right;">
-0.5775834
+0.578
+</td>
+<td style="text-align:right;">
+0.6592749
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:2~3
+</td>
+<td style="text-align:left;">
+executive_cs
 </td>
 <td style="text-align:left;">
 race6
 </td>
 <td style="text-align:right;">
-0.0172560
+0.017
 </td>
 <td style="text-align:right;">
-0.3587101
+0.359
 </td>
 <td style="text-align:right;">
--0.6915991
+-0.692
 </td>
 <td style="text-align:right;">
-0.7261112
+0.726
+</td>
+<td style="text-align:right;">
+0.9616968
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:2~3
+</td>
+<td style="text-align:left;">
+executive_cs
 </td>
 <td style="text-align:left;">
 race7
 </td>
 <td style="text-align:right;">
--0.0625280
+-0.063
 </td>
 <td style="text-align:right;">
-0.4098196
+0.410
 </td>
 <td style="text-align:right;">
--0.8723816
+-0.872
 </td>
 <td style="text-align:right;">
-0.7473257
+0.747
+</td>
+<td style="text-align:right;">
+0.8789417
 </td>
 </tr>
 <tr>
@@ -1754,19 +1686,25 @@ race7
 Model:2~3
 </td>
 <td style="text-align:left;">
+executive_cs
+</td>
+<td style="text-align:left;">
 race8
 </td>
 <td style="text-align:right;">
--0.1721623
+-0.172
 </td>
 <td style="text-align:right;">
-0.4581922
+0.458
 </td>
 <td style="text-align:right;">
--1.0776062
+-1.078
 </td>
 <td style="text-align:right;">
-0.7332816
+0.733
+</td>
+<td style="text-align:right;">
+0.7076463
 </td>
 </tr>
 <tr>
@@ -1774,39 +1712,25 @@ race8
 Model:2~4
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-0.0952052
-</td>
-<td style="text-align:right;">
-0.0447939
-</td>
-<td style="text-align:right;">
-0.0067061
-</td>
-<td style="text-align:right;">
-0.1837042
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:2~4
+executive_cs
 </td>
 <td style="text-align:left;">
 ethnicity2
 </td>
 <td style="text-align:right;">
--0.3793489
+-0.379
 </td>
 <td style="text-align:right;">
-0.0901753
+0.090
 </td>
 <td style="text-align:right;">
--0.5575077
+-0.558
 </td>
 <td style="text-align:right;">
--0.2011902
+-0.201
+</td>
+<td style="text-align:right;">
+0.0000441
 </td>
 </tr>
 <tr>
@@ -1814,19 +1738,25 @@ ethnicity2
 Model:2~4
 </td>
 <td style="text-align:left;">
+executive_cs
+</td>
+<td style="text-align:left;">
 ethnicity3
 </td>
 <td style="text-align:right;">
--1.0718615
+-1.072
 </td>
 <td style="text-align:right;">
-0.4845202
+0.485
 </td>
 <td style="text-align:right;">
--2.0291251
+-2.029
 </td>
 <td style="text-align:right;">
--0.1145980
+-0.115
+</td>
+<td style="text-align:right;">
+0.0284436
 </td>
 </tr>
 <tr>
@@ -1834,39 +1764,25 @@ ethnicity3
 Model:2~5
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
--0.2663517
-</td>
-<td style="text-align:right;">
-0.0550003
-</td>
-<td style="text-align:right;">
--0.3750097
-</td>
-<td style="text-align:right;">
--0.1576937
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:2~5
+executive_cs
 </td>
 <td style="text-align:left;">
 language_primary2
 </td>
 <td style="text-align:right;">
-0.4715604
+0.472
 </td>
 <td style="text-align:right;">
-0.0738382
+0.074
 </td>
 <td style="text-align:right;">
-0.3256862
+0.326
 </td>
 <td style="text-align:right;">
-0.6174345
+0.617
+</td>
+<td style="text-align:right;">
+0.0000000
 </td>
 </tr>
 <tr>
@@ -1874,139 +1790,155 @@ language_primary2
 Model:2~6
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
--0.8352676
-</td>
-<td style="text-align:right;">
-0.4989872
-</td>
-<td style="text-align:right;">
--1.8213827
-</td>
-<td style="text-align:right;">
-0.1508474
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:2~6
+executive_cs
 </td>
 <td style="text-align:left;">
 education1
 </td>
 <td style="text-align:right;">
-0.9272422
+0.927
 </td>
 <td style="text-align:right;">
-0.5134536
+0.513
 </td>
 <td style="text-align:right;">
--0.0874618
+-0.087
 </td>
 <td style="text-align:right;">
-1.9419463
+1.942
+</td>
+<td style="text-align:right;">
+0.0729810
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:2~6
+</td>
+<td style="text-align:left;">
+executive_cs
 </td>
 <td style="text-align:left;">
 education2
 </td>
 <td style="text-align:right;">
-1.1489329
+1.149
 </td>
 <td style="text-align:right;">
-0.5578846
+0.558
 </td>
 <td style="text-align:right;">
-0.0464227
+0.046
 </td>
 <td style="text-align:right;">
-2.2514430
+2.251
+</td>
+<td style="text-align:right;">
+0.0412159
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:2~6
+</td>
+<td style="text-align:left;">
+executive_cs
 </td>
 <td style="text-align:left;">
 education3
 </td>
 <td style="text-align:right;">
-0.9640117
+0.964
 </td>
 <td style="text-align:right;">
-0.5035030
+0.504
 </td>
 <td style="text-align:right;">
--0.0310277
+-0.031
 </td>
 <td style="text-align:right;">
-1.9590510
+1.959
+</td>
+<td style="text-align:right;">
+0.0574849
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:2~6
+</td>
+<td style="text-align:left;">
+executive_cs
 </td>
 <td style="text-align:left;">
 education4
 </td>
 <td style="text-align:right;">
-0.6984699
+0.698
 </td>
 <td style="text-align:right;">
-0.5058701
+0.506
 </td>
 <td style="text-align:right;">
--0.3012473
+-0.301
 </td>
 <td style="text-align:right;">
-1.6981872
+1.698
+</td>
+<td style="text-align:right;">
+0.1694577
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:2~6
+</td>
+<td style="text-align:left;">
+executive_cs
 </td>
 <td style="text-align:left;">
 education5
 </td>
 <td style="text-align:right;">
-0.6805481
+0.681
 </td>
 <td style="text-align:right;">
-0.5075175
+0.508
 </td>
 <td style="text-align:right;">
--0.3224248
+-0.322
 </td>
 <td style="text-align:right;">
-1.6835211
+1.684
+</td>
+<td style="text-align:right;">
+0.1820098
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:2~6
+</td>
+<td style="text-align:left;">
+executive_cs
 </td>
 <td style="text-align:left;">
 education6
 </td>
 <td style="text-align:right;">
-0.8732284
+0.873
 </td>
 <td style="text-align:right;">
-0.5211751
+0.521
 </td>
 <td style="text-align:right;">
--0.1567352
+-0.157
 </td>
 <td style="text-align:right;">
-1.9031920
+1.903
+</td>
+<td style="text-align:right;">
+0.0959622
 </td>
 </tr>
 <tr>
@@ -2014,19 +1946,25 @@ education6
 Model:2~6
 </td>
 <td style="text-align:left;">
+executive_cs
+</td>
+<td style="text-align:left;">
 education7
 </td>
 <td style="text-align:right;">
-0.4351717
+0.435
 </td>
 <td style="text-align:right;">
-0.6111320
+0.611
 </td>
 <td style="text-align:right;">
--0.7725677
+-0.773
 </td>
 <td style="text-align:right;">
-1.6429111
+1.643
+</td>
+<td style="text-align:right;">
+0.4775471
 </td>
 </tr>
 <tr>
@@ -2034,39 +1972,25 @@ education7
 Model:2~7
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-0.0316812
-</td>
-<td style="text-align:right;">
-0.0546275
-</td>
-<td style="text-align:right;">
--0.0762403
-</td>
-<td style="text-align:right;">
-0.1396027
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:2~7
+executive_cs
 </td>
 <td style="text-align:left;">
 pmh_neuro1
 </td>
 <td style="text-align:right;">
--0.0841927
+-0.084
 </td>
 <td style="text-align:right;">
-0.0830882
+0.083
 </td>
 <td style="text-align:right;">
--0.2483410
+-0.248
 </td>
 <td style="text-align:right;">
-0.0799556
+0.080
+</td>
+<td style="text-align:right;">
+0.3125203
 </td>
 </tr>
 <tr>
@@ -2074,39 +1998,25 @@ pmh_neuro1
 Model:2~8
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-0.0089031
-</td>
-<td style="text-align:right;">
-0.0501402
-</td>
-<td style="text-align:right;">
--0.0901533
-</td>
-<td style="text-align:right;">
-0.1079596
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:2~8
+executive_cs
 </td>
 <td style="text-align:left;">
 pmh_enc_is_ich1
 </td>
 <td style="text-align:right;">
--0.0422062
+-0.042
 </td>
 <td style="text-align:right;">
-0.0882809
+0.088
 </td>
 <td style="text-align:right;">
--0.2166131
+-0.217
 </td>
 <td style="text-align:right;">
-0.1322007
+0.132
+</td>
+<td style="text-align:right;">
+0.6332688
 </td>
 </tr>
 <tr>
@@ -2114,39 +2024,25 @@ pmh_enc_is_ich1
 Model:2~9
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-0.0518649
-</td>
-<td style="text-align:right;">
-0.0821628
-</td>
-<td style="text-align:right;">
--0.1104551
-</td>
-<td style="text-align:right;">
-0.2141849
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:2~9
+executive_cs
 </td>
 <td style="text-align:left;">
 pmh_covid_severe1
 </td>
 <td style="text-align:right;">
--0.0755981
+-0.076
 </td>
 <td style="text-align:right;">
-0.0949756
+0.095
 </td>
 <td style="text-align:right;">
--0.2632310
+-0.263
 </td>
 <td style="text-align:right;">
-0.1120347
+0.112
+</td>
+<td style="text-align:right;">
+0.4272802
 </td>
 </tr>
 <tr>
@@ -2154,39 +2050,77 @@ pmh_covid_severe1
 Model:2~10
 </td>
 <td style="text-align:left;">
-(Intercept)
+executive_cs
+</td>
+<td style="text-align:left;">
+icu1
 </td>
 <td style="text-align:right;">
-0.0064429
+-0.031
 </td>
 <td style="text-align:right;">
-0.0519175
+0.087
 </td>
 <td style="text-align:right;">
--0.0961248
+-0.202
 </td>
 <td style="text-align:right;">
-0.1090106
+0.140
+</td>
+<td style="text-align:right;">
+0.7222312
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Model:2~10
+Model:2~11
+</td>
+<td style="text-align:left;">
+executive_cs
+</td>
+<td style="text-align:left;">
+icu_2weeks1
+</td>
+<td style="text-align:right;">
+-0.062
+</td>
+<td style="text-align:right;">
+0.091
+</td>
+<td style="text-align:right;">
+-0.242
+</td>
+<td style="text-align:right;">
+0.119
+</td>
+<td style="text-align:right;">
+0.5017367
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Model:2~12
+</td>
+<td style="text-align:left;">
+executive_cs
 </td>
 <td style="text-align:left;">
 steroids1
 </td>
 <td style="text-align:right;">
--0.0303328
+-0.030
 </td>
 <td style="text-align:right;">
-0.0856135
+0.086
 </td>
 <td style="text-align:right;">
--0.1994700
+-0.199
 </td>
 <td style="text-align:right;">
-0.1388043
+0.139
+</td>
+<td style="text-align:right;">
+0.7236020
 </td>
 </tr>
 <tr>
@@ -2194,39 +2128,25 @@ steroids1
 Model:2~13
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-0.0216575
-</td>
-<td style="text-align:right;">
-0.0566530
-</td>
-<td style="text-align:right;">
--0.0902775
-</td>
-<td style="text-align:right;">
-0.1335925
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:2~13
+executive_cs
 </td>
 <td style="text-align:left;">
-ucla
+ad8_14
 </td>
 <td style="text-align:right;">
--0.0015485
+-0.008
 </td>
 <td style="text-align:right;">
-0.0026136
+0.016
 </td>
 <td style="text-align:right;">
--0.0067123
+-0.040
 </td>
 <td style="text-align:right;">
-0.0036154
+0.023
+</td>
+<td style="text-align:right;">
+0.5990295
 </td>
 </tr>
 <tr>
@@ -2234,39 +2154,25 @@ ucla
 Model:2~14
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-0.0430177
-</td>
-<td style="text-align:right;">
-0.0994450
-</td>
-<td style="text-align:right;">
--0.1534656
-</td>
-<td style="text-align:right;">
-0.2395011
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:2~14
+executive_cs
 </td>
 <td style="text-align:left;">
-stress
+ecog_15
 </td>
 <td style="text-align:right;">
--0.0025993
+-0.033
 </td>
 <td style="text-align:right;">
-0.0052963
+0.052
 </td>
 <td style="text-align:right;">
--0.0130636
+-0.136
 </td>
 <td style="text-align:right;">
-0.0078651
+0.070
+</td>
+<td style="text-align:right;">
+0.5305315
 </td>
 </tr>
 <tr>
@@ -2274,39 +2180,25 @@ stress
 Model:2~15
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-0.1213093
-</td>
-<td style="text-align:right;">
-0.0937927
-</td>
-<td style="text-align:right;">
--0.0640469
-</td>
-<td style="text-align:right;">
-0.3066655
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:2~15
+executive_cs
 </td>
 <td style="text-align:left;">
-sleep
+ucla
 </td>
 <td style="text-align:right;">
--0.0124583
+-0.002
 </td>
 <td style="text-align:right;">
-0.0092237
+0.003
 </td>
 <td style="text-align:right;">
--0.0306864
+-0.007
 </td>
 <td style="text-align:right;">
-0.0057698
+0.004
+</td>
+<td style="text-align:right;">
+0.5544192
 </td>
 </tr>
 <tr>
@@ -2314,39 +2206,25 @@ sleep
 Model:2~16
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-0.0680952
-</td>
-<td style="text-align:right;">
-0.0668591
-</td>
-<td style="text-align:right;">
--0.0640267
-</td>
-<td style="text-align:right;">
-0.2002170
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:2~16
+executive_cs
 </td>
 <td style="text-align:left;">
-dsm_depression
+stress
 </td>
 <td style="text-align:right;">
--0.0431137
+-0.003
 </td>
 <td style="text-align:right;">
-0.0309498
+0.005
 </td>
 <td style="text-align:right;">
--0.1042742
+-0.013
 </td>
 <td style="text-align:right;">
-0.0180469
+0.008
+</td>
+<td style="text-align:right;">
+0.6242998
 </td>
 </tr>
 <tr>
@@ -2354,39 +2232,25 @@ dsm_depression
 Model:2~17
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
--0.0067404
-</td>
-<td style="text-align:right;">
-0.0644103
-</td>
-<td style="text-align:right;">
--0.1340230
-</td>
-<td style="text-align:right;">
-0.1205422
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:2~17
+executive_cs
 </td>
 <td style="text-align:left;">
-dsm_anxiety
+sleep
 </td>
 <td style="text-align:right;">
-0.0010203
+-0.012
 </td>
 <td style="text-align:right;">
-0.0273324
+0.009
 </td>
 <td style="text-align:right;">
--0.0529919
+-0.031
 </td>
 <td style="text-align:right;">
-0.0550326
+0.006
+</td>
+<td style="text-align:right;">
+0.1788689
 </td>
 </tr>
 <tr>
@@ -2394,59 +2258,25 @@ dsm_anxiety
 Model:2~18
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
--0.2595142
-</td>
-<td style="text-align:right;">
-0.0663668
-</td>
-<td style="text-align:right;">
--0.3909620
-</td>
-<td style="text-align:right;">
--0.1280665
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:2~18
+executive_cs
 </td>
 <td style="text-align:left;">
-language_secondary2
+dsm_depression
 </td>
 <td style="text-align:right;">
-0.4713925
+-0.043
 </td>
 <td style="text-align:right;">
-0.0943249
+0.031
 </td>
 <td style="text-align:right;">
-0.2845702
+-0.104
 </td>
 <td style="text-align:right;">
-0.6582148
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:2~18
-</td>
-<td style="text-align:left;">
-language_secondary3
+0.018
 </td>
 <td style="text-align:right;">
-0.3309093
-</td>
-<td style="text-align:right;">
-0.1299388
-</td>
-<td style="text-align:right;">
-0.0735491
-</td>
-<td style="text-align:right;">
-0.5882695
+0.1657025
 </td>
 </tr>
 <tr>
@@ -2454,39 +2284,103 @@ language_secondary3
 Model:2~19
 </td>
 <td style="text-align:left;">
-(Intercept)
+executive_cs
+</td>
+<td style="text-align:left;">
+dsm_anxiety
 </td>
 <td style="text-align:right;">
-0.2165577
+0.001
 </td>
 <td style="text-align:right;">
-0.1049284
+0.027
 </td>
 <td style="text-align:right;">
-0.0087525
+-0.053
 </td>
 <td style="text-align:right;">
-0.4243629
+0.055
+</td>
+<td style="text-align:right;">
+0.9702716
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Model:2~19
+Model:2~20
+</td>
+<td style="text-align:left;">
+executive_cs
+</td>
+<td style="text-align:left;">
+language_secondary2
+</td>
+<td style="text-align:right;">
+0.471
+</td>
+<td style="text-align:right;">
+0.094
+</td>
+<td style="text-align:right;">
+0.285
+</td>
+<td style="text-align:right;">
+0.658
+</td>
+<td style="text-align:right;">
+0.0000021
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Model:2~20
+</td>
+<td style="text-align:left;">
+executive_cs
+</td>
+<td style="text-align:left;">
+language_secondary3
+</td>
+<td style="text-align:right;">
+0.331
+</td>
+<td style="text-align:right;">
+0.130
+</td>
+<td style="text-align:right;">
+0.074
+</td>
+<td style="text-align:right;">
+0.588
+</td>
+<td style="text-align:right;">
+0.0121859
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Model:2~21
+</td>
+<td style="text-align:left;">
+executive_cs
 </td>
 <td style="text-align:left;">
 vaccine
 </td>
 <td style="text-align:right;">
--0.0768458
+-0.077
 </td>
 <td style="text-align:right;">
-0.0316856
+0.032
 </td>
 <td style="text-align:right;">
--0.1395974
+-0.140
 </td>
 <td style="text-align:right;">
--0.0140942
+-0.014
+</td>
+<td style="text-align:right;">
+0.0168258
 </td>
 </tr>
 <tr>
@@ -2494,39 +2388,25 @@ vaccine
 Model:3~1
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-0.2152882
-</td>
-<td style="text-align:right;">
-0.1448283
-</td>
-<td style="text-align:right;">
--0.0708331
-</td>
-<td style="text-align:right;">
-0.5014096
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:3~1
+processing_cs
 </td>
 <td style="text-align:left;">
 age
 </td>
 <td style="text-align:right;">
--0.0041710
+-0.004
 </td>
 <td style="text-align:right;">
-0.0026508
+0.003
 </td>
 <td style="text-align:right;">
--0.0094078
+-0.009
 </td>
 <td style="text-align:right;">
-0.0010658
+0.001
+</td>
+<td style="text-align:right;">
+0.1176613
 </td>
 </tr>
 <tr>
@@ -2534,39 +2414,25 @@ age
 Model:3~2
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-0.0403457
-</td>
-<td style="text-align:right;">
-0.0547507
-</td>
-<td style="text-align:right;">
--0.0678192
-</td>
-<td style="text-align:right;">
-0.1485106
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:3~2
+processing_cs
 </td>
 <td style="text-align:left;">
 sex2
 </td>
 <td style="text-align:right;">
--0.0846251
+-0.085
 </td>
 <td style="text-align:right;">
-0.0748198
+0.075
 </td>
 <td style="text-align:right;">
--0.2324383
+-0.232
 </td>
 <td style="text-align:right;">
-0.0631881
+0.063
+</td>
+<td style="text-align:right;">
+0.2598026
 </td>
 </tr>
 <tr>
@@ -2574,119 +2440,129 @@ sex2
 Model:3~3
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-0.1319780
-</td>
-<td style="text-align:right;">
-0.3255701
-</td>
-<td style="text-align:right;">
--0.5113884
-</td>
-<td style="text-align:right;">
-0.7753445
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:3~3
+processing_cs
 </td>
 <td style="text-align:left;">
 race2
 </td>
 <td style="text-align:right;">
--0.0429355
+-0.043
 </td>
 <td style="text-align:right;">
-0.3852198
+0.385
 </td>
 <td style="text-align:right;">
--0.8041769
+-0.804
 </td>
 <td style="text-align:right;">
-0.7183060
+0.718
+</td>
+<td style="text-align:right;">
+0.9114049
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:3~3
+</td>
+<td style="text-align:left;">
+processing_cs
 </td>
 <td style="text-align:left;">
 race3
 </td>
 <td style="text-align:right;">
--0.3079539
+-0.308
 </td>
 <td style="text-align:right;">
-0.3362474
+0.336
 </td>
 <td style="text-align:right;">
--0.9724199
+-0.972
 </td>
 <td style="text-align:right;">
-0.3565121
+0.357
+</td>
+<td style="text-align:right;">
+0.3612326
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:3~3
+</td>
+<td style="text-align:left;">
+processing_cs
 </td>
 <td style="text-align:left;">
 race5
 </td>
 <td style="text-align:right;">
--0.3002645
+-0.300
 </td>
 <td style="text-align:right;">
-0.3453193
+0.345
 </td>
 <td style="text-align:right;">
--0.9826576
+-0.983
 </td>
 <td style="text-align:right;">
-0.3821287
+0.382
+</td>
+<td style="text-align:right;">
+0.3859668
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:3~3
+</td>
+<td style="text-align:left;">
+processing_cs
 </td>
 <td style="text-align:left;">
 race6
 </td>
 <td style="text-align:right;">
--0.0739777
+-0.074
 </td>
 <td style="text-align:right;">
-0.3290523
+0.329
 </td>
 <td style="text-align:right;">
--0.7242253
+-0.724
 </td>
 <td style="text-align:right;">
-0.5762698
+0.576
+</td>
+<td style="text-align:right;">
+0.8224289
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:3~3
+</td>
+<td style="text-align:left;">
+processing_cs
 </td>
 <td style="text-align:left;">
 race7
 </td>
 <td style="text-align:right;">
--0.0461370
+-0.046
 </td>
 <td style="text-align:right;">
-0.3759360
+0.376
 </td>
 <td style="text-align:right;">
--0.7890326
+-0.789
 </td>
 <td style="text-align:right;">
-0.6967585
+0.697
+</td>
+<td style="text-align:right;">
+0.9024908
 </td>
 </tr>
 <tr>
@@ -2694,19 +2570,25 @@ race7
 Model:3~3
 </td>
 <td style="text-align:left;">
+processing_cs
+</td>
+<td style="text-align:left;">
 race8
 </td>
 <td style="text-align:right;">
-0.0624589
+0.062
 </td>
 <td style="text-align:right;">
-0.4203092
+0.420
 </td>
 <td style="text-align:right;">
--0.7681236
+-0.768
 </td>
 <td style="text-align:right;">
-0.8930414
+0.893
+</td>
+<td style="text-align:right;">
+0.8820697
 </td>
 </tr>
 <tr>
@@ -2714,39 +2596,25 @@ race8
 Model:3~4
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-0.0466391
-</td>
-<td style="text-align:right;">
-0.0426036
-</td>
-<td style="text-align:right;">
--0.0375326
-</td>
-<td style="text-align:right;">
-0.1308108
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:3~4
+processing_cs
 </td>
 <td style="text-align:left;">
 ethnicity2
 </td>
 <td style="text-align:right;">
--0.1983941
+-0.198
 </td>
 <td style="text-align:right;">
-0.0857659
+0.086
 </td>
 <td style="text-align:right;">
--0.3678413
+-0.368
 </td>
 <td style="text-align:right;">
--0.0289468
+-0.029
+</td>
+<td style="text-align:right;">
+0.0220523
 </td>
 </tr>
 <tr>
@@ -2754,19 +2622,25 @@ ethnicity2
 Model:3~4
 </td>
 <td style="text-align:left;">
+processing_cs
+</td>
+<td style="text-align:left;">
 ethnicity3
 </td>
 <td style="text-align:right;">
--0.4603953
+-0.460
 </td>
 <td style="text-align:right;">
-0.4608284
+0.461
 </td>
 <td style="text-align:right;">
--1.3708512
+-1.371
 </td>
 <td style="text-align:right;">
-0.4500606
+0.450
+</td>
+<td style="text-align:right;">
+0.3193533
 </td>
 </tr>
 <tr>
@@ -2774,39 +2648,25 @@ ethnicity3
 Model:3~5
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
--0.1708363
-</td>
-<td style="text-align:right;">
-0.0531981
-</td>
-<td style="text-align:right;">
--0.2759340
-</td>
-<td style="text-align:right;">
--0.0657387
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:3~5
+processing_cs
 </td>
 <td style="text-align:left;">
 language_primary2
 </td>
 <td style="text-align:right;">
-0.2989456
+0.299
 </td>
 <td style="text-align:right;">
-0.0714188
+0.071
 </td>
 <td style="text-align:right;">
-0.1578513
+0.158
 </td>
 <td style="text-align:right;">
-0.4400400
+0.440
+</td>
+<td style="text-align:right;">
+0.0000478
 </td>
 </tr>
 <tr>
@@ -2814,139 +2674,155 @@ language_primary2
 Model:3~6
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
--0.8989235
-</td>
-<td style="text-align:right;">
-0.4470446
-</td>
-<td style="text-align:right;">
--1.7823880
-</td>
-<td style="text-align:right;">
--0.0154590
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:3~6
+processing_cs
 </td>
 <td style="text-align:left;">
 education1
 </td>
 <td style="text-align:right;">
-0.9306789
+0.931
 </td>
 <td style="text-align:right;">
-0.4600051
+0.460
 </td>
 <td style="text-align:right;">
-0.0216014
+0.022
 </td>
 <td style="text-align:right;">
-1.8397564
+1.840
+</td>
+<td style="text-align:right;">
+0.0448658
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:3~6
+</td>
+<td style="text-align:left;">
+processing_cs
 </td>
 <td style="text-align:left;">
 education2
 </td>
 <td style="text-align:right;">
-0.6100265
+0.610
 </td>
 <td style="text-align:right;">
-0.4998111
+0.500
 </td>
 <td style="text-align:right;">
--0.3777168
+-0.378
 </td>
 <td style="text-align:right;">
-1.5977698
+1.598
+</td>
+<td style="text-align:right;">
+0.2242243
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:3~6
+</td>
+<td style="text-align:left;">
+processing_cs
 </td>
 <td style="text-align:left;">
 education3
 </td>
 <td style="text-align:right;">
-0.9781696
+0.978
 </td>
 <td style="text-align:right;">
-0.4510904
+0.451
 </td>
 <td style="text-align:right;">
-0.0867098
+0.087
 </td>
 <td style="text-align:right;">
-1.8696294
+1.870
+</td>
+<td style="text-align:right;">
+0.0317326
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:3~6
+</td>
+<td style="text-align:left;">
+processing_cs
 </td>
 <td style="text-align:left;">
 education4
 </td>
 <td style="text-align:right;">
-0.7970628
+0.797
 </td>
 <td style="text-align:right;">
-0.4532111
+0.453
 </td>
 <td style="text-align:right;">
--0.0985880
+-0.099
 </td>
 <td style="text-align:right;">
-1.6927136
+1.693
+</td>
+<td style="text-align:right;">
+0.0807091
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:3~6
+</td>
+<td style="text-align:left;">
+processing_cs
 </td>
 <td style="text-align:left;">
 education5
 </td>
 <td style="text-align:right;">
-0.9646291
+0.965
 </td>
 <td style="text-align:right;">
-0.4546870
+0.455
 </td>
 <td style="text-align:right;">
-0.0660616
+0.066
 </td>
 <td style="text-align:right;">
-1.8631967
+1.863
+</td>
+<td style="text-align:right;">
+0.0355551
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:3~6
+</td>
+<td style="text-align:left;">
+processing_cs
 </td>
 <td style="text-align:left;">
 education6
 </td>
 <td style="text-align:right;">
-0.9086407
+0.909
 </td>
 <td style="text-align:right;">
-0.4669229
+0.467
 </td>
 <td style="text-align:right;">
--0.0141079
+-0.014
 </td>
 <td style="text-align:right;">
-1.8313892
+1.831
+</td>
+<td style="text-align:right;">
+0.0535599
 </td>
 </tr>
 <tr>
@@ -2954,19 +2830,25 @@ education6
 Model:3~6
 </td>
 <td style="text-align:left;">
+processing_cs
+</td>
+<td style="text-align:left;">
 education7
 </td>
 <td style="text-align:right;">
--0.0808477
+-0.081
 </td>
 <td style="text-align:right;">
-0.5475156
+0.548
 </td>
 <td style="text-align:right;">
--1.1628664
+-1.163
 </td>
 <td style="text-align:right;">
-1.0011709
+1.001
+</td>
+<td style="text-align:right;">
+0.8828112
 </td>
 </tr>
 <tr>
@@ -2974,39 +2856,25 @@ education7
 Model:3~7
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-0.0258340
-</td>
-<td style="text-align:right;">
-0.0495860
-</td>
-<td style="text-align:right;">
--0.0721277
-</td>
-<td style="text-align:right;">
-0.1237956
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:3~7
+processing_cs
 </td>
 <td style="text-align:left;">
 pmh_neuro1
 </td>
 <td style="text-align:right;">
--0.0712622
+-0.071
 </td>
 <td style="text-align:right;">
-0.0754202
+0.075
 </td>
 <td style="text-align:right;">
--0.2202616
+-0.220
 </td>
 <td style="text-align:right;">
-0.0777371
+0.078
+</td>
+<td style="text-align:right;">
+0.3462152
 </td>
 </tr>
 <tr>
@@ -3014,39 +2882,25 @@ pmh_neuro1
 Model:3~8
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-0.0058896
-</td>
-<td style="text-align:right;">
-0.0455008
-</td>
-<td style="text-align:right;">
--0.0840012
-</td>
-<td style="text-align:right;">
-0.0957805
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:3~8
+processing_cs
 </td>
 <td style="text-align:left;">
 pmh_enc_is_ich1
 </td>
 <td style="text-align:right;">
--0.0336640
+-0.034
 </td>
 <td style="text-align:right;">
-0.0801124
+0.080
 </td>
 <td style="text-align:right;">
--0.1919332
+-0.192
 </td>
 <td style="text-align:right;">
-0.1246052
+0.125
+</td>
+<td style="text-align:right;">
+0.6749216
 </td>
 </tr>
 <tr>
@@ -3054,39 +2908,25 @@ pmh_enc_is_ich1
 Model:3~9
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
--0.0486228
-</td>
-<td style="text-align:right;">
-0.0745904
-</td>
-<td style="text-align:right;">
--0.1959829
-</td>
-<td style="text-align:right;">
-0.0987373
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:3~9
+processing_cs
 </td>
 <td style="text-align:left;">
 pmh_covid_severe1
 </td>
 <td style="text-align:right;">
-0.0583295
+0.058
 </td>
 <td style="text-align:right;">
-0.0862223
+0.086
 </td>
 <td style="text-align:right;">
--0.1120105
+-0.112
 </td>
 <td style="text-align:right;">
-0.2286695
+0.229
+</td>
+<td style="text-align:right;">
+0.4997439
 </td>
 </tr>
 <tr>
@@ -3094,39 +2934,77 @@ pmh_covid_severe1
 Model:3~10
 </td>
 <td style="text-align:left;">
-(Intercept)
+processing_cs
+</td>
+<td style="text-align:left;">
+icu1
 </td>
 <td style="text-align:right;">
-0.0423303
+-0.098
 </td>
 <td style="text-align:right;">
-0.0467011
+0.078
 </td>
 <td style="text-align:right;">
--0.0499320
+-0.253
 </td>
 <td style="text-align:right;">
-0.1345926
+0.056
+</td>
+<td style="text-align:right;">
+0.2100166
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Model:3~10
+Model:3~11
+</td>
+<td style="text-align:left;">
+processing_cs
+</td>
+<td style="text-align:left;">
+icu_2weeks1
+</td>
+<td style="text-align:right;">
+-0.078
+</td>
+<td style="text-align:right;">
+0.083
+</td>
+<td style="text-align:right;">
+-0.242
+</td>
+<td style="text-align:right;">
+0.086
+</td>
+<td style="text-align:right;">
+0.3476014
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Model:3~12
+</td>
+<td style="text-align:left;">
+processing_cs
 </td>
 <td style="text-align:left;">
 steroids1
 </td>
 <td style="text-align:right;">
--0.1286229
+-0.129
 </td>
 <td style="text-align:right;">
-0.0770115
+0.077
 </td>
 <td style="text-align:right;">
--0.2807662
+-0.281
 </td>
 <td style="text-align:right;">
-0.0235203
+0.024
+</td>
+<td style="text-align:right;">
+0.0969289
 </td>
 </tr>
 <tr>
@@ -3134,39 +3012,25 @@ steroids1
 Model:3~13
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-0.0677453
-</td>
-<td style="text-align:right;">
-0.0511969
-</td>
-<td style="text-align:right;">
--0.0334094
-</td>
-<td style="text-align:right;">
-0.1689000
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:3~13
+processing_cs
 </td>
 <td style="text-align:left;">
-ucla
+ad8_14
 </td>
 <td style="text-align:right;">
--0.0049875
+0.017
 </td>
 <td style="text-align:right;">
-0.0023618
+0.015
 </td>
 <td style="text-align:right;">
--0.0096541
+-0.012
 </td>
 <td style="text-align:right;">
--0.0003210
+0.046
+</td>
+<td style="text-align:right;">
+0.2529166
 </td>
 </tr>
 <tr>
@@ -3174,39 +3038,25 @@ ucla
 Model:3~14
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
--0.0518880
-</td>
-<td style="text-align:right;">
-0.0910616
-</td>
-<td style="text-align:right;">
--0.2318074
-</td>
-<td style="text-align:right;">
-0.1280314
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:3~14
+processing_cs
 </td>
 <td style="text-align:left;">
-stress
+ecog_15
 </td>
 <td style="text-align:right;">
-0.0026529
+0.076
 </td>
 <td style="text-align:right;">
-0.0048498
+0.047
 </td>
 <td style="text-align:right;">
--0.0069293
+-0.017
 </td>
 <td style="text-align:right;">
-0.0122351
+0.169
+</td>
+<td style="text-align:right;">
+0.1094778
 </td>
 </tr>
 <tr>
@@ -3214,39 +3064,25 @@ stress
 Model:3~15
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-0.0289635
-</td>
-<td style="text-align:right;">
-0.0863855
-</td>
-<td style="text-align:right;">
--0.1417544
-</td>
-<td style="text-align:right;">
-0.1996815
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:3~15
+processing_cs
 </td>
 <td style="text-align:left;">
-sleep
+ucla
 </td>
 <td style="text-align:right;">
--0.0039626
+-0.005
 </td>
 <td style="text-align:right;">
-0.0084952
+0.002
 </td>
 <td style="text-align:right;">
--0.0207512
+-0.010
 </td>
 <td style="text-align:right;">
-0.0128260
+0.000
+</td>
+<td style="text-align:right;">
+0.0363575
 </td>
 </tr>
 <tr>
@@ -3254,39 +3090,25 @@ sleep
 Model:3~16
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
--0.0369031
-</td>
-<td style="text-align:right;">
-0.0611961
-</td>
-<td style="text-align:right;">
--0.1578341
-</td>
-<td style="text-align:right;">
-0.0840279
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:3~16
+processing_cs
 </td>
 <td style="text-align:left;">
-dsm_depression
+stress
 </td>
 <td style="text-align:right;">
-0.0122379
+0.003
 </td>
 <td style="text-align:right;">
-0.0283283
+0.005
 </td>
 <td style="text-align:right;">
--0.0437423
+-0.007
 </td>
 <td style="text-align:right;">
-0.0682181
+0.012
+</td>
+<td style="text-align:right;">
+0.5851785
 </td>
 </tr>
 <tr>
@@ -3294,39 +3116,25 @@ dsm_depression
 Model:3~17
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
--0.0675886
-</td>
-<td style="text-align:right;">
-0.0583455
-</td>
-<td style="text-align:right;">
--0.1828864
-</td>
-<td style="text-align:right;">
-0.0477092
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:3~17
+processing_cs
 </td>
 <td style="text-align:left;">
-dsm_anxiety
+sleep
 </td>
 <td style="text-align:right;">
-0.0286664
+-0.004
 </td>
 <td style="text-align:right;">
-0.0247588
+0.008
 </td>
 <td style="text-align:right;">
--0.0202601
+-0.021
 </td>
 <td style="text-align:right;">
-0.0775929
+0.013
+</td>
+<td style="text-align:right;">
+0.6415834
 </td>
 </tr>
 <tr>
@@ -3334,59 +3142,25 @@ dsm_anxiety
 Model:3~18
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
--0.1560153
-</td>
-<td style="text-align:right;">
-0.0628823
-</td>
-<td style="text-align:right;">
--0.2805615
-</td>
-<td style="text-align:right;">
--0.0314690
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:3~18
+processing_cs
 </td>
 <td style="text-align:left;">
-language_secondary2
+dsm_depression
 </td>
 <td style="text-align:right;">
-0.3529503
+0.012
 </td>
 <td style="text-align:right;">
-0.0893725
+0.028
 </td>
 <td style="text-align:right;">
-0.1759369
+-0.044
 </td>
 <td style="text-align:right;">
-0.5299638
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:3~18
-</td>
-<td style="text-align:left;">
-language_secondary3
+0.068
 </td>
 <td style="text-align:right;">
-0.1655170
-</td>
-<td style="text-align:right;">
-0.1231166
-</td>
-<td style="text-align:right;">
--0.0783308
-</td>
-<td style="text-align:right;">
-0.4093649
+0.6663678
 </td>
 </tr>
 <tr>
@@ -3394,39 +3168,103 @@ language_secondary3
 Model:3~19
 </td>
 <td style="text-align:left;">
-(Intercept)
+processing_cs
+</td>
+<td style="text-align:left;">
+dsm_anxiety
 </td>
 <td style="text-align:right;">
-0.1297334
+0.029
 </td>
 <td style="text-align:right;">
-0.0975296
+0.025
 </td>
 <td style="text-align:right;">
--0.0634189
+-0.020
 </td>
 <td style="text-align:right;">
-0.3228856
+0.078
+</td>
+<td style="text-align:right;">
+0.2488011
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Model:3~19
+Model:3~20
+</td>
+<td style="text-align:left;">
+processing_cs
+</td>
+<td style="text-align:left;">
+language_secondary2
+</td>
+<td style="text-align:right;">
+0.353
+</td>
+<td style="text-align:right;">
+0.089
+</td>
+<td style="text-align:right;">
+0.176
+</td>
+<td style="text-align:right;">
+0.530
+</td>
+<td style="text-align:right;">
+0.0001350
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Model:3~20
+</td>
+<td style="text-align:left;">
+processing_cs
+</td>
+<td style="text-align:left;">
+language_secondary3
+</td>
+<td style="text-align:right;">
+0.166
+</td>
+<td style="text-align:right;">
+0.123
+</td>
+<td style="text-align:right;">
+-0.078
+</td>
+<td style="text-align:right;">
+0.409
+</td>
+<td style="text-align:right;">
+0.1814445
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Model:3~21
+</td>
+<td style="text-align:left;">
+processing_cs
 </td>
 <td style="text-align:left;">
 vaccine
 </td>
 <td style="text-align:right;">
--0.0378959
+-0.038
 </td>
 <td style="text-align:right;">
-0.0294513
+0.029
 </td>
 <td style="text-align:right;">
--0.0962227
+-0.096
 </td>
 <td style="text-align:right;">
-0.0204309
+0.020
+</td>
+<td style="text-align:right;">
+0.2007280
 </td>
 </tr>
 <tr>
@@ -3434,39 +3272,25 @@ vaccine
 Model:4~1
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-0.0581994
-</td>
-<td style="text-align:right;">
-0.2708004
-</td>
-<td style="text-align:right;">
--0.4767914
-</td>
-<td style="text-align:right;">
-0.5931901
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:4~1
+verbal_cs
 </td>
 <td style="text-align:left;">
 age
 </td>
 <td style="text-align:right;">
--0.0011825
+-0.001
 </td>
 <td style="text-align:right;">
-0.0049564
+0.005
 </td>
 <td style="text-align:right;">
--0.0109742
+-0.011
 </td>
 <td style="text-align:right;">
-0.0086093
+0.009
+</td>
+<td style="text-align:right;">
+0.8117567
 </td>
 </tr>
 <tr>
@@ -3474,39 +3298,25 @@ age
 Model:4~2
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
--0.0415191
-</td>
-<td style="text-align:right;">
-0.1019141
-</td>
-<td style="text-align:right;">
--0.2428595
-</td>
-<td style="text-align:right;">
-0.1598213
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:4~2
+verbal_cs
 </td>
 <td style="text-align:left;">
 sex2
 </td>
 <td style="text-align:right;">
-0.0696141
+0.070
 </td>
 <td style="text-align:right;">
-0.1392711
+0.139
 </td>
 <td style="text-align:right;">
--0.2055284
+-0.206
 </td>
 <td style="text-align:right;">
-0.3447567
+0.345
+</td>
+<td style="text-align:right;">
+0.6179014
 </td>
 </tr>
 <tr>
@@ -3514,119 +3324,129 @@ sex2
 Model:4~3
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
--0.7808416
-</td>
-<td style="text-align:right;">
-0.5441475
-</td>
-<td style="text-align:right;">
--1.8561437
-</td>
-<td style="text-align:right;">
-0.2944604
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:4~3
+verbal_cs
 </td>
 <td style="text-align:left;">
 race2
 </td>
 <td style="text-align:right;">
-1.3426955
+1.343
 </td>
 <td style="text-align:right;">
-0.6438440
+0.644
 </td>
 <td style="text-align:right;">
-0.0703810
+0.070
 </td>
 <td style="text-align:right;">
-2.6150101
+2.615
+</td>
+<td style="text-align:right;">
+0.0387465
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:4~3
+</td>
+<td style="text-align:left;">
+verbal_cs
 </td>
 <td style="text-align:left;">
 race3
 </td>
 <td style="text-align:right;">
-1.3253814
+1.325
 </td>
 <td style="text-align:right;">
-0.5619931
+0.562
 </td>
 <td style="text-align:right;">
-0.2148142
+0.215
 </td>
 <td style="text-align:right;">
-2.4359486
+2.436
+</td>
+<td style="text-align:right;">
+0.0196633
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:4~3
+</td>
+<td style="text-align:left;">
+verbal_cs
 </td>
 <td style="text-align:left;">
 race5
 </td>
 <td style="text-align:right;">
-1.2760533
+1.276
 </td>
 <td style="text-align:right;">
-0.5771556
+0.577
 </td>
 <td style="text-align:right;">
-0.1355232
+0.136
 </td>
 <td style="text-align:right;">
-2.4165833
+2.417
+</td>
+<td style="text-align:right;">
+0.0285745
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:4~3
+</td>
+<td style="text-align:left;">
+verbal_cs
 </td>
 <td style="text-align:left;">
 race6
 </td>
 <td style="text-align:right;">
-0.4768153
+0.477
 </td>
 <td style="text-align:right;">
-0.5499674
+0.550
 </td>
 <td style="text-align:right;">
--0.6099876
+-0.610
 </td>
 <td style="text-align:right;">
-1.5636183
+1.564
+</td>
+<td style="text-align:right;">
+0.3873518
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:4~3
+</td>
+<td style="text-align:left;">
+verbal_cs
 </td>
 <td style="text-align:left;">
 race7
 </td>
 <td style="text-align:right;">
-1.3691642
+1.369
 </td>
 <td style="text-align:right;">
-0.6283274
+0.628
 </td>
 <td style="text-align:right;">
-0.1275124
+0.128
 </td>
 <td style="text-align:right;">
-2.6108161
+2.611
+</td>
+<td style="text-align:right;">
+0.0309090
 </td>
 </tr>
 <tr>
@@ -3634,19 +3454,25 @@ race7
 Model:4~3
 </td>
 <td style="text-align:left;">
+verbal_cs
+</td>
+<td style="text-align:left;">
 race8
 </td>
 <td style="text-align:right;">
-0.3074595
+0.307
 </td>
 <td style="text-align:right;">
-0.7024914
+0.702
 </td>
 <td style="text-align:right;">
--1.0807495
+-1.081
 </td>
 <td style="text-align:right;">
-1.6956685
+1.696
+</td>
+<td style="text-align:right;">
+0.6622635
 </td>
 </tr>
 <tr>
@@ -3654,39 +3480,25 @@ race8
 Model:4~4
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
--0.2802795
-</td>
-<td style="text-align:right;">
-0.0671375
-</td>
-<td style="text-align:right;">
--0.4129227
-</td>
-<td style="text-align:right;">
--0.1476363
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:4~4
+verbal_cs
 </td>
 <td style="text-align:left;">
 ethnicity2
 </td>
 <td style="text-align:right;">
-1.0974535
+1.097
 </td>
 <td style="text-align:right;">
-0.1351556
+0.135
 </td>
 <td style="text-align:right;">
-0.8304274
+0.830
 </td>
 <td style="text-align:right;">
-1.3644795
+1.364
+</td>
+<td style="text-align:right;">
+0.0000000
 </td>
 </tr>
 <tr>
@@ -3694,19 +3506,25 @@ ethnicity2
 Model:4~4
 </td>
 <td style="text-align:left;">
+verbal_cs
+</td>
+<td style="text-align:left;">
 ethnicity3
 </td>
 <td style="text-align:right;">
-1.0826053
+1.083
 </td>
 <td style="text-align:right;">
-0.7262036
+0.726
 </td>
 <td style="text-align:right;">
--0.3521507
+-0.352
 </td>
 <td style="text-align:right;">
-2.5173613
+2.517
+</td>
+<td style="text-align:right;">
+0.1380932
 </td>
 </tr>
 <tr>
@@ -3714,39 +3532,25 @@ ethnicity3
 Model:4~5
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-0.5640656
-</td>
-<td style="text-align:right;">
-0.0839712
-</td>
-<td style="text-align:right;">
-0.3981730
-</td>
-<td style="text-align:right;">
-0.7299583
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:4~5
+verbal_cs
 </td>
 <td style="text-align:left;">
 language_primary2
 </td>
 <td style="text-align:right;">
--1.0242751
+-1.024
 </td>
 <td style="text-align:right;">
-0.1127319
+0.113
 </td>
 <td style="text-align:right;">
--1.2469873
+-1.247
 </td>
 <td style="text-align:right;">
--0.8015630
+-0.802
+</td>
+<td style="text-align:right;">
+0.0000000
 </td>
 </tr>
 <tr>
@@ -3754,139 +3558,155 @@ language_primary2
 Model:4~6
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
--1.3149838
-</td>
-<td style="text-align:right;">
-0.6428246
-</td>
-<td style="text-align:right;">
--2.5853551
-</td>
-<td style="text-align:right;">
--0.0446124
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:4~6
+verbal_cs
 </td>
 <td style="text-align:left;">
 education1
 </td>
 <td style="text-align:right;">
-0.3213231
+0.321
 </td>
 <td style="text-align:right;">
-0.6614610
+0.661
 </td>
 <td style="text-align:right;">
--0.9858782
+-0.986
 </td>
 <td style="text-align:right;">
-1.6285245
+1.629
+</td>
+<td style="text-align:right;">
+0.6278480
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:4~6
+</td>
+<td style="text-align:left;">
+verbal_cs
 </td>
 <td style="text-align:left;">
 education2
 </td>
 <td style="text-align:right;">
-0.4756658
+0.476
 </td>
 <td style="text-align:right;">
-0.7186997
+0.719
 </td>
 <td style="text-align:right;">
--0.9446525
+-0.945
 </td>
 <td style="text-align:right;">
-1.8959842
+1.896
+</td>
+<td style="text-align:right;">
+0.5091085
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:4~6
+</td>
+<td style="text-align:left;">
+verbal_cs
 </td>
 <td style="text-align:left;">
 education3
 </td>
 <td style="text-align:right;">
-0.9987050
+0.999
 </td>
 <td style="text-align:right;">
-0.6486421
+0.649
 </td>
 <td style="text-align:right;">
--0.2831632
+-0.283
 </td>
 <td style="text-align:right;">
-2.2805732
+2.281
+</td>
+<td style="text-align:right;">
+0.1257868
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:4~6
+</td>
+<td style="text-align:left;">
+verbal_cs
 </td>
 <td style="text-align:left;">
 education4
 </td>
 <td style="text-align:right;">
-1.6385997
+1.639
 </td>
 <td style="text-align:right;">
-0.6516916
+0.652
 </td>
 <td style="text-align:right;">
-0.3507052
+0.351
 </td>
 <td style="text-align:right;">
-2.9264943
+2.926
+</td>
+<td style="text-align:right;">
+0.0130009
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:4~6
+</td>
+<td style="text-align:left;">
+verbal_cs
 </td>
 <td style="text-align:left;">
 education5
 </td>
 <td style="text-align:right;">
-1.6947132
+1.695
 </td>
 <td style="text-align:right;">
-0.6538138
+0.654
 </td>
 <td style="text-align:right;">
-0.4026245
+0.403
 </td>
 <td style="text-align:right;">
-2.9868019
+2.987
+</td>
+<td style="text-align:right;">
+0.0105035
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:4~6
+</td>
+<td style="text-align:left;">
+verbal_cs
 </td>
 <td style="text-align:left;">
 education6
 </td>
 <td style="text-align:right;">
-2.4576059
+2.458
 </td>
 <td style="text-align:right;">
-0.6714084
+0.671
 </td>
 <td style="text-align:right;">
-1.1307463
+1.131
 </td>
 <td style="text-align:right;">
-3.7844656
+3.784
+</td>
+<td style="text-align:right;">
+0.0003505
 </td>
 </tr>
 <tr>
@@ -3894,19 +3714,25 @@ education6
 Model:4~6
 </td>
 <td style="text-align:left;">
+verbal_cs
+</td>
+<td style="text-align:left;">
 education7
 </td>
 <td style="text-align:right;">
-2.8505624
+2.851
 </td>
 <td style="text-align:right;">
-0.7872961
+0.787
 </td>
 <td style="text-align:right;">
-1.2946816
+1.295
 </td>
 <td style="text-align:right;">
-4.4064433
+4.406
+</td>
+<td style="text-align:right;">
+0.0004037
 </td>
 </tr>
 <tr>
@@ -3914,39 +3740,25 @@ education7
 Model:4~7
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-0.0265380
-</td>
-<td style="text-align:right;">
-0.0921823
-</td>
-<td style="text-align:right;">
--0.1555765
-</td>
-<td style="text-align:right;">
-0.2086525
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:4~7
+verbal_cs
 </td>
 <td style="text-align:left;">
 pmh_neuro1
 </td>
 <td style="text-align:right;">
--0.0712071
+-0.071
 </td>
 <td style="text-align:right;">
-0.1402090
+0.140
 </td>
 <td style="text-align:right;">
--0.3482027
+-0.348
 </td>
 <td style="text-align:right;">
-0.2057885
+0.206
+</td>
+<td style="text-align:right;">
+0.6122800
 </td>
 </tr>
 <tr>
@@ -3954,39 +3766,25 @@ pmh_neuro1
 Model:4~8
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-0.0157901
-</td>
-<td style="text-align:right;">
-0.0844136
-</td>
-<td style="text-align:right;">
--0.1509766
-</td>
-<td style="text-align:right;">
-0.1825568
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:4~8
+verbal_cs
 </td>
 <td style="text-align:left;">
 pmh_enc_is_ich1
 </td>
 <td style="text-align:right;">
--0.0620990
+-0.062
 </td>
 <td style="text-align:right;">
-0.1486255
+0.149
 </td>
 <td style="text-align:right;">
--0.3557220
+-0.356
 </td>
 <td style="text-align:right;">
-0.2315240
+0.232
+</td>
+<td style="text-align:right;">
+0.6766629
 </td>
 </tr>
 <tr>
@@ -3994,39 +3792,25 @@ pmh_enc_is_ich1
 Model:4~9
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
--0.0421795
-</td>
-<td style="text-align:right;">
-0.1385416
-</td>
-<td style="text-align:right;">
--0.3158809
-</td>
-<td style="text-align:right;">
-0.2315219
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:4~9
+verbal_cs
 </td>
 <td style="text-align:left;">
 pmh_covid_severe1
 </td>
 <td style="text-align:right;">
-0.0506926
+0.051
 </td>
 <td style="text-align:right;">
-0.1601463
+0.160
 </td>
 <td style="text-align:right;">
--0.2656910
+-0.266
 </td>
 <td style="text-align:right;">
-0.3670761
+0.367
+</td>
+<td style="text-align:right;">
+0.7520249
 </td>
 </tr>
 <tr>
@@ -4034,39 +3818,77 @@ pmh_covid_severe1
 Model:4~10
 </td>
 <td style="text-align:left;">
-(Intercept)
+verbal_cs
+</td>
+<td style="text-align:left;">
+icu1
 </td>
 <td style="text-align:right;">
--0.0093423
+0.025
 </td>
 <td style="text-align:right;">
-0.0874236
+0.146
 </td>
 <td style="text-align:right;">
--0.1820554
+-0.263
 </td>
 <td style="text-align:right;">
-0.1633709
+0.314
+</td>
+<td style="text-align:right;">
+0.8615294
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Model:4~10
+Model:4~11
+</td>
+<td style="text-align:left;">
+verbal_cs
+</td>
+<td style="text-align:left;">
+icu_2weeks1
+</td>
+<td style="text-align:right;">
+0.039
+</td>
+<td style="text-align:right;">
+0.154
+</td>
+<td style="text-align:right;">
+-0.265
+</td>
+<td style="text-align:right;">
+0.344
+</td>
+<td style="text-align:right;">
+0.8002221
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Model:4~12
+</td>
+<td style="text-align:left;">
+verbal_cs
 </td>
 <td style="text-align:left;">
 steroids1
 </td>
 <td style="text-align:right;">
-0.0138696
+0.014
 </td>
 <td style="text-align:right;">
-0.1441640
+0.144
 </td>
 <td style="text-align:right;">
--0.2709395
+-0.271
 </td>
 <td style="text-align:right;">
-0.2986786
+0.299
+</td>
+<td style="text-align:right;">
+0.9234822
 </td>
 </tr>
 <tr>
@@ -4074,39 +3896,25 @@ steroids1
 Model:4~13
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-0.0236874
-</td>
-<td style="text-align:right;">
-0.0946610
-</td>
-<td style="text-align:right;">
--0.1633436
-</td>
-<td style="text-align:right;">
-0.2107185
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:4~13
+verbal_cs
 </td>
 <td style="text-align:left;">
-ucla
+ad8_14
 </td>
 <td style="text-align:right;">
--0.0032444
+-0.050
 </td>
 <td style="text-align:right;">
-0.0043670
+0.027
 </td>
 <td style="text-align:right;">
--0.0118726
+-0.103
 </td>
 <td style="text-align:right;">
-0.0053839
+0.002
+</td>
+<td style="text-align:right;">
+0.0599465
 </td>
 </tr>
 <tr>
@@ -4114,39 +3922,25 @@ ucla
 Model:4~14
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-0.0337453
-</td>
-<td style="text-align:right;">
-0.1663226
-</td>
-<td style="text-align:right;">
--0.2948748
-</td>
-<td style="text-align:right;">
-0.3623654
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:4~14
+verbal_cs
 </td>
 <td style="text-align:left;">
-stress
+ecog_15
 </td>
 <td style="text-align:right;">
--0.0034160
+-0.151
 </td>
 <td style="text-align:right;">
-0.0088580
+0.086
 </td>
 <td style="text-align:right;">
--0.0209177
+-0.321
 </td>
 <td style="text-align:right;">
-0.0140857
+0.019
+</td>
+<td style="text-align:right;">
+0.0821513
 </td>
 </tr>
 <tr>
@@ -4154,39 +3948,25 @@ stress
 Model:4~15
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
--0.2107172
-</td>
-<td style="text-align:right;">
-0.1573828
-</td>
-<td style="text-align:right;">
--0.5217424
-</td>
-<td style="text-align:right;">
-0.1003080
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:4~15
+verbal_cs
 </td>
 <td style="text-align:left;">
-sleep
+ucla
 </td>
 <td style="text-align:right;">
-0.0197248
+-0.003
 </td>
 <td style="text-align:right;">
-0.0154772
+0.004
 </td>
 <td style="text-align:right;">
--0.0108617
+-0.012
 </td>
 <td style="text-align:right;">
-0.0503113
+0.005
+</td>
+<td style="text-align:right;">
+0.4586736
 </td>
 </tr>
 <tr>
@@ -4194,39 +3974,25 @@ sleep
 Model:4~16
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-0.0048296
-</td>
-<td style="text-align:right;">
-0.1125067
-</td>
-<td style="text-align:right;">
--0.2174975
-</td>
-<td style="text-align:right;">
-0.2271567
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:4~16
+verbal_cs
 </td>
 <td style="text-align:left;">
-dsm_depression
+stress
 </td>
 <td style="text-align:right;">
--0.0146746
+-0.003
 </td>
 <td style="text-align:right;">
-0.0520805
+0.009
 </td>
 <td style="text-align:right;">
--0.1175920
+-0.021
 </td>
 <td style="text-align:right;">
-0.0882429
+0.014
+</td>
+<td style="text-align:right;">
+0.7003087
 </td>
 </tr>
 <tr>
@@ -4234,39 +4000,25 @@ dsm_depression
 Model:4~17
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-0.0221622
-</td>
-<td style="text-align:right;">
-0.1076152
-</td>
-<td style="text-align:right;">
--0.1904987
-</td>
-<td style="text-align:right;">
-0.2348231
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:4~17
+verbal_cs
 </td>
 <td style="text-align:left;">
-dsm_anxiety
+sleep
 </td>
 <td style="text-align:right;">
--0.0235213
+0.020
 </td>
 <td style="text-align:right;">
-0.0456664
+0.015
 </td>
 <td style="text-align:right;">
--0.1137637
+-0.011
 </td>
 <td style="text-align:right;">
-0.0667211
+0.050
+</td>
+<td style="text-align:right;">
+0.2045169
 </td>
 </tr>
 <tr>
@@ -4274,59 +4026,25 @@ dsm_anxiety
 Model:4~18
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-0.6590140
-</td>
-<td style="text-align:right;">
-0.0935345
-</td>
-<td style="text-align:right;">
-0.4737573
-</td>
-<td style="text-align:right;">
-0.8442708
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:4~18
+verbal_cs
 </td>
 <td style="text-align:left;">
-language_secondary2
+dsm_depression
 </td>
 <td style="text-align:right;">
--1.1673595
+-0.015
 </td>
 <td style="text-align:right;">
-0.1329375
+0.052
 </td>
 <td style="text-align:right;">
--1.4306588
+-0.118
 </td>
 <td style="text-align:right;">
--0.9040601
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:4~18
-</td>
-<td style="text-align:left;">
-language_secondary3
+0.088
 </td>
 <td style="text-align:right;">
--0.8789376
-</td>
-<td style="text-align:right;">
-0.1831302
-</td>
-<td style="text-align:right;">
--1.2416500
-</td>
-<td style="text-align:right;">
--0.5162252
+0.7785158
 </td>
 </tr>
 <tr>
@@ -4334,39 +4052,103 @@ language_secondary3
 Model:4~19
 </td>
 <td style="text-align:left;">
-(Intercept)
+verbal_cs
+</td>
+<td style="text-align:left;">
+dsm_anxiety
 </td>
 <td style="text-align:right;">
--0.2335160
+-0.024
 </td>
 <td style="text-align:right;">
-0.1762120
+0.046
 </td>
 <td style="text-align:right;">
--0.5824945
+-0.114
 </td>
 <td style="text-align:right;">
-0.1154626
+0.067
+</td>
+<td style="text-align:right;">
+0.6072743
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Model:4~19
+Model:4~20
+</td>
+<td style="text-align:left;">
+verbal_cs
+</td>
+<td style="text-align:left;">
+language_secondary2
+</td>
+<td style="text-align:right;">
+-1.167
+</td>
+<td style="text-align:right;">
+0.133
+</td>
+<td style="text-align:right;">
+-1.431
+</td>
+<td style="text-align:right;">
+-0.904
+</td>
+<td style="text-align:right;">
+0.0000000
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Model:4~20
+</td>
+<td style="text-align:left;">
+verbal_cs
+</td>
+<td style="text-align:left;">
+language_secondary3
+</td>
+<td style="text-align:right;">
+-0.879
+</td>
+<td style="text-align:right;">
+0.183
+</td>
+<td style="text-align:right;">
+-1.242
+</td>
+<td style="text-align:right;">
+-0.516
+</td>
+<td style="text-align:right;">
+0.0000048
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Model:4~21
+</td>
+<td style="text-align:left;">
+verbal_cs
 </td>
 <td style="text-align:left;">
 vaccine
 </td>
 <td style="text-align:right;">
-0.0907145
+0.091
 </td>
 <td style="text-align:right;">
-0.0532113
+0.053
 </td>
 <td style="text-align:right;">
--0.0146676
+-0.015
 </td>
 <td style="text-align:right;">
-0.1960966
+0.196
+</td>
+<td style="text-align:right;">
+0.0908859
 </td>
 </tr>
 <tr>
@@ -4374,39 +4156,25 @@ vaccine
 Model:5~1
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-0.3960009
-</td>
-<td style="text-align:right;">
-0.1188513
-</td>
-<td style="text-align:right;">
-0.1611995
-</td>
-<td style="text-align:right;">
-0.6308023
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:5~1
+global_cs
 </td>
 <td style="text-align:left;">
 age
 </td>
 <td style="text-align:right;">
--0.0075677
+-0.008
 </td>
 <td style="text-align:right;">
-0.0021753
+0.002
 </td>
 <td style="text-align:right;">
--0.0118652
+-0.012
 </td>
 <td style="text-align:right;">
--0.0032702
+-0.003
+</td>
+<td style="text-align:right;">
+0.0006559
 </td>
 </tr>
 <tr>
@@ -4414,39 +4182,25 @@ age
 Model:5~2
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
--0.0144264
-</td>
-<td style="text-align:right;">
-0.0464783
-</td>
-<td style="text-align:right;">
--0.1062485
-</td>
-<td style="text-align:right;">
-0.0773957
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:5~2
+global_cs
 </td>
 <td style="text-align:left;">
 sex2
 </td>
 <td style="text-align:right;">
-0.0201783
+0.020
 </td>
 <td style="text-align:right;">
-0.0635151
+0.064
 </td>
 <td style="text-align:right;">
--0.1053016
+-0.105
 </td>
 <td style="text-align:right;">
-0.1456581
+0.146
+</td>
+<td style="text-align:right;">
+0.7511515
 </td>
 </tr>
 <tr>
@@ -4454,119 +4208,129 @@ sex2
 Model:5~3
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
--0.1907926
-</td>
-<td style="text-align:right;">
-0.2714937
-</td>
-<td style="text-align:right;">
--0.7272974
-</td>
-<td style="text-align:right;">
-0.3457122
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:5~3
+global_cs
 </td>
 <td style="text-align:left;">
 race2
 </td>
 <td style="text-align:right;">
-0.4139423
+0.414
 </td>
 <td style="text-align:right;">
-0.3212357
+0.321
 </td>
 <td style="text-align:right;">
--0.2208588
+-0.221
 </td>
 <td style="text-align:right;">
-1.0487433
+1.049
+</td>
+<td style="text-align:right;">
+0.1995501
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:5~3
+</td>
+<td style="text-align:left;">
+global_cs
 </td>
 <td style="text-align:left;">
 race3
 </td>
 <td style="text-align:right;">
-0.2654518
+0.265
 </td>
 <td style="text-align:right;">
-0.2803975
+0.280
 </td>
 <td style="text-align:right;">
--0.2886480
+-0.289
 </td>
 <td style="text-align:right;">
-0.8195516
+0.820
+</td>
+<td style="text-align:right;">
+0.3453356
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:5~3
+</td>
+<td style="text-align:left;">
+global_cs
 </td>
 <td style="text-align:left;">
 race5
 </td>
 <td style="text-align:right;">
-0.3957003
+0.396
 </td>
 <td style="text-align:right;">
-0.2879626
+0.288
 </td>
 <td style="text-align:right;">
--0.1733490
+-0.173
 </td>
 <td style="text-align:right;">
-0.9647496
+0.965
+</td>
+<td style="text-align:right;">
+0.1714762
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:5~3
+</td>
+<td style="text-align:left;">
+global_cs
 </td>
 <td style="text-align:left;">
 race6
 </td>
 <td style="text-align:right;">
-0.1082782
+0.108
 </td>
 <td style="text-align:right;">
-0.2743975
+0.274
 </td>
 <td style="text-align:right;">
--0.4339648
+-0.434
 </td>
 <td style="text-align:right;">
-0.6505212
+0.651
+</td>
+<td style="text-align:right;">
+0.6937035
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:5~3
+</td>
+<td style="text-align:left;">
+global_cs
 </td>
 <td style="text-align:left;">
 race7
 </td>
 <td style="text-align:right;">
-0.3682971
+0.368
 </td>
 <td style="text-align:right;">
-0.3134939
+0.313
 </td>
 <td style="text-align:right;">
--0.2512053
+-0.251
 </td>
 <td style="text-align:right;">
-0.9877995
+0.988
+</td>
+<td style="text-align:right;">
+0.2419558
 </td>
 </tr>
 <tr>
@@ -4574,19 +4338,25 @@ race7
 Model:5~3
 </td>
 <td style="text-align:left;">
+global_cs
+</td>
+<td style="text-align:left;">
 race8
 </td>
 <td style="text-align:right;">
-0.1224733
+0.122
 </td>
 <td style="text-align:right;">
-0.3504969
+0.350
 </td>
 <td style="text-align:right;">
--0.5701514
+-0.570
 </td>
 <td style="text-align:right;">
-0.8150981
+0.815
+</td>
+<td style="text-align:right;">
+0.7272649
 </td>
 </tr>
 <tr>
@@ -4594,39 +4364,25 @@ race8
 Model:5~4
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
--0.0660105
-</td>
-<td style="text-align:right;">
-0.0353215
-</td>
-<td style="text-align:right;">
--0.1357949
-</td>
-<td style="text-align:right;">
-0.0037740
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:5~4
+global_cs
 </td>
 <td style="text-align:left;">
 ethnicity2
 </td>
 <td style="text-align:right;">
-0.2516764
+0.252
 </td>
 <td style="text-align:right;">
-0.0711062
+0.071
 </td>
 <td style="text-align:right;">
-0.1111923
+0.111
 </td>
 <td style="text-align:right;">
-0.3921606
+0.392
+</td>
+<td style="text-align:right;">
+0.0005323
 </td>
 </tr>
 <tr>
@@ -4634,19 +4390,25 @@ ethnicity2
 Model:5~4
 </td>
 <td style="text-align:left;">
+global_cs
+</td>
+<td style="text-align:left;">
 ethnicity3
 </td>
 <td style="text-align:right;">
-0.1066161
+0.107
 </td>
 <td style="text-align:right;">
-0.3820604
+0.382
 </td>
 <td style="text-align:right;">
--0.6482184
+-0.648
 </td>
 <td style="text-align:right;">
-0.8614505
+0.861
+</td>
+<td style="text-align:right;">
+0.7805816
 </td>
 </tr>
 <tr>
@@ -4654,39 +4416,25 @@ ethnicity3
 Model:5~5
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-0.1013212
-</td>
-<td style="text-align:right;">
-0.0461076
-</td>
-<td style="text-align:right;">
-0.0102315
-</td>
-<td style="text-align:right;">
-0.1924110
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:5~5
+global_cs
 </td>
 <td style="text-align:left;">
 language_primary2
 </td>
 <td style="text-align:right;">
--0.1891406
+-0.189
 </td>
 <td style="text-align:right;">
-0.0618998
+0.062
 </td>
 <td style="text-align:right;">
--0.3114293
+-0.311
 </td>
 <td style="text-align:right;">
--0.0668519
+-0.067
+</td>
+<td style="text-align:right;">
+0.0026509
 </td>
 </tr>
 <tr>
@@ -4694,139 +4442,155 @@ language_primary2
 Model:5~6
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
--1.1845252
-</td>
-<td style="text-align:right;">
-0.3299622
-</td>
-<td style="text-align:right;">
--1.8366075
-</td>
-<td style="text-align:right;">
--0.5324430
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:5~6
+global_cs
 </td>
 <td style="text-align:left;">
 education1
 </td>
 <td style="text-align:right;">
-0.7952182
+0.795
 </td>
 <td style="text-align:right;">
-0.3395283
+0.340
 </td>
 <td style="text-align:right;">
-0.1242311
+0.124
 </td>
 <td style="text-align:right;">
-1.4662053
+1.466
+</td>
+<td style="text-align:right;">
+0.0205159
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:5~6
+</td>
+<td style="text-align:left;">
+global_cs
 </td>
 <td style="text-align:left;">
 education2
 </td>
 <td style="text-align:right;">
-0.8134869
+0.813
 </td>
 <td style="text-align:right;">
-0.3689089
+0.369
 </td>
 <td style="text-align:right;">
-0.0844367
+0.084
 </td>
 <td style="text-align:right;">
-1.5425370
+1.543
+</td>
+<td style="text-align:right;">
+0.0289995
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:5~6
+</td>
+<td style="text-align:left;">
+global_cs
 </td>
 <td style="text-align:left;">
 education3
 </td>
 <td style="text-align:right;">
-1.1468353
+1.147
 </td>
 <td style="text-align:right;">
-0.3329483
+0.333
 </td>
 <td style="text-align:right;">
-0.4888518
+0.489
 </td>
 <td style="text-align:right;">
-1.8048189
+1.805
+</td>
+<td style="text-align:right;">
+0.0007458
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:5~6
+</td>
+<td style="text-align:left;">
+global_cs
 </td>
 <td style="text-align:left;">
 education4
 </td>
 <td style="text-align:right;">
-1.2228120
+1.223
 </td>
 <td style="text-align:right;">
-0.3345136
+0.335
 </td>
 <td style="text-align:right;">
-0.5617351
+0.562
 </td>
 <td style="text-align:right;">
-1.8838890
+1.884
+</td>
+<td style="text-align:right;">
+0.0003567
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:5~6
+</td>
+<td style="text-align:left;">
+global_cs
 </td>
 <td style="text-align:left;">
 education5
 </td>
 <td style="text-align:right;">
-1.3095856
+1.310
 </td>
 <td style="text-align:right;">
-0.3356030
+0.336
 </td>
 <td style="text-align:right;">
-0.6463558
+0.646
 </td>
 <td style="text-align:right;">
-1.9728154
+1.973
+</td>
+<td style="text-align:right;">
+0.0001447
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:5~6
+</td>
+<td style="text-align:left;">
+global_cs
 </td>
 <td style="text-align:left;">
 education6
 </td>
 <td style="text-align:right;">
-1.6700378
+1.670
 </td>
 <td style="text-align:right;">
-0.3446343
+0.345
 </td>
 <td style="text-align:right;">
-0.9889601
+0.989
 </td>
 <td style="text-align:right;">
-2.3511155
+2.351
+</td>
+<td style="text-align:right;">
+0.0000032
 </td>
 </tr>
 <tr>
@@ -4834,19 +4598,25 @@ education6
 Model:5~6
 </td>
 <td style="text-align:left;">
+global_cs
+</td>
+<td style="text-align:left;">
 education7
 </td>
 <td style="text-align:right;">
-1.4109373
+1.411
 </td>
 <td style="text-align:right;">
-0.4041195
+0.404
 </td>
 <td style="text-align:right;">
-0.6123029
+0.612
 </td>
 <td style="text-align:right;">
-2.2095717
+2.210
+</td>
+<td style="text-align:right;">
+0.0006348
 </td>
 </tr>
 <tr>
@@ -4854,39 +4624,25 @@ education7
 Model:5~7
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-0.0220991
-</td>
-<td style="text-align:right;">
-0.0419360
-</td>
-<td style="text-align:right;">
--0.0607492
-</td>
-<td style="text-align:right;">
-0.1049474
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:5~7
+global_cs
 </td>
 <td style="text-align:left;">
 pmh_neuro1
 </td>
 <td style="text-align:right;">
--0.0595024
+-0.060
 </td>
 <td style="text-align:right;">
-0.0637845
+0.064
 </td>
 <td style="text-align:right;">
--0.1855145
+-0.186
 </td>
 <td style="text-align:right;">
-0.0665096
+0.067
+</td>
+<td style="text-align:right;">
+0.3523587
 </td>
 </tr>
 <tr>
@@ -4894,39 +4650,25 @@ pmh_neuro1
 Model:5~8
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-0.0156163
-</td>
-<td style="text-align:right;">
-0.0384029
-</td>
-<td style="text-align:right;">
--0.0602521
-</td>
-<td style="text-align:right;">
-0.0914847
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:5~8
+global_cs
 </td>
 <td style="text-align:left;">
 pmh_enc_is_ich1
 </td>
 <td style="text-align:right;">
--0.0596366
+-0.060
 </td>
 <td style="text-align:right;">
-0.0676153
+0.068
 </td>
 <td style="text-align:right;">
--0.1932166
+-0.193
 </td>
 <td style="text-align:right;">
-0.0739435
+0.074
+</td>
+<td style="text-align:right;">
+0.3791609
 </td>
 </tr>
 <tr>
@@ -4934,39 +4676,25 @@ pmh_enc_is_ich1
 Model:5~9
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-0.0391652
-</td>
-<td style="text-align:right;">
-0.0630457
-</td>
-<td style="text-align:right;">
--0.0853874
-</td>
-<td style="text-align:right;">
-0.1637178
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:5~9
+global_cs
 </td>
 <td style="text-align:left;">
 pmh_covid_severe1
 </td>
 <td style="text-align:right;">
--0.0571716
+-0.057
 </td>
 <td style="text-align:right;">
-0.0728774
+0.073
 </td>
 <td style="text-align:right;">
--0.2011474
+-0.201
 </td>
 <td style="text-align:right;">
-0.0868042
+0.087
+</td>
+<td style="text-align:right;">
+0.4339651
 </td>
 </tr>
 <tr>
@@ -4974,39 +4702,77 @@ pmh_covid_severe1
 Model:5~10
 </td>
 <td style="text-align:left;">
-(Intercept)
+global_cs
+</td>
+<td style="text-align:left;">
+icu1
 </td>
 <td style="text-align:right;">
-0.0047059
+-0.030
 </td>
 <td style="text-align:right;">
-0.0398362
+0.066
 </td>
 <td style="text-align:right;">
--0.0739942
+-0.162
 </td>
 <td style="text-align:right;">
-0.0834059
+0.101
+</td>
+<td style="text-align:right;">
+0.6474265
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Model:5~10
+Model:5~11
+</td>
+<td style="text-align:left;">
+global_cs
+</td>
+<td style="text-align:left;">
+icu_2weeks1
+</td>
+<td style="text-align:right;">
+-0.037
+</td>
+<td style="text-align:right;">
+0.070
+</td>
+<td style="text-align:right;">
+-0.176
+</td>
+<td style="text-align:right;">
+0.101
+</td>
+<td style="text-align:right;">
+0.5965181
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Model:5~12
+</td>
+<td style="text-align:left;">
+global_cs
 </td>
 <td style="text-align:left;">
 steroids1
 </td>
 <td style="text-align:right;">
--0.0226440
+-0.023
 </td>
 <td style="text-align:right;">
-0.0656911
+0.066
 </td>
 <td style="text-align:right;">
--0.1524228
+-0.152
 </td>
 <td style="text-align:right;">
-0.1071347
+0.107
+</td>
+<td style="text-align:right;">
+0.7307896
 </td>
 </tr>
 <tr>
@@ -5014,39 +4780,25 @@ steroids1
 Model:5~13
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-0.0516581
-</td>
-<td style="text-align:right;">
-0.0426950
-</td>
-<td style="text-align:right;">
--0.0326987
-</td>
-<td style="text-align:right;">
-0.1360150
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:5~13
+global_cs
 </td>
 <td style="text-align:left;">
-ucla
+ad8_14
 </td>
 <td style="text-align:right;">
--0.0041770
+-0.031
 </td>
 <td style="text-align:right;">
-0.0019696
+0.012
 </td>
 <td style="text-align:right;">
--0.0080686
+-0.054
 </td>
 <td style="text-align:right;">
--0.0002854
+-0.007
+</td>
+<td style="text-align:right;">
+0.0122962
 </td>
 </tr>
 <tr>
@@ -5054,39 +4806,25 @@ ucla
 Model:5~14
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-0.0841046
-</td>
-<td style="text-align:right;">
-0.0755517
-</td>
-<td style="text-align:right;">
--0.0651704
-</td>
-<td style="text-align:right;">
-0.2333796
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:5~14
+global_cs
 </td>
 <td style="text-align:left;">
-stress
+ecog_15
 </td>
 <td style="text-align:right;">
--0.0055387
+-0.101
 </td>
 <td style="text-align:right;">
-0.0040237
+0.039
 </td>
 <td style="text-align:right;">
--0.0134888
+-0.178
 </td>
 <td style="text-align:right;">
-0.0024114
+-0.024
+</td>
+<td style="text-align:right;">
+0.0104282
 </td>
 </tr>
 <tr>
@@ -5094,39 +4832,25 @@ stress
 Model:5~15
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-0.0116658
-</td>
-<td style="text-align:right;">
-0.0742806
-</td>
-<td style="text-align:right;">
--0.1351299
-</td>
-<td style="text-align:right;">
-0.1584615
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:5~15
+global_cs
 </td>
 <td style="text-align:left;">
-sleep
+ucla
 </td>
 <td style="text-align:right;">
--0.0021237
+-0.004
 </td>
 <td style="text-align:right;">
-0.0073048
+0.002
 </td>
 <td style="text-align:right;">
--0.0165597
+-0.008
 </td>
 <td style="text-align:right;">
-0.0123123
+0.000
+</td>
+<td style="text-align:right;">
+0.0355820
 </td>
 </tr>
 <tr>
@@ -5134,39 +4858,25 @@ sleep
 Model:5~16
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-0.0604766
-</td>
-<td style="text-align:right;">
-0.0507006
-</td>
-<td style="text-align:right;">
--0.0397141
-</td>
-<td style="text-align:right;">
-0.1606672
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:5~16
+global_cs
 </td>
 <td style="text-align:left;">
-dsm_depression
+stress
 </td>
 <td style="text-align:right;">
--0.0432602
+-0.006
 </td>
 <td style="text-align:right;">
-0.0234698
+0.004
 </td>
 <td style="text-align:right;">
--0.0896395
+-0.013
 </td>
 <td style="text-align:right;">
-0.0031191
+0.002
+</td>
+<td style="text-align:right;">
+0.1707052
 </td>
 </tr>
 <tr>
@@ -5174,39 +4884,25 @@ dsm_depression
 Model:5~17
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-0.0281487
-</td>
-<td style="text-align:right;">
-0.0488811
-</td>
-<td style="text-align:right;">
--0.0684463
-</td>
-<td style="text-align:right;">
-0.1247437
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:5~17
+global_cs
 </td>
 <td style="text-align:left;">
-dsm_anxiety
+sleep
 </td>
 <td style="text-align:right;">
--0.0228212
+-0.002
 </td>
 <td style="text-align:right;">
-0.0207426
+0.007
 </td>
 <td style="text-align:right;">
--0.0638112
+-0.017
 </td>
 <td style="text-align:right;">
-0.0181687
+0.012
+</td>
+<td style="text-align:right;">
+0.7716708
 </td>
 </tr>
 <tr>
@@ -5214,59 +4910,25 @@ dsm_anxiety
 Model:5~18
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-0.1356344
-</td>
-<td style="text-align:right;">
-0.0542719
-</td>
-<td style="text-align:right;">
-0.0281421
-</td>
-<td style="text-align:right;">
-0.2431268
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:5~18
+global_cs
 </td>
 <td style="text-align:left;">
-language_secondary2
+dsm_depression
 </td>
 <td style="text-align:right;">
--0.2476345
+-0.043
 </td>
 <td style="text-align:right;">
-0.0771349
+0.023
 </td>
 <td style="text-align:right;">
--0.4004098
+-0.090
 </td>
 <td style="text-align:right;">
--0.0948592
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:5~18
-</td>
-<td style="text-align:left;">
-language_secondary3
+0.003
 </td>
 <td style="text-align:right;">
--0.1303031
-</td>
-<td style="text-align:right;">
-0.1062584
-</td>
-<td style="text-align:right;">
--0.3407613
-</td>
-<td style="text-align:right;">
-0.0801551
+0.0672963
 </td>
 </tr>
 <tr>
@@ -5274,39 +4936,103 @@ language_secondary3
 Model:5~19
 </td>
 <td style="text-align:left;">
-(Intercept)
+global_cs
+</td>
+<td style="text-align:left;">
+dsm_anxiety
 </td>
 <td style="text-align:right;">
-0.0386670
+-0.023
 </td>
 <td style="text-align:right;">
-0.0830014
+0.021
 </td>
 <td style="text-align:right;">
--0.1257129
+-0.064
 </td>
 <td style="text-align:right;">
-0.2030468
+0.018
+</td>
+<td style="text-align:right;">
+0.2730271
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Model:5~19
+Model:5~20
+</td>
+<td style="text-align:left;">
+global_cs
+</td>
+<td style="text-align:left;">
+language_secondary2
+</td>
+<td style="text-align:right;">
+-0.248
+</td>
+<td style="text-align:right;">
+0.077
+</td>
+<td style="text-align:right;">
+-0.400
+</td>
+<td style="text-align:right;">
+-0.095
+</td>
+<td style="text-align:right;">
+0.0017149
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Model:5~20
+</td>
+<td style="text-align:left;">
+global_cs
+</td>
+<td style="text-align:left;">
+language_secondary3
+</td>
+<td style="text-align:right;">
+-0.130
+</td>
+<td style="text-align:right;">
+0.106
+</td>
+<td style="text-align:right;">
+-0.341
+</td>
+<td style="text-align:right;">
+0.080
+</td>
+<td style="text-align:right;">
+0.2225751
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Model:5~21
+</td>
+<td style="text-align:left;">
+global_cs
 </td>
 <td style="text-align:left;">
 vaccine
 </td>
 <td style="text-align:right;">
--0.0090313
+-0.009
 </td>
 <td style="text-align:right;">
-0.0250642
+0.025
 </td>
 <td style="text-align:right;">
--0.0586696
+-0.059
 </td>
 <td style="text-align:right;">
-0.0406070
+0.041
+</td>
+<td style="text-align:right;">
+0.7192518
 </td>
 </tr>
 <tr>
@@ -5314,39 +5040,25 @@ vaccine
 Model:8~1
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-1.6288720
-</td>
-<td style="text-align:right;">
-0.8007538
-</td>
-<td style="text-align:right;">
-0.0467434
-</td>
-<td style="text-align:right;">
-3.2110006
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:8~1
+ad8_28
 </td>
 <td style="text-align:left;">
 age
 </td>
 <td style="text-align:right;">
-0.0314048
+0.031
 </td>
 <td style="text-align:right;">
-0.0146542
+0.015
 </td>
 <td style="text-align:right;">
-0.0024512
+0.002
 </td>
 <td style="text-align:right;">
-0.0603585
+0.060
+</td>
+<td style="text-align:right;">
+0.0337100
 </td>
 </tr>
 <tr>
@@ -5354,39 +5066,25 @@ age
 Model:8~2
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-3.9714286
-</td>
-<td style="text-align:right;">
-0.2986889
-</td>
-<td style="text-align:right;">
-3.3812794
-</td>
-<td style="text-align:right;">
-4.5615778
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:8~2
+ad8_28
 </td>
 <td style="text-align:left;">
 sex2
 </td>
 <td style="text-align:right;">
--1.2605852
+-1.261
 </td>
 <td style="text-align:right;">
-0.4055326
+0.406
 </td>
 <td style="text-align:right;">
--2.0618360
+-2.062
 </td>
 <td style="text-align:right;">
--0.4593344
+-0.459
+</td>
+<td style="text-align:right;">
+0.0022479
 </td>
 </tr>
 <tr>
@@ -5394,119 +5092,129 @@ sex2
 Model:8~3
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-5.0000000
-</td>
-<td style="text-align:right;">
-1.8093873
-</td>
-<td style="text-align:right;">
-1.4240253
-</td>
-<td style="text-align:right;">
-8.5759747
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:8~3
+ad8_28
 </td>
 <td style="text-align:left;">
 race2
 </td>
 <td style="text-align:right;">
--2.0000000
+-2.000
 </td>
 <td style="text-align:right;">
-2.2160378
+2.216
 </td>
 <td style="text-align:right;">
--6.3796567
+-6.380
 </td>
 <td style="text-align:right;">
-2.3796567
+2.380
+</td>
+<td style="text-align:right;">
+0.3682717
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:8~3
+</td>
+<td style="text-align:left;">
+ad8_28
 </td>
 <td style="text-align:left;">
 race3
 </td>
 <td style="text-align:right;">
--2.7586207
+-2.759
 </td>
 <td style="text-align:right;">
-1.8707398
+1.871
 </td>
 <td style="text-align:right;">
--6.4558491
+-6.456
 </td>
 <td style="text-align:right;">
-0.9386078
+0.939
+</td>
+<td style="text-align:right;">
+0.1424692
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:8~3
+</td>
+<td style="text-align:left;">
+ad8_28
 </td>
 <td style="text-align:left;">
 race5
 </td>
 <td style="text-align:right;">
--1.4375000
+-1.438
 </td>
 <td style="text-align:right;">
-1.9191450
+1.919
 </td>
 <td style="text-align:right;">
--5.2303939
+-5.230
 </td>
 <td style="text-align:right;">
-2.3553939
+2.355
+</td>
+<td style="text-align:right;">
+0.4550433
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:8~3
+</td>
+<td style="text-align:left;">
+ad8_28
 </td>
 <td style="text-align:left;">
 race6
 </td>
 <td style="text-align:right;">
--1.5161290
+-1.516
 </td>
 <td style="text-align:right;">
-1.8287396
+1.829
 </td>
 <td style="text-align:right;">
--5.1303505
+-5.130
 </td>
 <td style="text-align:right;">
-2.0980925
+2.098
+</td>
+<td style="text-align:right;">
+0.4084256
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:8~3
+</td>
+<td style="text-align:left;">
+ad8_28
 </td>
 <td style="text-align:left;">
 race7
 </td>
 <td style="text-align:right;">
--0.8333333
+-0.833
 </td>
 <td style="text-align:right;">
-2.0893005
+2.089
 </td>
 <td style="text-align:right;">
--4.9625133
+-4.963
 </td>
 <td style="text-align:right;">
-3.2958466
+3.296
+</td>
+<td style="text-align:right;">
+0.6905809
 </td>
 </tr>
 <tr>
@@ -5514,19 +5222,25 @@ race7
 Model:8~3
 </td>
 <td style="text-align:left;">
+ad8_28
+</td>
+<td style="text-align:left;">
 race8
 </td>
 <td style="text-align:right;">
--1.6666667
+-1.667
 </td>
 <td style="text-align:right;">
-2.3359089
+2.336
 </td>
 <td style="text-align:right;">
--6.2832302
+-6.283
 </td>
 <td style="text-align:right;">
-2.9498968
+2.950
+</td>
+<td style="text-align:right;">
+0.4766765
 </td>
 </tr>
 <tr>
@@ -5534,39 +5248,25 @@ race8
 Model:8~4
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-3.5172414
-</td>
-<td style="text-align:right;">
-0.2363474
-</td>
-<td style="text-align:right;">
-3.0502413
-</td>
-<td style="text-align:right;">
-3.9842414
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:8~4
+ad8_28
 </td>
 <td style="text-align:left;">
 ethnicity2
 </td>
 <td style="text-align:right;">
--1.0172414
+-1.017
 </td>
 <td style="text-align:right;">
-0.4856477
+0.486
 </td>
 <td style="text-align:right;">
--1.9768353
+-1.977
 </td>
 <td style="text-align:right;">
--0.0576475
+-0.058
+</td>
+<td style="text-align:right;">
+0.0378871
 </td>
 </tr>
 <tr>
@@ -5574,19 +5274,25 @@ ethnicity2
 Model:8~4
 </td>
 <td style="text-align:left;">
+ad8_28
+</td>
+<td style="text-align:left;">
 ethnicity3
 </td>
 <td style="text-align:right;">
-1.4827586
+1.483
 </td>
 <td style="text-align:right;">
-2.5564879
+2.556
 </td>
 <td style="text-align:right;">
--3.5686194
+-3.569
 </td>
 <td style="text-align:right;">
-6.5341366
+6.534
+</td>
+<td style="text-align:right;">
+0.5627860
 </td>
 </tr>
 <tr>
@@ -5594,39 +5300,25 @@ ethnicity3
 Model:8~5
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-2.7462687
-</td>
-<td style="text-align:right;">
-0.3093897
-</td>
-<td style="text-align:right;">
-2.1349769
-</td>
-<td style="text-align:right;">
-3.3575604
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:8~5
+ad8_28
 </td>
 <td style="text-align:left;">
 language_primary2
 </td>
 <td style="text-align:right;">
-0.9630337
+0.963
 </td>
 <td style="text-align:right;">
-0.4126694
+0.413
 </td>
 <td style="text-align:right;">
-0.1476819
+0.148
 </td>
 <td style="text-align:right;">
-1.7783855
+1.778
+</td>
+<td style="text-align:right;">
+0.0209318
 </td>
 </tr>
 <tr>
@@ -5634,139 +5326,155 @@ language_primary2
 Model:8~6
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-4.0000000
-</td>
-<td style="text-align:right;">
-2.5135965
-</td>
-<td style="text-align:right;">
--0.9680219
-</td>
-<td style="text-align:right;">
-8.9680219
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:8~6
+ad8_28
 </td>
 <td style="text-align:left;">
 education1
 </td>
 <td style="text-align:right;">
-0.7058824
+0.706
 </td>
 <td style="text-align:right;">
-2.5864695
+2.586
 </td>
 <td style="text-align:right;">
--4.4061700
+-4.406
 </td>
 <td style="text-align:right;">
-5.8179347
+5.818
+</td>
+<td style="text-align:right;">
+0.7853080
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:8~6
+</td>
+<td style="text-align:left;">
+ad8_28
 </td>
 <td style="text-align:left;">
 education2
 </td>
 <td style="text-align:right;">
-0.7500000
+0.750
 </td>
 <td style="text-align:right;">
-2.8102864
+2.810
 </td>
 <td style="text-align:right;">
--4.8044174
+-4.804
 </td>
 <td style="text-align:right;">
-6.3044174
+6.304
+</td>
+<td style="text-align:right;">
+0.7899433
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:8~6
+</td>
+<td style="text-align:left;">
+ad8_28
 </td>
 <td style="text-align:left;">
 education3
 </td>
 <td style="text-align:right;">
--0.7636364
+-0.764
 </td>
 <td style="text-align:right;">
-2.5363445
+2.536
 </td>
 <td style="text-align:right;">
--5.7766187
+-5.777
 </td>
 <td style="text-align:right;">
-4.2493459
+4.249
+</td>
+<td style="text-align:right;">
+0.7637867
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:8~6
+</td>
+<td style="text-align:left;">
+ad8_28
 </td>
 <td style="text-align:left;">
 education4
 </td>
 <td style="text-align:right;">
--1.3333333
+-1.333
 </td>
 <td style="text-align:right;">
-2.5482685
+2.548
 </td>
 <td style="text-align:right;">
--6.3698829
+-6.370
 </td>
 <td style="text-align:right;">
-3.7032163
+3.703
+</td>
+<td style="text-align:right;">
+0.6016121
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:8~6
+</td>
+<td style="text-align:left;">
+ad8_28
 </td>
 <td style="text-align:left;">
 education5
 </td>
 <td style="text-align:right;">
--1.4074074
+-1.407
 </td>
 <td style="text-align:right;">
-2.5597214
+2.560
 </td>
 <td style="text-align:right;">
--6.4665933
+-6.467
 </td>
 <td style="text-align:right;">
-3.6517785
+3.652
+</td>
+<td style="text-align:right;">
+0.5832830
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:8~6
+</td>
+<td style="text-align:left;">
+ad8_28
 </td>
 <td style="text-align:left;">
 education6
 </td>
 <td style="text-align:right;">
-0.0909091
+0.091
 </td>
 <td style="text-align:right;">
-2.6253660
+2.625
 </td>
 <td style="text-align:right;">
--5.0980206
+-5.098
 </td>
 <td style="text-align:right;">
-5.2798387
+5.280
+</td>
+<td style="text-align:right;">
+0.9724246
 </td>
 </tr>
 <tr>
@@ -5774,19 +5482,25 @@ education6
 Model:8~6
 </td>
 <td style="text-align:left;">
+ad8_28
+</td>
+<td style="text-align:left;">
 education7
 </td>
 <td style="text-align:right;">
-1.5000000
+1.500
 </td>
 <td style="text-align:right;">
-3.0785145
+3.079
 </td>
 <td style="text-align:right;">
--4.5845594
+-4.585
 </td>
 <td style="text-align:right;">
-7.5845594
+7.585
+</td>
+<td style="text-align:right;">
+0.6268184
 </td>
 </tr>
 <tr>
@@ -5794,39 +5508,25 @@ education7
 Model:8~7
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-3.5813953
-</td>
-<td style="text-align:right;">
-0.2756051
-</td>
-<td style="text-align:right;">
-3.0368551
-</td>
-<td style="text-align:right;">
-4.1259356
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:8~7
+ad8_28
 </td>
 <td style="text-align:left;">
 pmh_neuro1
 </td>
 <td style="text-align:right;">
--0.6709476
+-0.671
 </td>
 <td style="text-align:right;">
-0.4164814
+0.416
 </td>
 <td style="text-align:right;">
--1.4938310
+-1.494
 </td>
 <td style="text-align:right;">
-0.1519359
+0.152
+</td>
+<td style="text-align:right;">
+0.1092701
 </td>
 </tr>
 <tr>
@@ -5834,39 +5534,25 @@ pmh_neuro1
 Model:8~8
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-3.3398058
-</td>
-<td style="text-align:right;">
-0.2538822
-</td>
-<td style="text-align:right;">
-2.8381857
-</td>
-<td style="text-align:right;">
-3.8414260
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:8~8
+ad8_28
 </td>
 <td style="text-align:left;">
 pmh_enc_is_ich1
 </td>
 <td style="text-align:right;">
--0.1598058
+-0.160
 </td>
 <td style="text-align:right;">
-0.4441125
+0.444
 </td>
 <td style="text-align:right;">
--1.0372827
+-1.037
 </td>
 <td style="text-align:right;">
-0.7176711
+0.718
+</td>
+<td style="text-align:right;">
+0.7194756
 </td>
 </tr>
 <tr>
@@ -5874,39 +5560,25 @@ pmh_enc_is_ich1
 Model:8~9
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-2.4473684
-</td>
-<td style="text-align:right;">
-0.4106579
-</td>
-<td style="text-align:right;">
-1.6359911
-</td>
-<td style="text-align:right;">
-3.2587458
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:8~9
+ad8_28
 </td>
 <td style="text-align:left;">
 pmh_covid_severe1
 </td>
 <td style="text-align:right;">
-1.1178490
+1.118
 </td>
 <td style="text-align:right;">
-0.4736711
+0.474
 </td>
 <td style="text-align:right;">
-0.1819700
+0.182
 </td>
 <td style="text-align:right;">
-2.0537279
+2.054
+</td>
+<td style="text-align:right;">
+0.0195552
 </td>
 </tr>
 <tr>
@@ -5914,419 +5586,285 @@ pmh_covid_severe1
 Model:8~10
 </td>
 <td style="text-align:left;">
-(Intercept)
+ad8_28
+</td>
+<td style="text-align:left;">
+icu1
 </td>
 <td style="text-align:right;">
-3.5876289
+-0.387
 </td>
 <td style="text-align:right;">
-0.2585979
+0.435
 </td>
 <td style="text-align:right;">
-3.0766913
+-1.247
 </td>
 <td style="text-align:right;">
-4.0985664
+0.472
+</td>
+<td style="text-align:right;">
+0.3747501
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Model:8~10
+Model:8~11
+</td>
+<td style="text-align:left;">
+ad8_28
+</td>
+<td style="text-align:left;">
+icu_2weeks1
+</td>
+<td style="text-align:right;">
+-0.148
+</td>
+<td style="text-align:right;">
+0.460
+</td>
+<td style="text-align:right;">
+-1.058
+</td>
+<td style="text-align:right;">
+0.761
+</td>
+<td style="text-align:right;">
+0.7474765
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Model:8~12
+</td>
+<td style="text-align:left;">
+ad8_28
 </td>
 <td style="text-align:left;">
 steroids1
 </td>
 <td style="text-align:right;">
--0.8197717
+-0.820
 </td>
 <td style="text-align:right;">
-0.4274416
+0.427
 </td>
 <td style="text-align:right;">
--1.6643103
+-1.664
 </td>
 <td style="text-align:right;">
-0.0247669
+0.025
+</td>
+<td style="text-align:right;">
+0.0570168
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Model:8~11
+Model:8~15
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-0.0000000
-</td>
-<td style="text-align:right;">
-0.0000000
-</td>
-<td style="text-align:right;">
-0.0000000
-</td>
-<td style="text-align:right;">
-0.0000000
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:8~11
-</td>
-<td style="text-align:left;">
-ad8_14
-</td>
-<td style="text-align:right;">
-1.0000000
-</td>
-<td style="text-align:right;">
-0.0000000
-</td>
-<td style="text-align:right;">
-1.0000000
-</td>
-<td style="text-align:right;">
-1.0000000
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:8~12
-</td>
-<td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
--1.4275434
-</td>
-<td style="text-align:right;">
-0.3271711
-</td>
-<td style="text-align:right;">
--2.0741098
-</td>
-<td style="text-align:right;">
--0.7809770
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:8~12
-</td>
-<td style="text-align:left;">
-ecog_15
-</td>
-<td style="text-align:right;">
-2.5305930
-</td>
-<td style="text-align:right;">
-0.1594300
-</td>
-<td style="text-align:right;">
-2.2155221
-</td>
-<td style="text-align:right;">
-2.8456639
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:8~13
-</td>
-<td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-2.4484449
-</td>
-<td style="text-align:right;">
-0.2690862
-</td>
-<td style="text-align:right;">
-1.9167848
-</td>
-<td style="text-align:right;">
-2.9801051
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:8~13
+ad8_28
 </td>
 <td style="text-align:left;">
 ucla
 </td>
 <td style="text-align:right;">
-0.0563352
+0.056
 </td>
 <td style="text-align:right;">
-0.0124137
+0.012
 </td>
 <td style="text-align:right;">
-0.0318083
+0.032
 </td>
 <td style="text-align:right;">
-0.0808621
+0.081
+</td>
+<td style="text-align:right;">
+0.0000115
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Model:8~14
+Model:8~16
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-0.6998900
-</td>
-<td style="text-align:right;">
-0.4470190
-</td>
-<td style="text-align:right;">
--0.1833297
-</td>
-<td style="text-align:right;">
-1.5831097
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:8~14
+ad8_28
 </td>
 <td style="text-align:left;">
 stress
 </td>
 <td style="text-align:right;">
-0.1514022
+0.151
 </td>
 <td style="text-align:right;">
-0.0238074
+0.024
 </td>
 <td style="text-align:right;">
-0.1043636
+0.104
 </td>
 <td style="text-align:right;">
-0.1984409
+0.198
+</td>
+<td style="text-align:right;">
+0.0000000
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Model:8~15
+Model:8~17
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-0.8370257
-</td>
-<td style="text-align:right;">
-0.4228320
-</td>
-<td style="text-align:right;">
-0.0013636
-</td>
-<td style="text-align:right;">
-1.6726878
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:8~15
+ad8_28
 </td>
 <td style="text-align:left;">
 sleep
 </td>
 <td style="text-align:right;">
-0.2732200
+0.273
 </td>
 <td style="text-align:right;">
-0.0415770
+0.042
 </td>
 <td style="text-align:right;">
-0.1910494
+0.191
 </td>
 <td style="text-align:right;">
-0.3553906
+0.355
+</td>
+<td style="text-align:right;">
+0.0000000
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Model:8~16
+Model:8~18
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-1.5180318
-</td>
-<td style="text-align:right;">
-0.2808534
-</td>
-<td style="text-align:right;">
-0.9630310
-</td>
-<td style="text-align:right;">
-2.0730326
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:8~16
+ad8_28
 </td>
 <td style="text-align:left;">
 dsm_depression
 </td>
 <td style="text-align:right;">
-1.0720285
+1.072
 </td>
 <td style="text-align:right;">
-0.1300099
+0.130
 </td>
 <td style="text-align:right;">
-0.8151130
+0.815
 </td>
 <td style="text-align:right;">
-1.3289439
+1.329
+</td>
+<td style="text-align:right;">
+0.0000000
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Model:8~17
+Model:8~19
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-1.8380079
-</td>
-<td style="text-align:right;">
-0.2817233
-</td>
-<td style="text-align:right;">
-1.2812882
-</td>
-<td style="text-align:right;">
-2.3947277
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:8~17
+ad8_28
 </td>
 <td style="text-align:left;">
 dsm_anxiety
 </td>
 <td style="text-align:right;">
-0.8338246
+0.834
 </td>
 <td style="text-align:right;">
-0.1195490
+0.120
 </td>
 <td style="text-align:right;">
-0.5975811
+0.598
 </td>
 <td style="text-align:right;">
-1.0700680
+1.070
+</td>
+<td style="text-align:right;">
+0.0000000
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Model:8~18
+Model:8~20
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-3.0200000
-</td>
-<td style="text-align:right;">
-0.3501083
-</td>
-<td style="text-align:right;">
-2.3265028
-</td>
-<td style="text-align:right;">
-3.7134972
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:8~18
+ad8_28
 </td>
 <td style="text-align:left;">
 language_secondary2
 </td>
 <td style="text-align:right;">
-1.1400000
+1.140
 </td>
 <td style="text-align:right;">
-0.4951280
+0.495
 </td>
 <td style="text-align:right;">
-0.1592468
+0.159
 </td>
 <td style="text-align:right;">
-2.1207532
+2.121
+</td>
+<td style="text-align:right;">
+0.0231095
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Model:8~18
+Model:8~20
+</td>
+<td style="text-align:left;">
+ad8_28
 </td>
 <td style="text-align:left;">
 language_secondary3
 </td>
 <td style="text-align:right;">
--0.7977778
+-0.798
 </td>
 <td style="text-align:right;">
-0.6804883
+0.680
 </td>
 <td style="text-align:right;">
--2.1456941
+-2.146
 </td>
 <td style="text-align:right;">
-0.5501385
+0.550
+</td>
+<td style="text-align:right;">
+0.2434751
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Model:8~19
+Model:8~21
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-3.5478507
-</td>
-<td style="text-align:right;">
-0.5299990
-</td>
-<td style="text-align:right;">
-2.4981209
-</td>
-<td style="text-align:right;">
-4.5975804
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:8~19
+ad8_28
 </td>
 <td style="text-align:left;">
 vaccine
 </td>
 <td style="text-align:right;">
--0.0561325
+-0.056
 </td>
 <td style="text-align:right;">
-0.1599240
+0.160
 </td>
 <td style="text-align:right;">
--0.3728821
+-0.373
 </td>
 <td style="text-align:right;">
-0.2606170
+0.261
+</td>
+<td style="text-align:right;">
+0.7262288
 </td>
 </tr>
 <tr>
@@ -6334,39 +5872,25 @@ vaccine
 Model:9~1
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-1.1416867
-</td>
-<td style="text-align:right;">
-0.2479963
-</td>
-<td style="text-align:right;">
-0.6515881
-</td>
-<td style="text-align:right;">
-1.6317853
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:9~1
+ecog_29
 </td>
 <td style="text-align:left;">
 age
 </td>
 <td style="text-align:right;">
-0.0141800
+0.014
 </td>
 <td style="text-align:right;">
-0.0045536
+0.005
 </td>
 <td style="text-align:right;">
-0.0051810
+0.005
 </td>
 <td style="text-align:right;">
-0.0231790
+0.023
+</td>
+<td style="text-align:right;">
+0.0022189
 </td>
 </tr>
 <tr>
@@ -6374,39 +5898,25 @@ age
 Model:9~2
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-2.0875362
-</td>
-<td style="text-align:right;">
-0.0949725
-</td>
-<td style="text-align:right;">
-1.8998483
-</td>
-<td style="text-align:right;">
-2.2752241
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:9~2
+ecog_29
 </td>
 <td style="text-align:left;">
 sex2
 </td>
 <td style="text-align:right;">
--0.3725362
+-0.373
 </td>
 <td style="text-align:right;">
-0.1296123
+0.130
 </td>
 <td style="text-align:right;">
--0.6286804
+-0.629
 </td>
 <td style="text-align:right;">
--0.1163921
+-0.116
+</td>
+<td style="text-align:right;">
+0.0046513
 </td>
 </tr>
 <tr>
@@ -6414,119 +5924,129 @@ sex2
 Model:9~3
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-2.1750000
-</td>
-<td style="text-align:right;">
-0.5722504
-</td>
-<td style="text-align:right;">
-1.0437692
-</td>
-<td style="text-align:right;">
-3.3062308
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:9~3
+ecog_29
 </td>
 <td style="text-align:left;">
 race2
 </td>
 <td style="text-align:right;">
--0.5825000
+-0.582
 </td>
 <td style="text-align:right;">
-0.7008607
+0.701
 </td>
 <td style="text-align:right;">
--1.9679692
+-1.968
 </td>
 <td style="text-align:right;">
-0.8029692
+0.803
+</td>
+<td style="text-align:right;">
+0.4073006
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:9~3
+</td>
+<td style="text-align:left;">
+ecog_29
 </td>
 <td style="text-align:left;">
 race3
 </td>
 <td style="text-align:right;">
--0.5328571
+-0.533
 </td>
 <td style="text-align:right;">
-0.5923354
+0.592
 </td>
 <td style="text-align:right;">
--1.7037923
+-1.704
 </td>
 <td style="text-align:right;">
-0.6380780
+0.638
+</td>
+<td style="text-align:right;">
+0.3698632
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:9~3
+</td>
+<td style="text-align:left;">
+ecog_29
 </td>
 <td style="text-align:left;">
 race5
 </td>
 <td style="text-align:right;">
--0.3787500
+-0.379
 </td>
 <td style="text-align:right;">
-0.6069632
+0.607
 </td>
 <td style="text-align:right;">
--1.5786015
+-1.579
 </td>
 <td style="text-align:right;">
-0.8211015
+0.821
+</td>
+<td style="text-align:right;">
+0.5336234
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:9~3
+</td>
+<td style="text-align:left;">
+ecog_29
 </td>
 <td style="text-align:left;">
 race6
 </td>
 <td style="text-align:right;">
--0.2001111
+-0.200
 </td>
 <td style="text-align:right;">
-0.5785738
+0.579
 </td>
 <td style="text-align:right;">
--1.3438421
+-1.344
 </td>
 <td style="text-align:right;">
-0.9436199
+0.944
+</td>
+<td style="text-align:right;">
+0.7299526
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:9~3
+</td>
+<td style="text-align:left;">
+ecog_29
 </td>
 <td style="text-align:left;">
 race7
 </td>
 <td style="text-align:right;">
--0.0050000
+-0.005
 </td>
 <td style="text-align:right;">
-0.6607778
+0.661
 </td>
 <td style="text-align:right;">
--1.3112329
+-1.311
 </td>
 <td style="text-align:right;">
-1.3012329
+1.301
+</td>
+<td style="text-align:right;">
+0.9939732
 </td>
 </tr>
 <tr>
@@ -6534,19 +6054,25 @@ race7
 Model:9~3
 </td>
 <td style="text-align:left;">
+ecog_29
+</td>
+<td style="text-align:left;">
 race8
 </td>
 <td style="text-align:right;">
--0.4950000
+-0.495
 </td>
 <td style="text-align:right;">
-0.7387721
+0.739
 </td>
 <td style="text-align:right;">
--1.9554127
+-1.955
 </td>
 <td style="text-align:right;">
-0.9654127
+0.965
+</td>
+<td style="text-align:right;">
+0.5039263
 </td>
 </tr>
 <tr>
@@ -6554,39 +6080,25 @@ race8
 Model:9~4
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-1.9339823
-</td>
-<td style="text-align:right;">
-0.0761299
-</td>
-<td style="text-align:right;">
-1.7835232
-</td>
-<td style="text-align:right;">
-2.0844414
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:9~4
+ecog_29
 </td>
 <td style="text-align:left;">
 ethnicity2
 </td>
 <td style="text-align:right;">
--0.1931252
+-0.193
 </td>
 <td style="text-align:right;">
-0.1565497
+0.157
 </td>
 <td style="text-align:right;">
--0.5025215
+-0.503
 </td>
 <td style="text-align:right;">
-0.1162712
+0.116
+</td>
+<td style="text-align:right;">
+0.2193214
 </td>
 </tr>
 <tr>
@@ -6594,19 +6106,25 @@ ethnicity2
 Model:9~4
 </td>
 <td style="text-align:left;">
+ecog_29
+</td>
+<td style="text-align:left;">
 ethnicity3
 </td>
 <td style="text-align:right;">
--0.1639823
+-0.164
 </td>
 <td style="text-align:right;">
-0.8128454
+0.813
 </td>
 <td style="text-align:right;">
--1.7704457
+-1.770
 </td>
 <td style="text-align:right;">
-1.4424811
+1.442
+</td>
+<td style="text-align:right;">
+0.8404019
 </td>
 </tr>
 <tr>
@@ -6614,39 +6132,25 @@ ethnicity3
 Model:9~5
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-1.7054545
-</td>
-<td style="text-align:right;">
-0.0977493
-</td>
-<td style="text-align:right;">
-1.5122791
-</td>
-<td style="text-align:right;">
-1.8986300
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:9~5
+ecog_29
 </td>
 <td style="text-align:left;">
 language_primary2
 </td>
 <td style="text-align:right;">
-0.3268346
+0.327
 </td>
 <td style="text-align:right;">
-0.1309688
+0.131
 </td>
 <td style="text-align:right;">
-0.0680098
+0.068
 </td>
 <td style="text-align:right;">
-0.5856595
+0.586
+</td>
+<td style="text-align:right;">
+0.0136825
 </td>
 </tr>
 <tr>
@@ -6654,139 +6158,155 @@ language_primary2
 Model:9~6
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-2.2300000
-</td>
-<td style="text-align:right;">
-0.7872527
-</td>
-<td style="text-align:right;">
-0.6736553
-</td>
-<td style="text-align:right;">
-3.7863447
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:9~6
+ecog_29
 </td>
 <td style="text-align:left;">
 education1
 </td>
 <td style="text-align:right;">
-0.2041176
+0.204
 </td>
 <td style="text-align:right;">
-0.8100763
+0.810
 </td>
 <td style="text-align:right;">
--1.3973478
+-1.397
 </td>
 <td style="text-align:right;">
-1.8055831
+1.806
+</td>
+<td style="text-align:right;">
+0.8014286
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:9~6
+</td>
+<td style="text-align:left;">
+ecog_29
 </td>
 <td style="text-align:left;">
 education2
 </td>
 <td style="text-align:right;">
--0.2150000
+-0.215
 </td>
 <td style="text-align:right;">
-0.8801753
+0.880
 </td>
 <td style="text-align:right;">
--1.9550462
+-1.955
 </td>
 <td style="text-align:right;">
-1.5250462
+1.525
+</td>
+<td style="text-align:right;">
+0.8073772
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:9~6
+</td>
+<td style="text-align:left;">
+ecog_29
 </td>
 <td style="text-align:left;">
 education3
 </td>
 <td style="text-align:right;">
--0.4250943
+-0.425
 </td>
 <td style="text-align:right;">
-0.7946449
+0.795
 </td>
 <td style="text-align:right;">
--1.9960529
+-1.996
 </td>
 <td style="text-align:right;">
-1.1458642
+1.146
+</td>
+<td style="text-align:right;">
+0.5935279
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:9~6
+</td>
+<td style="text-align:left;">
+ecog_29
 </td>
 <td style="text-align:left;">
 education4
 </td>
 <td style="text-align:right;">
--0.5485294
+-0.549
 </td>
 <td style="text-align:right;">
-0.7987460
+0.799
 </td>
 <td style="text-align:right;">
--2.1275956
+-2.128
 </td>
 <td style="text-align:right;">
-1.0305368
+1.031
+</td>
+<td style="text-align:right;">
+0.4933756
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:9~6
+</td>
+<td style="text-align:left;">
+ecog_29
 </td>
 <td style="text-align:left;">
 education5
 </td>
 <td style="text-align:right;">
--0.4407407
+-0.441
 </td>
 <td style="text-align:right;">
-0.8016989
+0.802
 </td>
 <td style="text-align:right;">
--2.0256446
+-2.026
 </td>
 <td style="text-align:right;">
-1.1441631
+1.144
+</td>
+<td style="text-align:right;">
+0.5833548
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:9~6
+</td>
+<td style="text-align:left;">
+ecog_29
 </td>
 <td style="text-align:left;">
 education6
 </td>
 <td style="text-align:right;">
--0.1454545
+-0.145
 </td>
 <td style="text-align:right;">
-0.8222586
+0.822
 </td>
 <td style="text-align:right;">
--1.7710035
+-1.771
 </td>
 <td style="text-align:right;">
-1.4800944
+1.480
+</td>
+<td style="text-align:right;">
+0.8598437
 </td>
 </tr>
 <tr>
@@ -6794,19 +6314,25 @@ education6
 Model:9~6
 </td>
 <td style="text-align:left;">
+ecog_29
+</td>
+<td style="text-align:left;">
 education7
 </td>
 <td style="text-align:right;">
-0.5200000
+0.520
 </td>
 <td style="text-align:right;">
-0.9641837
+0.964
 </td>
 <td style="text-align:right;">
--1.3861251
+-1.386
 </td>
 <td style="text-align:right;">
-2.4261251
+2.426
+</td>
+<td style="text-align:right;">
+0.5905192
 </td>
 </tr>
 <tr>
@@ -6814,39 +6340,25 @@ education7
 Model:9~7
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-1.9883133
-</td>
-<td style="text-align:right;">
-0.0881121
-</td>
-<td style="text-align:right;">
-1.8141832
-</td>
-<td style="text-align:right;">
-2.1624433
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:9~7
+ecog_29
 </td>
 <td style="text-align:left;">
 pmh_neuro1
 </td>
 <td style="text-align:right;">
--0.2275557
+-0.228
 </td>
 <td style="text-align:right;">
-0.1323905
+0.132
 </td>
 <td style="text-align:right;">
--0.4891901
+-0.489
 </td>
 <td style="text-align:right;">
-0.0340788
+0.034
+</td>
+<td style="text-align:right;">
+0.0877519
 </td>
 </tr>
 <tr>
@@ -6854,39 +6366,25 @@ pmh_neuro1
 Model:9~8
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-1.8987000
-</td>
-<td style="text-align:right;">
-0.0810606
-</td>
-<td style="text-align:right;">
-1.7385053
-</td>
-<td style="text-align:right;">
-2.0588947
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:9~8
+ecog_29
 </td>
 <td style="text-align:left;">
 pmh_enc_is_ich1
 </td>
 <td style="text-align:right;">
--0.0340061
+-0.034
 </td>
 <td style="text-align:right;">
-0.1413530
+0.141
 </td>
 <td style="text-align:right;">
--0.3133527
+-0.313
 </td>
 <td style="text-align:right;">
-0.2453404
+0.245
+</td>
+<td style="text-align:right;">
+0.8102191
 </td>
 </tr>
 <tr>
@@ -6894,39 +6392,25 @@ pmh_enc_is_ich1
 Model:9~9
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-1.6365789
-</td>
-<td style="text-align:right;">
-0.1293192
-</td>
-<td style="text-align:right;">
-1.3810141
-</td>
-<td style="text-align:right;">
-1.8921438
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:9~9
+ecog_29
 </td>
 <td style="text-align:left;">
 pmh_covid_severe1
 </td>
 <td style="text-align:right;">
-0.3368445
+0.337
 </td>
 <td style="text-align:right;">
-0.1498285
+0.150
 </td>
 <td style="text-align:right;">
-0.0407484
+0.041
 </td>
 <td style="text-align:right;">
-0.6329406
+0.633
+</td>
+<td style="text-align:right;">
+0.0260511
 </td>
 </tr>
 <tr>
@@ -6934,419 +6418,285 @@ pmh_covid_severe1
 Model:9~10
 </td>
 <td style="text-align:left;">
-(Intercept)
+ecog_29
+</td>
+<td style="text-align:left;">
+icu1
 </td>
 <td style="text-align:right;">
-1.9500000
+-0.104
 </td>
 <td style="text-align:right;">
-0.0831928
+0.138
 </td>
 <td style="text-align:right;">
-1.7855916
+-0.378
 </td>
 <td style="text-align:right;">
-2.1144084
+0.169
+</td>
+<td style="text-align:right;">
+0.4529476
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Model:9~10
+Model:9~11
+</td>
+<td style="text-align:left;">
+ecog_29
+</td>
+<td style="text-align:left;">
+icu_2weeks1
+</td>
+<td style="text-align:right;">
+0.025
+</td>
+<td style="text-align:right;">
+0.147
+</td>
+<td style="text-align:right;">
+-0.265
+</td>
+<td style="text-align:right;">
+0.315
+</td>
+<td style="text-align:right;">
+0.8644504
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Model:9~12
+</td>
+<td style="text-align:left;">
+ecog_29
 </td>
 <td style="text-align:left;">
 steroids1
 </td>
 <td style="text-align:right;">
--0.1692727
+-0.169
 </td>
 <td style="text-align:right;">
-0.1369297
+0.137
 </td>
 <td style="text-align:right;">
--0.4398777
+-0.440
 </td>
 <td style="text-align:right;">
-0.1013322
+0.101
+</td>
+<td style="text-align:right;">
+0.2183551
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Model:9~11
+Model:9~15
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-1.0517517
-</td>
-<td style="text-align:right;">
-0.0663177
-</td>
-<td style="text-align:right;">
-0.9206924
-</td>
-<td style="text-align:right;">
-1.1828109
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:9~11
-</td>
-<td style="text-align:left;">
-ad8_14
-</td>
-<td style="text-align:right;">
-0.2495571
-</td>
-<td style="text-align:right;">
-0.0157224
-</td>
-<td style="text-align:right;">
-0.2184861
-</td>
-<td style="text-align:right;">
-0.2806282
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:9~12
-</td>
-<td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-0.0000000
-</td>
-<td style="text-align:right;">
-0.0000000
-</td>
-<td style="text-align:right;">
-0.0000000
-</td>
-<td style="text-align:right;">
-0.0000000
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:9~12
-</td>
-<td style="text-align:left;">
-ecog_15
-</td>
-<td style="text-align:right;">
-1.0000000
-</td>
-<td style="text-align:right;">
-0.0000000
-</td>
-<td style="text-align:right;">
-1.0000000
-</td>
-<td style="text-align:right;">
-1.0000000
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:9~13
-</td>
-<td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-1.6067809
-</td>
-<td style="text-align:right;">
-0.0846202
-</td>
-<td style="text-align:right;">
-1.4395517
-</td>
-<td style="text-align:right;">
-1.7740102
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:9~13
+ecog_29
 </td>
 <td style="text-align:left;">
 ucla
 </td>
 <td style="text-align:right;">
-0.0187830
+0.019
 </td>
 <td style="text-align:right;">
-0.0038762
+0.004
 </td>
 <td style="text-align:right;">
-0.0111226
+0.011
 </td>
 <td style="text-align:right;">
-0.0264433
+0.026
+</td>
+<td style="text-align:right;">
+0.0000032
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Model:9~14
+Model:9~16
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-0.9698720
-</td>
-<td style="text-align:right;">
-0.1351162
-</td>
-<td style="text-align:right;">
-0.7028509
-</td>
-<td style="text-align:right;">
-1.2368930
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:9~14
+ecog_29
 </td>
 <td style="text-align:left;">
 stress
 </td>
 <td style="text-align:right;">
-0.0540004
+0.054
 </td>
 <td style="text-align:right;">
-0.0072217
+0.007
 </td>
 <td style="text-align:right;">
-0.0397286
+0.040
 </td>
 <td style="text-align:right;">
-0.0682722
+0.068
+</td>
+<td style="text-align:right;">
+0.0000000
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Model:9~15
+Model:9~17
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-1.1032047
-</td>
-<td style="text-align:right;">
-0.1338070
-</td>
-<td style="text-align:right;">
-0.8387405
-</td>
-<td style="text-align:right;">
-1.3676688
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:9~15
+ecog_29
 </td>
 <td style="text-align:left;">
 sleep
 </td>
 <td style="text-align:right;">
-0.0854984
+0.085
 </td>
 <td style="text-align:right;">
-0.0131475
+0.013
 </td>
 <td style="text-align:right;">
-0.0595129
+0.060
 </td>
 <td style="text-align:right;">
-0.1114840
+0.111
+</td>
+<td style="text-align:right;">
+0.0000000
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Model:9~16
+Model:9~18
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-1.3204806
-</td>
-<td style="text-align:right;">
-0.0883682
-</td>
-<td style="text-align:right;">
-1.1458444
-</td>
-<td style="text-align:right;">
-1.4951168
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:9~16
+ecog_29
 </td>
 <td style="text-align:left;">
 dsm_depression
 </td>
 <td style="text-align:right;">
-0.3352714
+0.335
 </td>
 <td style="text-align:right;">
-0.0408869
+0.041
 </td>
 <td style="text-align:right;">
-0.2544693
+0.254
 </td>
 <td style="text-align:right;">
-0.4160735
+0.416
+</td>
+<td style="text-align:right;">
+0.0000000
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Model:9~17
+Model:9~19
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-1.3296313
-</td>
-<td style="text-align:right;">
-0.0833555
-</td>
-<td style="text-align:right;">
-1.1649015
-</td>
-<td style="text-align:right;">
-1.4943612
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:9~17
+ecog_29
 </td>
 <td style="text-align:left;">
 dsm_anxiety
 </td>
 <td style="text-align:right;">
-0.3090146
+0.309
 </td>
 <td style="text-align:right;">
-0.0352537
+0.035
 </td>
 <td style="text-align:right;">
-0.2393451
+0.239
 </td>
 <td style="text-align:right;">
-0.3786842
+0.379
+</td>
+<td style="text-align:right;">
+0.0000000
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Model:9~18
+Model:9~20
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-1.8000000
-</td>
-<td style="text-align:right;">
-0.1095884
-</td>
-<td style="text-align:right;">
-1.5828647
-</td>
-<td style="text-align:right;">
-2.0171353
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:9~18
+ecog_29
 </td>
 <td style="text-align:left;">
 language_secondary2
 </td>
 <td style="text-align:right;">
-0.3816327
+0.382
 </td>
 <td style="text-align:right;">
-0.1549814
+0.155
 </td>
 <td style="text-align:right;">
-0.0745569
+0.075
 </td>
 <td style="text-align:right;">
-0.6887084
+0.689
+</td>
+<td style="text-align:right;">
+0.0153226
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Model:9~18
+Model:9~20
+</td>
+<td style="text-align:left;">
+ecog_29
 </td>
 <td style="text-align:left;">
 language_secondary3
 </td>
 <td style="text-align:right;">
--0.2794118
+-0.279
 </td>
 <td style="text-align:right;">
-0.2159295
+0.216
 </td>
 <td style="text-align:right;">
--0.7072484
+-0.707
 </td>
 <td style="text-align:right;">
-0.1484249
+0.148
+</td>
+<td style="text-align:right;">
+0.1983291
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Model:9~19
+Model:9~21
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-1.8401757
-</td>
-<td style="text-align:right;">
-0.1668585
-</td>
-<td style="text-align:right;">
-1.5095989
-</td>
-<td style="text-align:right;">
-2.1707525
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:9~19
+ecog_29
 </td>
 <td style="text-align:left;">
 vaccine
 </td>
 <td style="text-align:right;">
-0.0276848
+0.028
 </td>
 <td style="text-align:right;">
-0.0509171
+0.051
 </td>
 <td style="text-align:right;">
--0.0731911
+-0.073
 </td>
 <td style="text-align:right;">
-0.1285608
+0.129
+</td>
+<td style="text-align:right;">
+0.5877027
 </td>
 </tr>
 </tbody>
@@ -7362,10 +6712,13 @@ Logistic Regression Outputs
 Model
 </th>
 <th style="text-align:left;">
-term
+outcome
+</th>
+<th style="text-align:left;">
+covariate
 </th>
 <th style="text-align:right;">
-odds_ratio
+odds.ratio
 </th>
 <th style="text-align:right;">
 std.error
@@ -7376,6 +6729,9 @@ conf.low
 <th style="text-align:right;">
 conf.high
 </th>
+<th style="text-align:right;">
+p.value
+</th>
 </tr>
 </thead>
 <tbody>
@@ -7384,39 +6740,25 @@ conf.high
 Model:6~1
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-1.290334e+02
-</td>
-<td style="text-align:right;">
-1.1904357
-</td>
-<td style="text-align:right;">
-15.3631692
-</td>
-<td style="text-align:right;">
-1.693808e+03
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:6~1
+barthel
 </td>
 <td style="text-align:left;">
 age
 </td>
 <td style="text-align:right;">
-9.443890e-01
+9.440000e-01
 </td>
 <td style="text-align:right;">
-0.0197049
+0.020
 </td>
 <td style="text-align:right;">
-0.9058722
+0.906
 </td>
 <td style="text-align:right;">
-9.791946e-01
+9.790000e-01
+</td>
+<td style="text-align:right;">
+0.0036878
 </td>
 </tr>
 <tr>
@@ -7424,39 +6766,25 @@ age
 Model:6~2
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-2.944444e+00
-</td>
-<td style="text-align:right;">
-0.2728067
-</td>
-<td style="text-align:right;">
-1.7602244
-</td>
-<td style="text-align:right;">
-5.164028e+00
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:6~2
+barthel
 </td>
 <td style="text-align:left;">
 sex2
 </td>
 <td style="text-align:right;">
-3.687331e+00
+3.687000e+00
 </td>
 <td style="text-align:right;">
-0.4800401
+0.480
 </td>
 <td style="text-align:right;">
-1.4936990
+1.494
 </td>
 <td style="text-align:right;">
-1.005826e+01
+1.005800e+01
+</td>
+<td style="text-align:right;">
+0.0065614
 </td>
 </tr>
 <tr>
@@ -7464,24 +6792,7 @@ sex2
 Model:6~3
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-1.156488e+08
-</td>
-<td style="text-align:right;">
-4612.2020843
-</td>
-<td style="text-align:right;">
-0.0000000
-</td>
-<td style="text-align:right;">
-NA
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:6~3
+barthel
 </td>
 <td style="text-align:left;">
 race2
@@ -7490,18 +6801,24 @@ race2
 1.000000e+00
 </td>
 <td style="text-align:right;">
-5457.2310698
+5457.231
 </td>
 <td style="text-align:right;">
-0.0000000
+0.000
 </td>
 <td style="text-align:right;">
 5.081096e+56
+</td>
+<td style="text-align:right;">
+1.0000000
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:6~3
+</td>
+<td style="text-align:left;">
+barthel
 </td>
 <td style="text-align:left;">
 race3
@@ -7510,7 +6827,7 @@ race3
 0.000000e+00
 </td>
 <td style="text-align:right;">
-4612.2021103
+4612.202
 </td>
 <td style="text-align:right;">
 NA
@@ -7518,30 +6835,42 @@ NA
 <td style="text-align:right;">
 7.704215e+305
 </td>
+<td style="text-align:right;">
+0.9970666
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:6~3
+</td>
+<td style="text-align:left;">
+barthel
 </td>
 <td style="text-align:left;">
 race5
 </td>
 <td style="text-align:right;">
-9.999999e-01
+1.000000e+00
 </td>
 <td style="text-align:right;">
-4910.0640542
+4910.064
 </td>
 <td style="text-align:right;">
-0.0000000
+0.000
 </td>
 <td style="text-align:right;">
 1.212448e+45
+</td>
+<td style="text-align:right;">
+1.0000000
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:6~3
+</td>
+<td style="text-align:left;">
+barthel
 </td>
 <td style="text-align:left;">
 race6
@@ -7550,7 +6879,7 @@ race6
 0.000000e+00
 </td>
 <td style="text-align:right;">
-4612.2020918
+4612.202
 </td>
 <td style="text-align:right;">
 NA
@@ -7558,10 +6887,16 @@ NA
 <td style="text-align:right;">
 5.905823e+306
 </td>
+<td style="text-align:right;">
+0.9970351
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:6~3
+</td>
+<td style="text-align:left;">
+barthel
 </td>
 <td style="text-align:left;">
 race7
@@ -7570,7 +6905,7 @@ race7
 0.000000e+00
 </td>
 <td style="text-align:right;">
-4612.2022144
+4612.202
 </td>
 <td style="text-align:right;">
 NA
@@ -7578,10 +6913,16 @@ NA
 <td style="text-align:right;">
 3.799802e+102
 </td>
+<td style="text-align:right;">
+0.9970666
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:6~3
+</td>
+<td style="text-align:left;">
+barthel
 </td>
 <td style="text-align:left;">
 race8
@@ -7590,7 +6931,7 @@ race8
 0.000000e+00
 </td>
 <td style="text-align:right;">
-4612.2022469
+4612.202
 </td>
 <td style="text-align:right;">
 NA
@@ -7598,50 +6939,42 @@ NA
 <td style="text-align:right;">
 1.519924e+102
 </td>
+<td style="text-align:right;">
+0.9969081
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:6~4
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-5.388889e+00
-</td>
-<td style="text-align:right;">
-0.2566415
-</td>
-<td style="text-align:right;">
-3.3448109
-</td>
-<td style="text-align:right;">
-9.203588e+00
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:6~4
+barthel
 </td>
 <td style="text-align:left;">
 ethnicity2
 </td>
 <td style="text-align:right;">
-8.217968e-01
+8.220000e-01
 </td>
 <td style="text-align:right;">
-0.4908972
+0.491
 </td>
 <td style="text-align:right;">
-0.3242522
+0.324
 </td>
 <td style="text-align:right;">
-2.278660e+00
+2.279000e+00
+</td>
+<td style="text-align:right;">
+0.6893016
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:6~4
+</td>
+<td style="text-align:left;">
+barthel
 </td>
 <td style="text-align:left;">
 ethnicity3
@@ -7650,53 +6983,42 @@ ethnicity3
 1.068460e+06
 </td>
 <td style="text-align:right;">
-1455.3975550
+1455.398
 </td>
 <td style="text-align:right;">
-0.0000000
+0.000
 </td>
 <td style="text-align:right;">
 NA
 </td>
+<td style="text-align:right;">
+0.9923898
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:6~5
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-5.181818e+00
-</td>
-<td style="text-align:right;">
-0.3293220
-</td>
-<td style="text-align:right;">
-2.8311926
-</td>
-<td style="text-align:right;">
-1.042913e+01
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:6~5
+barthel
 </td>
 <td style="text-align:left;">
 language_primary2
 </td>
 <td style="text-align:right;">
-9.924812e-01
+9.920000e-01
 </td>
 <td style="text-align:right;">
-0.4401935
+0.440
 </td>
 <td style="text-align:right;">
-0.4111478
+0.411
 </td>
 <td style="text-align:right;">
-2.346726e+00
+2.347000e+00
+</td>
+<td style="text-align:right;">
+0.9863208
 </td>
 </tr>
 <tr>
@@ -7704,24 +7026,7 @@ language_primary2
 Model:6~6
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-1.000000e-07
-</td>
-<td style="text-align:right;">
-2399.5447197
-</td>
-<td style="text-align:right;">
-NA
-</td>
-<td style="text-align:right;">
-1.582281e+205
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:6~6
+barthel
 </td>
 <td style="text-align:left;">
 education1
@@ -7730,18 +7035,24 @@ education1
 5.086692e+07
 </td>
 <td style="text-align:right;">
-2399.5447878
+2399.545
 </td>
 <td style="text-align:right;">
-0.0000000
+0.000
 </td>
 <td style="text-align:right;">
 NA
+</td>
+<td style="text-align:right;">
+0.9940997
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:6~6
+</td>
+<td style="text-align:left;">
+barthel
 </td>
 <td style="text-align:left;">
 education2
@@ -7750,18 +7061,24 @@ education2
 4.695408e+07
 </td>
 <td style="text-align:right;">
-2399.5449975
+2399.545
 </td>
 <td style="text-align:right;">
-0.0000000
+0.000
 </td>
 <td style="text-align:right;">
 NA
+</td>
+<td style="text-align:right;">
+0.9941263
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:6~6
+</td>
+<td style="text-align:left;">
+barthel
 </td>
 <td style="text-align:left;">
 education3
@@ -7770,18 +7087,24 @@ education3
 6.886599e+07
 </td>
 <td style="text-align:right;">
-2399.5447452
+2399.545
 </td>
 <td style="text-align:right;">
-0.0000000
+0.000
 </td>
 <td style="text-align:right;">
 NA
+</td>
+<td style="text-align:right;">
+0.9939989
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:6~6
+</td>
+<td style="text-align:left;">
+barthel
 </td>
 <td style="text-align:left;">
 education4
@@ -7790,18 +7113,24 @@ education4
 1.721650e+08
 </td>
 <td style="text-align:right;">
-2399.5447954
+2399.545
 </td>
 <td style="text-align:right;">
-0.0000000
+0.000
 </td>
 <td style="text-align:right;">
 NA
+</td>
+<td style="text-align:right;">
+0.9936943
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:6~6
+</td>
+<td style="text-align:left;">
+barthel
 </td>
 <td style="text-align:left;">
 education5
@@ -7810,18 +7139,24 @@ education5
 7.512653e+07
 </td>
 <td style="text-align:right;">
-2399.5447700
+2399.545
 </td>
 <td style="text-align:right;">
-0.0000000
+0.000
 </td>
 <td style="text-align:right;">
 NA
+</td>
+<td style="text-align:right;">
+0.9939700
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:6~6
+</td>
+<td style="text-align:left;">
+barthel
 </td>
 <td style="text-align:left;">
 education6
@@ -7830,18 +7165,24 @@ education6
 1.565136e+08
 </td>
 <td style="text-align:right;">
-2399.5449489
+2399.545
 </td>
 <td style="text-align:right;">
-0.0000000
+0.000
 </td>
 <td style="text-align:right;">
 NA
+</td>
+<td style="text-align:right;">
+0.9937260
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:6~6
+</td>
+<td style="text-align:left;">
+barthel
 </td>
 <td style="text-align:left;">
 education7
@@ -7850,53 +7191,42 @@ education7
 2.449651e+14
 </td>
 <td style="text-align:right;">
-2938.8300889
+2938.830
 </td>
 <td style="text-align:right;">
-0.0000000
+0.000
 </td>
 <td style="text-align:right;">
 NA
 </td>
+<td style="text-align:right;">
+0.9910049
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:6~7
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-6.333333e+00
-</td>
-<td style="text-align:right;">
-0.3106302
-</td>
-<td style="text-align:right;">
-3.5852347
-</td>
-<td style="text-align:right;">
-1.225076e+01
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:6~7
+barthel
 </td>
 <td style="text-align:left;">
 pmh_neuro1
 </td>
 <td style="text-align:right;">
-6.437247e-01
+6.440000e-01
 </td>
 <td style="text-align:right;">
-0.4384998
+0.438
 </td>
 <td style="text-align:right;">
-0.2693213
+0.269
 </td>
 <td style="text-align:right;">
-1.526100e+00
+1.526000e+00
+</td>
+<td style="text-align:right;">
+0.3151255
 </td>
 </tr>
 <tr>
@@ -7904,39 +7234,25 @@ pmh_neuro1
 Model:6~8
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-6.428571e+00
-</td>
-<td style="text-align:right;">
-0.2872970
-</td>
-<td style="text-align:right;">
-3.7894008
-</td>
-<td style="text-align:right;">
-1.178938e+01
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:6~8
+barthel
 </td>
 <td style="text-align:left;">
 pmh_enc_is_ich1
 </td>
 <td style="text-align:right;">
-5.515152e-01
+5.520000e-01
 </td>
 <td style="text-align:right;">
-0.4461945
+0.446
 </td>
 <td style="text-align:right;">
-0.2302045
+0.230
 </td>
 <td style="text-align:right;">
-1.344718e+00
+1.345000e+00
+</td>
+<td style="text-align:right;">
+0.1823049
 </td>
 </tr>
 <tr>
@@ -7944,24 +7260,7 @@ pmh_enc_is_ich1
 Model:6~9
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-1.156488e+08
-</td>
-<td style="text-align:right;">
-1044.4580751
-</td>
-<td style="text-align:right;">
-0.0000000
-</td>
-<td style="text-align:right;">
-2.242019e+151
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:6~9
+barthel
 </td>
 <td style="text-align:left;">
 pmh_covid_severe1
@@ -7970,7 +7269,7 @@ pmh_covid_severe1
 0.000000e+00
 </td>
 <td style="text-align:right;">
-1044.4580996
+1044.458
 </td>
 <td style="text-align:right;">
 NA
@@ -7978,425 +7277,346 @@ NA
 <td style="text-align:right;">
 2.234656e+17
 </td>
+<td style="text-align:right;">
+0.9867961
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:6~10
 </td>
 <td style="text-align:left;">
-(Intercept)
+barthel
+</td>
+<td style="text-align:left;">
+icu1
 </td>
 <td style="text-align:right;">
-5.928571e+00
+6.140000e-01
 </td>
 <td style="text-align:right;">
-0.2889234
+0.445
 </td>
 <td style="text-align:right;">
-3.4813074
+0.257
 </td>
 <td style="text-align:right;">
-1.090100e+01
+1.494000e+00
+</td>
+<td style="text-align:right;">
+0.2732469
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Model:6~10
+Model:6~11
+</td>
+<td style="text-align:left;">
+barthel
+</td>
+<td style="text-align:left;">
+icu_2weeks1
+</td>
+<td style="text-align:right;">
+5.160000e-01
+</td>
+<td style="text-align:right;">
+0.455
+</td>
+<td style="text-align:right;">
+0.213
+</td>
+<td style="text-align:right;">
+1.289000e+00
+</td>
+<td style="text-align:right;">
+0.1458070
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Model:6~12
+</td>
+<td style="text-align:left;">
+barthel
 </td>
 <td style="text-align:left;">
 steroids1
 </td>
 <td style="text-align:right;">
-7.053669e-01
+7.050000e-01
 </td>
 <td style="text-align:right;">
-0.4428600
+0.443
 </td>
 <td style="text-align:right;">
-0.2965525
+0.297
 </td>
 <td style="text-align:right;">
-1.710143e+00
+1.710000e+00
+</td>
+<td style="text-align:right;">
+0.4306128
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Model:6~11
+Model:6~13
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-9.284924e+00
-</td>
-<td style="text-align:right;">
-0.4142685
-</td>
-<td style="text-align:right;">
-4.3728887
-</td>
-<td style="text-align:right;">
-2.249895e+01
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:6~11
+barthel
 </td>
 <td style="text-align:left;">
 ad8_14
 </td>
 <td style="text-align:right;">
-8.579936e-01
+8.580000e-01
 </td>
 <td style="text-align:right;">
-0.0879133
+0.088
 </td>
 <td style="text-align:right;">
-0.7186144
+0.719
 </td>
 <td style="text-align:right;">
-1.017267e+00
+1.017000e+00
+</td>
+<td style="text-align:right;">
+0.0814814
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Model:6~12
+Model:6~14
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-2.497170e+01
-</td>
-<td style="text-align:right;">
-0.6231587
-</td>
-<td style="text-align:right;">
-7.8251938
-</td>
-<td style="text-align:right;">
-9.165302e+01
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:6~12
+barthel
 </td>
 <td style="text-align:left;">
 ecog_15
 </td>
 <td style="text-align:right;">
-4.642530e-01
+4.640000e-01
 </td>
 <td style="text-align:right;">
-0.2618075
+0.262
 </td>
 <td style="text-align:right;">
-0.2739506
+0.274
 </td>
 <td style="text-align:right;">
-7.722176e-01
+7.720000e-01
+</td>
+<td style="text-align:right;">
+0.0033801
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Model:6~13
+Model:6~15
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-9.443884e+00
-</td>
-<td style="text-align:right;">
-0.3470930
-</td>
-<td style="text-align:right;">
-4.9894585
-</td>
-<td style="text-align:right;">
-1.963480e+01
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:6~13
+barthel
 </td>
 <td style="text-align:left;">
 ucla
 </td>
 <td style="text-align:right;">
-9.683148e-01
+9.680000e-01
 </td>
 <td style="text-align:right;">
-0.0128122
+0.013
 </td>
 <td style="text-align:right;">
-0.9440035
+0.944
 </td>
 <td style="text-align:right;">
-9.931491e-01
+9.930000e-01
+</td>
+<td style="text-align:right;">
+0.0119685
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Model:6~14
+Model:6~16
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-1.219733e+01
-</td>
-<td style="text-align:right;">
-0.5971857
-</td>
-<td style="text-align:right;">
-4.0703975
-</td>
-<td style="text-align:right;">
-4.301883e+01
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:6~14
+barthel
 </td>
 <td style="text-align:left;">
 stress
 </td>
 <td style="text-align:right;">
-9.550905e-01
+9.550000e-01
 </td>
 <td style="text-align:right;">
-0.0292410
+0.029
 </td>
 <td style="text-align:right;">
-0.9003744
+0.900
 </td>
 <td style="text-align:right;">
-1.010597e+00
+1.011000e+00
+</td>
+<td style="text-align:right;">
+0.1160914
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Model:6~15
+Model:6~17
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-1.364002e+01
-</td>
-<td style="text-align:right;">
-0.5808217
-</td>
-<td style="text-align:right;">
-4.6933067
-</td>
-<td style="text-align:right;">
-4.650994e+01
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:6~15
+barthel
 </td>
 <td style="text-align:left;">
 sleep
 </td>
 <td style="text-align:right;">
-9.098938e-01
+9.100000e-01
 </td>
 <td style="text-align:right;">
-0.0514360
+0.051
 </td>
 <td style="text-align:right;">
-0.8202954
+0.820
 </td>
 <td style="text-align:right;">
-1.005231e+00
+1.005000e+00
+</td>
+<td style="text-align:right;">
+0.0663838
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Model:6~16
+Model:6~18
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-9.850078e+00
-</td>
-<td style="text-align:right;">
-0.4213888
-</td>
-<td style="text-align:right;">
-4.5808905
-</td>
-<td style="text-align:right;">
-2.423204e+01
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:6~16
+barthel
 </td>
 <td style="text-align:left;">
 dsm_depression
 </td>
 <td style="text-align:right;">
-7.158965e-01
+7.160000e-01
 </td>
 <td style="text-align:right;">
-0.1690151
+0.169
 </td>
 <td style="text-align:right;">
-0.5089037
+0.509
 </td>
 <td style="text-align:right;">
-9.925869e-01
+9.930000e-01
+</td>
+<td style="text-align:right;">
+0.0479903
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Model:6~17
+Model:6~19
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-7.876394e+00
-</td>
-<td style="text-align:right;">
-0.3844412
-</td>
-<td style="text-align:right;">
-3.9137739
-</td>
-<td style="text-align:right;">
-1.791905e+01
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:6~17
+barthel
 </td>
 <td style="text-align:left;">
 dsm_anxiety
 </td>
 <td style="text-align:right;">
-8.097592e-01
+8.100000e-01
 </td>
 <td style="text-align:right;">
-0.1467338
+0.147
 </td>
 <td style="text-align:right;">
-0.6027661
+0.603
 </td>
 <td style="text-align:right;">
-1.076918e+00
+1.077000e+00
+</td>
+<td style="text-align:right;">
+0.1504048
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Model:6~18
+Model:6~20
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-7.333333e+00
-</td>
-<td style="text-align:right;">
-0.4351907
-</td>
-<td style="text-align:right;">
-3.3797572
-</td>
-<td style="text-align:right;">
-1.919411e+01
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:6~18
+barthel
 </td>
 <td style="text-align:left;">
 language_secondary2
 </td>
 <td style="text-align:right;">
-7.159091e-01
+7.160000e-01
 </td>
 <td style="text-align:right;">
-0.5815501
+0.582
 </td>
 <td style="text-align:right;">
-0.2190259
+0.219
 </td>
 <td style="text-align:right;">
-2.230337e+00
+2.230000e+00
+</td>
+<td style="text-align:right;">
+0.5655113
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Model:6~18
+Model:6~20
+</td>
+<td style="text-align:left;">
+barthel
 </td>
 <td style="text-align:left;">
 language_secondary3
 </td>
 <td style="text-align:right;">
-3.545455e-01
+3.550000e-01
 </td>
 <td style="text-align:right;">
-0.6828716
+0.683
 </td>
 <td style="text-align:right;">
-0.0915647
+0.092
 </td>
 <td style="text-align:right;">
-1.403278e+00
+1.403000e+00
+</td>
+<td style="text-align:right;">
+0.1288964
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Model:6~19
+Model:6~21
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-3.731131e+00
-</td>
-<td style="text-align:right;">
-0.5517793
-</td>
-<td style="text-align:right;">
-1.3251085
-</td>
-<td style="text-align:right;">
-1.177271e+01
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:6~19
+barthel
 </td>
 <td style="text-align:left;">
 vaccine
 </td>
 <td style="text-align:right;">
-1.121622e+00
+1.122000e+00
 </td>
 <td style="text-align:right;">
-0.1737311
+0.174
 </td>
 <td style="text-align:right;">
-0.7992138
+0.799
 </td>
 <td style="text-align:right;">
-1.588293e+00
+1.588000e+00
+</td>
+<td style="text-align:right;">
+0.5088364
 </td>
 </tr>
 <tr>
@@ -8404,39 +7624,25 @@ vaccine
 Model:7~1
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-2.209790e-02
-</td>
-<td style="text-align:right;">
-0.8123866
-</td>
-<td style="text-align:right;">
-0.0040582
-</td>
-<td style="text-align:right;">
-9.971500e-02
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:7~1
+mrs
 </td>
 <td style="text-align:left;">
 age
 </td>
 <td style="text-align:right;">
-1.071238e+00
+1.071000e+00
 </td>
 <td style="text-align:right;">
-0.0145783
+0.015
 </td>
 <td style="text-align:right;">
-1.0425171
+1.043
 </td>
 <td style="text-align:right;">
-1.104153e+00
+1.104000e+00
+</td>
+<td style="text-align:right;">
+0.0000024
 </td>
 </tr>
 <tr>
@@ -8444,39 +7650,25 @@ age
 Model:7~2
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-1.151515e+00
-</td>
-<td style="text-align:right;">
-0.2379471
-</td>
-<td style="text-align:right;">
-0.7226372
-</td>
-<td style="text-align:right;">
-1.844386e+00
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:7~2
+mrs
 </td>
 <td style="text-align:left;">
 sex2
 </td>
 <td style="text-align:right;">
-6.025779e-01
+6.030000e-01
 </td>
 <td style="text-align:right;">
-0.3262495
+0.326
 </td>
 <td style="text-align:right;">
-0.3161789
+0.316
 </td>
 <td style="text-align:right;">
-1.139091e+00
+1.139000e+00
+</td>
+<td style="text-align:right;">
+0.1205163
 </td>
 </tr>
 <tr>
@@ -8484,24 +7676,7 @@ sex2
 Model:7~3
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-1.000000e+00
-</td>
-<td style="text-align:right;">
-1.4142136
-</td>
-<td style="text-align:right;">
-0.0395442
-</td>
-<td style="text-align:right;">
-2.528818e+01
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:7~3
+mrs
 </td>
 <td style="text-align:left;">
 race2
@@ -8510,38 +7685,50 @@ race2
 1.500000e+00
 </td>
 <td style="text-align:right;">
-1.6832508
+1.683
 </td>
 <td style="text-align:right;">
-0.0410171
+0.041
 </td>
 <td style="text-align:right;">
-5.708783e+01
+5.708800e+01
+</td>
+<td style="text-align:right;">
+0.8096464
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:7~3
+</td>
+<td style="text-align:left;">
+mrs
 </td>
 <td style="text-align:left;">
 race3
 </td>
 <td style="text-align:right;">
-1.307692e+00
+1.308000e+00
 </td>
 <td style="text-align:right;">
-1.4614194
+1.461
 </td>
 <td style="text-align:right;">
-0.0486080
+0.049
 </td>
 <td style="text-align:right;">
-3.520528e+01
+3.520500e+01
+</td>
+<td style="text-align:right;">
+0.8543555
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:7~3
+</td>
+<td style="text-align:left;">
+mrs
 </td>
 <td style="text-align:left;">
 race5
@@ -8550,38 +7737,50 @@ race5
 1.500000e+00
 </td>
 <td style="text-align:right;">
-1.5092309
+1.509
 </td>
 <td style="text-align:right;">
-0.0523480
+0.052
 </td>
 <td style="text-align:right;">
-4.316708e+01
+4.316700e+01
+</td>
+<td style="text-align:right;">
+0.7881938
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:7~3
+</td>
+<td style="text-align:left;">
+mrs
 </td>
 <td style="text-align:left;">
 race6
 </td>
 <td style="text-align:right;">
-6.909091e-01
+6.910000e-01
 </td>
 <td style="text-align:right;">
-1.4298593
+1.430
 </td>
 <td style="text-align:right;">
-0.0267668
+0.027
 </td>
 <td style="text-align:right;">
-1.783204e+01
+1.783200e+01
+</td>
+<td style="text-align:right;">
+0.7959518
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:7~3
+</td>
+<td style="text-align:left;">
+mrs
 </td>
 <td style="text-align:left;">
 race7
@@ -8590,18 +7789,24 @@ race7
 1.000000e+00
 </td>
 <td style="text-align:right;">
-1.6329932
+1.633
 </td>
 <td style="text-align:right;">
-0.0290462
+0.029
 </td>
 <td style="text-align:right;">
-3.442796e+01
+3.442800e+01
+</td>
+<td style="text-align:right;">
+1.0000000
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:7~3
+</td>
+<td style="text-align:left;">
+mrs
 </td>
 <td style="text-align:left;">
 race8
@@ -8610,13 +7815,16 @@ race8
 5.000000e-01
 </td>
 <td style="text-align:right;">
-1.8708285
+1.871
 </td>
 <td style="text-align:right;">
-0.0083139
+0.008
 </td>
 <td style="text-align:right;">
-2.355294e+01
+2.355300e+01
+</td>
+<td style="text-align:right;">
+0.7110079
 </td>
 </tr>
 <tr>
@@ -8624,44 +7832,33 @@ race8
 Model:7~4
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-6.911765e-01
-</td>
-<td style="text-align:right;">
-0.1896905
-</td>
-<td style="text-align:right;">
-0.4740405
-</td>
-<td style="text-align:right;">
-9.992872e-01
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:7~4
+mrs
 </td>
 <td style="text-align:left;">
 ethnicity2
 </td>
 <td style="text-align:right;">
-2.480243e+00
+2.480000e+00
 </td>
 <td style="text-align:right;">
-0.3861058
+0.386
 </td>
 <td style="text-align:right;">
-1.1770337
+1.177
 </td>
 <td style="text-align:right;">
-5.393205e+00
+5.393000e+00
+</td>
+<td style="text-align:right;">
+0.0186422
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:7~4
+</td>
+<td style="text-align:left;">
+mrs
 </td>
 <td style="text-align:left;">
 ethnicity3
@@ -8670,53 +7867,42 @@ ethnicity3
 3.064601e+06
 </td>
 <td style="text-align:right;">
-882.7433956
+882.743
 </td>
 <td style="text-align:right;">
-0.0000000
+0.000
 </td>
 <td style="text-align:right;">
 NA
 </td>
+<td style="text-align:right;">
+0.9865010
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:7~5
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-1.266667e+00
-</td>
-<td style="text-align:right;">
-0.2442317
-</td>
-<td style="text-align:right;">
-0.7865645
-</td>
-<td style="text-align:right;">
-2.058358e+00
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:7~5
+mrs
 </td>
 <td style="text-align:left;">
 language_primary2
 </td>
 <td style="text-align:right;">
-5.161943e-01
+5.160000e-01
 </td>
 <td style="text-align:right;">
-0.3290770
+0.329
 </td>
 <td style="text-align:right;">
-0.2689749
+0.269
 </td>
 <td style="text-align:right;">
-9.799522e-01
+9.800000e-01
+</td>
+<td style="text-align:right;">
+0.0444868
 </td>
 </tr>
 <tr>
@@ -8724,33 +7910,16 @@ language_primary2
 Model:7~6
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-2.118180e+06
-</td>
-<td style="text-align:right;">
-882.7433763
-</td>
-<td style="text-align:right;">
-0.0000000
-</td>
-<td style="text-align:right;">
-NA
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:7~6
+mrs
 </td>
 <td style="text-align:left;">
 education1
 </td>
 <td style="text-align:right;">
-9.000000e-07
+0.000000e+00
 </td>
 <td style="text-align:right;">
-882.7435222
+882.744
 </td>
 <td style="text-align:right;">
 NA
@@ -8758,19 +7927,25 @@ NA
 <td style="text-align:right;">
 9.770796e+71
 </td>
+<td style="text-align:right;">
+0.9873826
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:7~6
 </td>
 <td style="text-align:left;">
+mrs
+</td>
+<td style="text-align:left;">
 education2
 </td>
 <td style="text-align:right;">
-2.000000e-07
+0.000000e+00
 </td>
 <td style="text-align:right;">
-882.7441315
+882.744
 </td>
 <td style="text-align:right;">
 NA
@@ -8778,19 +7953,25 @@ NA
 <td style="text-align:right;">
 1.043536e+71
 </td>
+<td style="text-align:right;">
+0.9858419
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:7~6
 </td>
 <td style="text-align:left;">
+mrs
+</td>
+<td style="text-align:left;">
 education3
 </td>
 <td style="text-align:right;">
-3.000000e-07
+0.000000e+00
 </td>
 <td style="text-align:right;">
-882.7434223
+882.743
 </td>
 <td style="text-align:right;">
 NA
@@ -8798,19 +7979,25 @@ NA
 <td style="text-align:right;">
 3.310131e+71
 </td>
+<td style="text-align:right;">
+0.9862827
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:7~6
 </td>
 <td style="text-align:left;">
+mrs
+</td>
+<td style="text-align:left;">
 education4
 </td>
 <td style="text-align:right;">
-5.000000e-07
+0.000000e+00
 </td>
 <td style="text-align:right;">
-882.7434394
+882.743
 </td>
 <td style="text-align:right;">
 NA
@@ -8818,19 +8005,25 @@ NA
 <td style="text-align:right;">
 6.664256e+71
 </td>
+<td style="text-align:right;">
+0.9869353
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:7~6
 </td>
 <td style="text-align:left;">
+mrs
+</td>
+<td style="text-align:left;">
 education5
 </td>
 <td style="text-align:right;">
-3.000000e-07
+0.000000e+00
 </td>
 <td style="text-align:right;">
-882.7434568
+882.743
 </td>
 <td style="text-align:right;">
 NA
@@ -8838,19 +8031,25 @@ NA
 <td style="text-align:right;">
 4.127423e+71
 </td>
+<td style="text-align:right;">
+0.9865200
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:7~6
 </td>
 <td style="text-align:left;">
+mrs
+</td>
+<td style="text-align:left;">
 education6
 </td>
 <td style="text-align:right;">
-1.300000e-06
+0.000000e+00
 </td>
 <td style="text-align:right;">
-882.7436359
+882.744
 </td>
 <td style="text-align:right;">
 NA
@@ -8858,19 +8057,25 @@ NA
 <td style="text-align:right;">
 1.175212e+72
 </td>
+<td style="text-align:right;">
+0.9877212
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:7~6
 </td>
 <td style="text-align:left;">
+mrs
+</td>
+<td style="text-align:left;">
 education7
 </td>
 <td style="text-align:right;">
-5.000000e-07
+0.000000e+00
 </td>
 <td style="text-align:right;">
-882.7445091
+882.745
 </td>
 <td style="text-align:right;">
 NA
@@ -8878,45 +8083,34 @@ NA
 <td style="text-align:right;">
 2.027534e+69
 </td>
+<td style="text-align:right;">
+0.9868348
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:7~7
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-7.254902e-01
-</td>
-<td style="text-align:right;">
-0.2159511
-</td>
-<td style="text-align:right;">
-0.4721095
-</td>
-<td style="text-align:right;">
-1.104256e+00
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:7~7
+mrs
 </td>
 <td style="text-align:left;">
 pmh_neuro1
 </td>
 <td style="text-align:right;">
-1.556234e+00
+1.556000e+00
 </td>
 <td style="text-align:right;">
-0.3278176
+0.328
 </td>
 <td style="text-align:right;">
-0.8201180
+0.820
 </td>
 <td style="text-align:right;">
-2.973258e+00
+2.973000e+00
+</td>
+<td style="text-align:right;">
+0.1772952
 </td>
 </tr>
 <tr>
@@ -8924,39 +8118,25 @@ pmh_neuro1
 Model:7~8
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-6.507937e-01
-</td>
-<td style="text-align:right;">
-0.2006571
-</td>
-<td style="text-align:right;">
-0.4362158
-</td>
-<td style="text-align:right;">
-9.603366e-01
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:7~8
+mrs
 </td>
 <td style="text-align:left;">
 pmh_enc_is_ich1
 </td>
 <td style="text-align:right;">
-2.507060e+00
+2.507000e+00
 </td>
 <td style="text-align:right;">
-0.3537696
+0.354
 </td>
 <td style="text-align:right;">
-1.2635651
+1.264
 </td>
 <td style="text-align:right;">
-5.081948e+00
+5.082000e+00
+</td>
+<td style="text-align:right;">
+0.0093755
 </td>
 </tr>
 <tr>
@@ -8964,39 +8144,25 @@ pmh_enc_is_ich1
 Model:7~9
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-3.928571e-01
-</td>
-<td style="text-align:right;">
-0.3558415
-</td>
-<td style="text-align:right;">
-0.1872925
-</td>
-<td style="text-align:right;">
-7.671315e-01
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:7~9
+mrs
 </td>
 <td style="text-align:left;">
 pmh_covid_severe1
 </td>
 <td style="text-align:right;">
-2.875421e+00
+2.875000e+00
 </td>
 <td style="text-align:right;">
-0.4019144
+0.402
 </td>
 <td style="text-align:right;">
-1.3379106
+1.338
 </td>
 <td style="text-align:right;">
-6.542508e+00
+6.543000e+00
+</td>
+<td style="text-align:right;">
+0.0085909
 </td>
 </tr>
 <tr>
@@ -9004,419 +8170,337 @@ pmh_covid_severe1
 Model:7~10
 </td>
 <td style="text-align:left;">
-(Intercept)
+mrs
+</td>
+<td style="text-align:left;">
+icu1
 </td>
 <td style="text-align:right;">
-6.724138e-01
+2.062000e+00
 </td>
 <td style="text-align:right;">
-0.2070807
+0.345
 </td>
 <td style="text-align:right;">
-0.4450459
+1.055
 </td>
 <td style="text-align:right;">
-1.005012e+00
+4.090000e+00
+</td>
+<td style="text-align:right;">
+0.0357301
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Model:7~10
+Model:7~11
+</td>
+<td style="text-align:left;">
+mrs
+</td>
+<td style="text-align:left;">
+icu_2weeks1
+</td>
+<td style="text-align:right;">
+2.475000e+00
+</td>
+<td style="text-align:right;">
+0.370
+</td>
+<td style="text-align:right;">
+1.210
+</td>
+<td style="text-align:right;">
+5.197000e+00
+</td>
+<td style="text-align:right;">
+0.0143173
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Model:7~12
+</td>
+<td style="text-align:left;">
+mrs
 </td>
 <td style="text-align:left;">
 steroids1
 </td>
 <td style="text-align:right;">
-2.044872e+00
+2.045000e+00
 </td>
 <td style="text-align:right;">
-0.3388984
+0.339
 </td>
 <td style="text-align:right;">
-1.0574492
+1.057
 </td>
 <td style="text-align:right;">
-4.006921e+00
+4.007000e+00
+</td>
+<td style="text-align:right;">
+0.0347924
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Model:7~11
+Model:7~13
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-4.046116e-01
-</td>
-<td style="text-align:right;">
-0.2838845
-</td>
-<td style="text-align:right;">
-0.2276088
-</td>
-<td style="text-align:right;">
-6.961829e-01
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:7~11
+mrs
 </td>
 <td style="text-align:left;">
 ad8_14
 </td>
 <td style="text-align:right;">
-1.262912e+00
+1.263000e+00
 </td>
 <td style="text-align:right;">
-0.0682874
+0.068
 </td>
 <td style="text-align:right;">
-1.1082487
+1.108
 </td>
 <td style="text-align:right;">
-1.450060e+00
+1.450000e+00
+</td>
+<td style="text-align:right;">
+0.0006304
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Model:7~12
+Model:7~14
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-1.994076e-01
-</td>
-<td style="text-align:right;">
-0.4614616
-</td>
-<td style="text-align:right;">
-0.0779925
-</td>
-<td style="text-align:right;">
-4.800654e-01
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:7~12
+mrs
 </td>
 <td style="text-align:left;">
 ecog_15
 </td>
 <td style="text-align:right;">
-2.228684e+00
+2.229000e+00
 </td>
 <td style="text-align:right;">
-0.2312168
+0.231
 </td>
 <td style="text-align:right;">
-1.4416580
+1.442
 </td>
 <td style="text-align:right;">
-3.587746e+00
+3.588000e+00
+</td>
+<td style="text-align:right;">
+0.0005281
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Model:7~13
+Model:7~15
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-6.839297e-01
-</td>
-<td style="text-align:right;">
-0.2268579
-</td>
-<td style="text-align:right;">
-0.4357481
-</td>
-<td style="text-align:right;">
-1.063305e+00
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:7~13
+mrs
 </td>
 <td style="text-align:left;">
 ucla
 </td>
 <td style="text-align:right;">
-1.016676e+00
+1.017000e+00
 </td>
 <td style="text-align:right;">
-0.0104938
+0.010
 </td>
 <td style="text-align:right;">
-0.9962183
+0.996
 </td>
 <td style="text-align:right;">
-1.038344e+00
+1.038000e+00
+</td>
+<td style="text-align:right;">
+0.1150191
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Model:7~14
+Model:7~16
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-3.509694e-01
-</td>
-<td style="text-align:right;">
-0.4118014
-</td>
-<td style="text-align:right;">
-0.1527061
-</td>
-<td style="text-align:right;">
-7.733378e-01
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:7~14
+mrs
 </td>
 <td style="text-align:left;">
 stress
 </td>
 <td style="text-align:right;">
-1.054793e+00
+1.055000e+00
 </td>
 <td style="text-align:right;">
-0.0218514
+0.022
 </td>
 <td style="text-align:right;">
-1.0114023
+1.011
 </td>
 <td style="text-align:right;">
-1.102310e+00
+1.102000e+00
+</td>
+<td style="text-align:right;">
+0.0146364
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Model:7~15
+Model:7~17
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-3.037288e-01
-</td>
-<td style="text-align:right;">
-0.4012334
-</td>
-<td style="text-align:right;">
-0.1345777
-</td>
-<td style="text-align:right;">
-6.537650e-01
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:7~15
+mrs
 </td>
 <td style="text-align:left;">
 sleep
 </td>
 <td style="text-align:right;">
-1.122264e+00
+1.122000e+00
 </td>
 <td style="text-align:right;">
-0.0395356
+0.040
 </td>
 <td style="text-align:right;">
-1.0406063
+1.041
 </td>
 <td style="text-align:right;">
-1.216010e+00
+1.216000e+00
+</td>
+<td style="text-align:right;">
+0.0035276
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Model:7~16
+Model:7~18
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-4.983631e-01
-</td>
-<td style="text-align:right;">
-0.2776703
-</td>
-<td style="text-align:right;">
-0.2849416
-</td>
-<td style="text-align:right;">
-8.503498e-01
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:7~16
+mrs
 </td>
 <td style="text-align:left;">
 dsm_depression
 </td>
 <td style="text-align:right;">
-1.398074e+00
+1.398000e+00
 </td>
 <td style="text-align:right;">
-0.1281038
+0.128
 </td>
 <td style="text-align:right;">
-1.0925213
+1.093
 </td>
 <td style="text-align:right;">
-1.809132e+00
+1.809000e+00
+</td>
+<td style="text-align:right;">
+0.0089015
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Model:7~17
+Model:7~19
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-6.408451e-01
-</td>
-<td style="text-align:right;">
-0.2570375
-</td>
-<td style="text-align:right;">
-0.3834717
-</td>
-<td style="text-align:right;">
-1.054904e+00
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:7~17
+mrs
 </td>
 <td style="text-align:left;">
 dsm_anxiety
 </td>
 <td style="text-align:right;">
-1.196862e+00
+1.197000e+00
 </td>
 <td style="text-align:right;">
-0.1084124
+0.108
 </td>
 <td style="text-align:right;">
-0.9692676
+0.969
 </td>
 <td style="text-align:right;">
-1.484664e+00
+1.485000e+00
+</td>
+<td style="text-align:right;">
+0.0974015
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Model:7~18
+Model:7~20
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-1.631579e+00
-</td>
-<td style="text-align:right;">
-0.2913583
-</td>
-<td style="text-align:right;">
-0.9302390
-</td>
-<td style="text-align:right;">
-2.938023e+00
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:7~18
+mrs
 </td>
 <td style="text-align:left;">
 language_secondary2
 </td>
 <td style="text-align:right;">
-4.086022e-01
+4.090000e-01
 </td>
 <td style="text-align:right;">
-0.4101499
+0.410
 </td>
 <td style="text-align:right;">
-0.1802168
+0.180
 </td>
 <td style="text-align:right;">
-9.045660e-01
+9.050000e-01
+</td>
+<td style="text-align:right;">
+0.0290976
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Model:7~18
+Model:7~20
+</td>
+<td style="text-align:left;">
+mrs
 </td>
 <td style="text-align:left;">
 language_secondary3
 </td>
 <td style="text-align:right;">
-3.900293e-01
+3.900000e-01
 </td>
 <td style="text-align:right;">
-0.5644961
+0.564
 </td>
 <td style="text-align:right;">
-0.1238407
+0.124
 </td>
 <td style="text-align:right;">
-1.160097e+00
+1.160000e+00
+</td>
+<td style="text-align:right;">
+0.0953320
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Model:7~19
+Model:7~21
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-6.723828e-01
-</td>
-<td style="text-align:right;">
-0.4260909
-</td>
-<td style="text-align:right;">
-0.2863597
-</td>
-<td style="text-align:right;">
-1.540824e+00
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:7~19
+mrs
 </td>
 <td style="text-align:left;">
 vaccine
 </td>
 <td style="text-align:right;">
-1.128929e+00
+1.129000e+00
 </td>
 <td style="text-align:right;">
-0.1281641
+0.128
 </td>
 <td style="text-align:right;">
-0.8797616
+0.880
 </td>
 <td style="text-align:right;">
-1.459679e+00
+1.460000e+00
+</td>
+<td style="text-align:right;">
+0.3440464
 </td>
 </tr>
 <tr>
@@ -9424,39 +8508,25 @@ vaccine
 Model:10~1
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-6.261523e+00
-</td>
-<td style="text-align:right;">
-1.0212084
-</td>
-<td style="text-align:right;">
-0.9448765
-</td>
-<td style="text-align:right;">
-5.432677e+01
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:10~1
+pasc_cognition
 </td>
 <td style="text-align:left;">
 age
 </td>
 <td style="text-align:right;">
-9.979424e-01
+9.980000e-01
 </td>
 <td style="text-align:right;">
-0.0185189
+0.019
 </td>
 <td style="text-align:right;">
-0.9610138
+0.961
 </td>
 <td style="text-align:right;">
-1.034208e+00
+1.034000e+00
+</td>
+<td style="text-align:right;">
+0.9114398
 </td>
 </tr>
 <tr>
@@ -9464,39 +8534,25 @@ age
 Model:10~2
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-4.700000e+00
-</td>
-<td style="text-align:right;">
-0.3482479
-</td>
-<td style="text-align:right;">
-2.4804319
-</td>
-<td style="text-align:right;">
-9.862508e+00
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:10~2
+pasc_cognition
 </td>
 <td style="text-align:left;">
 sex2
 </td>
 <td style="text-align:right;">
-1.436170e+00
+1.436000e+00
 </td>
 <td style="text-align:right;">
-0.5145819
+0.515
 </td>
 <td style="text-align:right;">
-0.5242311
+0.524
 </td>
 <td style="text-align:right;">
-4.048529e+00
+4.049000e+00
+</td>
+<td style="text-align:right;">
+0.4817785
 </td>
 </tr>
 <tr>
@@ -9504,24 +8560,7 @@ sex2
 Model:10~3
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-4.254481e+07
-</td>
-<td style="text-align:right;">
-3956.1802869
-</td>
-<td style="text-align:right;">
-0.0000000
-</td>
-<td style="text-align:right;">
-NA
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:10~3
+pasc_cognition
 </td>
 <td style="text-align:left;">
 race2
@@ -9530,13 +8569,16 @@ race2
 1.000000e+00
 </td>
 <td style="text-align:right;">
-4333.7783768
+4333.778
 </td>
 <td style="text-align:right;">
-0.0000000
+0.000
 </td>
 <td style="text-align:right;">
 1.244446e+72
+</td>
+<td style="text-align:right;">
+1.0000000
 </td>
 </tr>
 <tr>
@@ -9544,13 +8586,16 @@ race2
 Model:10~3
 </td>
 <td style="text-align:left;">
+pasc_cognition
+</td>
+<td style="text-align:left;">
 race3
 </td>
 <td style="text-align:right;">
-1.000000e-07
+0.000000e+00
 </td>
 <td style="text-align:right;">
-3956.1803182
+3956.180
 </td>
 <td style="text-align:right;">
 NA
@@ -9558,19 +8603,25 @@ NA
 <td style="text-align:right;">
 Inf
 </td>
+<td style="text-align:right;">
+0.9967467
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:10~3
 </td>
 <td style="text-align:left;">
+pasc_cognition
+</td>
+<td style="text-align:left;">
 race5
 </td>
 <td style="text-align:right;">
-3.000000e-07
+0.000000e+00
 </td>
 <td style="text-align:right;">
-3956.1804238
+3956.180
 </td>
 <td style="text-align:right;">
 NA
@@ -9578,19 +8629,25 @@ NA
 <td style="text-align:right;">
 7.999537e+100
 </td>
+<td style="text-align:right;">
+0.9969584
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:10~3
 </td>
 <td style="text-align:left;">
+pasc_cognition
+</td>
+<td style="text-align:left;">
 race6
 </td>
 <td style="text-align:right;">
-1.000000e-07
+0.000000e+00
 </td>
 <td style="text-align:right;">
-3956.1803007
+3956.180
 </td>
 <td style="text-align:right;">
 NA
@@ -9598,10 +8655,16 @@ NA
 <td style="text-align:right;">
 Inf
 </td>
+<td style="text-align:right;">
+0.9967819
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:10~3
+</td>
+<td style="text-align:left;">
+pasc_cognition
 </td>
 <td style="text-align:left;">
 race7
@@ -9610,18 +8673,24 @@ race7
 1.000000e+00
 </td>
 <td style="text-align:right;">
-4333.7783769
+4333.778
 </td>
 <td style="text-align:right;">
-0.0000000
+0.000
 </td>
 <td style="text-align:right;">
 1.435104e+53
+</td>
+<td style="text-align:right;">
+1.0000000
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:10~3
+</td>
+<td style="text-align:left;">
+pasc_cognition
 </td>
 <td style="text-align:left;">
 race8
@@ -9630,7 +8699,7 @@ race8
 0.000000e+00
 </td>
 <td style="text-align:right;">
-3956.1804765
+3956.180
 </td>
 <td style="text-align:right;">
 NA
@@ -9638,50 +8707,42 @@ NA
 <td style="text-align:right;">
 1.172133e+302
 </td>
+<td style="text-align:right;">
+0.9965971
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:10~4
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-5.538462e+00
-</td>
-<td style="text-align:right;">
-0.3013502
-</td>
-<td style="text-align:right;">
-3.1797712
-</td>
-<td style="text-align:right;">
-1.046564e+01
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:10~4
+pasc_cognition
 </td>
 <td style="text-align:left;">
 ethnicity2
 </td>
 <td style="text-align:right;">
-1.011111e+00
+1.011000e+00
 </td>
 <td style="text-align:right;">
-0.5714248
+0.571
 </td>
 <td style="text-align:right;">
-0.3454143
+0.345
 </td>
 <td style="text-align:right;">
-3.386857e+00
+3.387000e+00
+</td>
+<td style="text-align:right;">
+0.9845720
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:10~4
+</td>
+<td style="text-align:left;">
+pasc_cognition
 </td>
 <td style="text-align:left;">
 ethnicity3
@@ -9690,53 +8751,42 @@ ethnicity3
 1.039605e+06
 </td>
 <td style="text-align:right;">
-1455.3975635
+1455.398
 </td>
 <td style="text-align:right;">
-0.0000000
+0.000
 </td>
 <td style="text-align:right;">
 NA
 </td>
+<td style="text-align:right;">
+0.9924048
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:10~5
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-4.700000e+00
-</td>
-<td style="text-align:right;">
-0.3482479
-</td>
-<td style="text-align:right;">
-2.4804319
-</td>
-<td style="text-align:right;">
-9.862508e+00
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:10~5
+pasc_cognition
 </td>
 <td style="text-align:left;">
 language_primary2
 </td>
 <td style="text-align:right;">
-1.436170e+00
+1.436000e+00
 </td>
 <td style="text-align:right;">
-0.5145819
+0.515
 </td>
 <td style="text-align:right;">
-0.5242311
+0.524
 </td>
 <td style="text-align:right;">
-4.048529e+00
+4.049000e+00
+</td>
+<td style="text-align:right;">
+0.4817785
 </td>
 </tr>
 <tr>
@@ -9744,24 +8794,7 @@ language_primary2
 Model:10~6
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-1.156488e+08
-</td>
-<td style="text-align:right;">
-6522.6386128
-</td>
-<td style="text-align:right;">
-0.0000000
-</td>
-<td style="text-align:right;">
-NA
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:10~6
+pasc_cognition
 </td>
 <td style="text-align:left;">
 education1
@@ -9770,7 +8803,7 @@ education1
 0.000000e+00
 </td>
 <td style="text-align:right;">
-6522.6386480
+6522.639
 </td>
 <td style="text-align:right;">
 NA
@@ -9778,30 +8811,42 @@ NA
 <td style="text-align:right;">
 Inf
 </td>
+<td style="text-align:right;">
+0.9978489
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:10~6
+</td>
+<td style="text-align:left;">
+pasc_cognition
 </td>
 <td style="text-align:left;">
 education2
 </td>
 <td style="text-align:right;">
-9.999999e-01
+1.000000e+00
 </td>
 <td style="text-align:right;">
-7531.6943171
+7531.694
 </td>
 <td style="text-align:right;">
-0.0000000
+0.000
 </td>
 <td style="text-align:right;">
 1.964003e+53
+</td>
+<td style="text-align:right;">
+1.0000000
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:10~6
+</td>
+<td style="text-align:left;">
+pasc_cognition
 </td>
 <td style="text-align:left;">
 education3
@@ -9810,7 +8855,7 @@ education3
 0.000000e+00
 </td>
 <td style="text-align:right;">
-6522.6386280
+6522.639
 </td>
 <td style="text-align:right;">
 NA
@@ -9818,10 +8863,16 @@ NA
 <td style="text-align:right;">
 Inf
 </td>
+<td style="text-align:right;">
+0.9979337
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:10~6
+</td>
+<td style="text-align:left;">
+pasc_cognition
 </td>
 <td style="text-align:left;">
 education4
@@ -9830,7 +8881,7 @@ education4
 0.000000e+00
 </td>
 <td style="text-align:right;">
-6522.6386268
+6522.639
 </td>
 <td style="text-align:right;">
 NA
@@ -9838,19 +8889,25 @@ NA
 <td style="text-align:right;">
 Inf
 </td>
+<td style="text-align:right;">
+0.9978846
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:10~6
+</td>
+<td style="text-align:left;">
+pasc_cognition
 </td>
 <td style="text-align:left;">
 education5
 </td>
 <td style="text-align:right;">
-1.000000e-07
+0.000000e+00
 </td>
 <td style="text-align:right;">
-6522.6386550
+6522.639
 </td>
 <td style="text-align:right;">
 NA
@@ -9858,25 +8915,34 @@ NA
 <td style="text-align:right;">
 Inf
 </td>
+<td style="text-align:right;">
+0.9980106
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:10~6
+</td>
+<td style="text-align:left;">
+pasc_cognition
 </td>
 <td style="text-align:left;">
 education6
 </td>
 <td style="text-align:right;">
-9.999999e-01
+1.000000e+00
 </td>
 <td style="text-align:right;">
-6841.0010888
+6841.001
+</td>
+<td style="text-align:right;">
+Inf
 </td>
 <td style="text-align:right;">
 Inf
 </td>
 <td style="text-align:right;">
-Inf
+1.0000000
 </td>
 </tr>
 <tr>
@@ -9884,59 +8950,51 @@ Inf
 Model:10~6
 </td>
 <td style="text-align:left;">
+pasc_cognition
+</td>
+<td style="text-align:left;">
 education7
 </td>
 <td style="text-align:right;">
-9.999999e-01
+1.000000e+00
 </td>
 <td style="text-align:right;">
-7988.5681866
+7988.568
 </td>
 <td style="text-align:right;">
-0.0000000
+0.000
 </td>
 <td style="text-align:right;">
 3.870345e+103
 </td>
+<td style="text-align:right;">
+1.0000000
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Model:10~7
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-5.800000e+00
-</td>
-<td style="text-align:right;">
-0.3424053
-</td>
-<td style="text-align:right;">
-3.1049433
-</td>
-<td style="text-align:right;">
-1.206079e+01
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:10~7
+pasc_cognition
 </td>
 <td style="text-align:left;">
 pmh_neuro1
 </td>
 <td style="text-align:right;">
-9.267241e-01
+9.270000e-01
 </td>
 <td style="text-align:right;">
-0.5152642
+0.515
 </td>
 <td style="text-align:right;">
-0.3375416
+0.338
 </td>
 <td style="text-align:right;">
-2.613742e+00
+2.614000e+00
+</td>
+<td style="text-align:right;">
+0.8825875
 </td>
 </tr>
 <tr>
@@ -9944,39 +9002,25 @@ pmh_neuro1
 Model:10~8
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-5.500000e+00
-</td>
-<td style="text-align:right;">
-0.3138230
-</td>
-<td style="text-align:right;">
-3.0898128
-</td>
-<td style="text-align:right;">
-1.069290e+01
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:10~8
+pasc_cognition
 </td>
 <td style="text-align:left;">
 pmh_enc_is_ich1
 </td>
 <td style="text-align:right;">
-1.060606e+00
+1.061000e+00
 </td>
 <td style="text-align:right;">
-0.5419621
+0.542
 </td>
 <td style="text-align:right;">
-0.3772612
+0.377
 </td>
 <td style="text-align:right;">
-3.267723e+00
+3.268000e+00
+</td>
+<td style="text-align:right;">
+0.9135440
 </td>
 </tr>
 <tr>
@@ -9984,39 +9028,25 @@ pmh_enc_is_ich1
 Model:10~9
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-5.500000e+00
-</td>
-<td style="text-align:right;">
-0.5435573
-</td>
-<td style="text-align:right;">
-2.1054377
-</td>
-<td style="text-align:right;">
-1.880403e+01
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:10~9
+pasc_cognition
 </td>
 <td style="text-align:left;">
 pmh_covid_severe1
 </td>
 <td style="text-align:right;">
-1.025974e+00
+1.026000e+00
 </td>
 <td style="text-align:right;">
-0.6160693
+0.616
 </td>
 <td style="text-align:right;">
-0.2701200
+0.270
 </td>
 <td style="text-align:right;">
-3.203737e+00
+3.204000e+00
+</td>
+<td style="text-align:right;">
+0.9667995
 </td>
 </tr>
 <tr>
@@ -10024,344 +9054,267 @@ pmh_covid_severe1
 Model:10~10
 </td>
 <td style="text-align:left;">
-(Intercept)
+pasc_cognition
+</td>
+<td style="text-align:left;">
+icu1
 </td>
 <td style="text-align:right;">
-5.545454e+00
+1.206000e+00
 </td>
 <td style="text-align:right;">
-0.3275707
+0.541
 </td>
 <td style="text-align:right;">
-3.0427216
+0.431
 </td>
 <td style="text-align:right;">
-1.113033e+01
+3.709000e+00
+</td>
+<td style="text-align:right;">
+0.7285502
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Model:10~10
+Model:10~11
+</td>
+<td style="text-align:left;">
+pasc_cognition
+</td>
+<td style="text-align:left;">
+icu_2weeks1
+</td>
+<td style="text-align:right;">
+1.206000e+00
+</td>
+<td style="text-align:right;">
+0.568
+</td>
+<td style="text-align:right;">
+0.415
+</td>
+<td style="text-align:right;">
+4.018000e+00
+</td>
+<td style="text-align:right;">
+0.7418140
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Model:10~12
+</td>
+<td style="text-align:left;">
+pasc_cognition
 </td>
 <td style="text-align:left;">
 steroids1
 </td>
 <td style="text-align:right;">
-1.030445e+00
+1.030000e+00
 </td>
 <td style="text-align:right;">
-0.5245566
+0.525
 </td>
 <td style="text-align:right;">
-0.3736250
+0.374
 </td>
 <td style="text-align:right;">
-3.008072e+00
+3.008000e+00
+</td>
+<td style="text-align:right;">
+0.9544070
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Model:10~11
+Model:10~13
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-1.476783e+00
-</td>
-<td style="text-align:right;">
-0.3623401
-</td>
-<td style="text-align:right;">
-0.7314824
-</td>
-<td style="text-align:right;">
-3.066287e+00
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:10~11
+pasc_cognition
 </td>
 <td style="text-align:left;">
 ad8_14
 </td>
 <td style="text-align:right;">
-1.800196e+00
+1.800000e+00
 </td>
 <td style="text-align:right;">
-0.1639977
+0.164
 </td>
 <td style="text-align:right;">
-1.3507424
+1.351
 </td>
 <td style="text-align:right;">
-2.593755e+00
+2.594000e+00
+</td>
+<td style="text-align:right;">
+0.0003374
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Model:10~12
+Model:10~14
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-4.183180e-02
-</td>
-<td style="text-align:right;">
-1.2835001
-</td>
-<td style="text-align:right;">
-0.0023709
-</td>
-<td style="text-align:right;">
-3.952821e-01
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:10~12
+pasc_cognition
 </td>
 <td style="text-align:left;">
 ecog_15
 </td>
 <td style="text-align:right;">
-2.796227e+01
+2.796200e+01
 </td>
 <td style="text-align:right;">
-0.9958357
+0.996
 </td>
 <td style="text-align:right;">
-5.4396104
+5.440
 </td>
 <td style="text-align:right;">
-2.888307e+02
+2.888310e+02
+</td>
+<td style="text-align:right;">
+0.0008235
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Model:10~13
+Model:10~15
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-3.851165e+00
-</td>
-<td style="text-align:right;">
-0.3390762
-</td>
-<td style="text-align:right;">
-2.0380986
-</td>
-<td style="text-align:right;">
-7.776049e+00
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:10~13
+pasc_cognition
 </td>
 <td style="text-align:left;">
 ucla
 </td>
 <td style="text-align:right;">
-1.027454e+00
+1.027000e+00
 </td>
 <td style="text-align:right;">
-0.0192504
+0.019
 </td>
 <td style="text-align:right;">
-0.9928268
+0.993
 </td>
 <td style="text-align:right;">
-1.072254e+00
+1.072000e+00
+</td>
+<td style="text-align:right;">
+0.1594443
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Model:10~14
+Model:10~16
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-1.565053e+00
-</td>
-<td style="text-align:right;">
-0.5557814
-</td>
-<td style="text-align:right;">
-0.5324692
-</td>
-<td style="text-align:right;">
-4.814531e+00
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:10~14
+pasc_cognition
 </td>
 <td style="text-align:left;">
 stress
 </td>
 <td style="text-align:right;">
-1.087296e+00
+1.087000e+00
 </td>
 <td style="text-align:right;">
-0.0362073
+0.036
 </td>
 <td style="text-align:right;">
-1.0160409
+1.016
 </td>
 <td style="text-align:right;">
-1.172682e+00
+1.173000e+00
+</td>
+<td style="text-align:right;">
+0.0208043
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Model:10~15
+Model:10~17
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-6.472053e-01
-</td>
-<td style="text-align:right;">
-0.5865659
-</td>
-<td style="text-align:right;">
-0.1997046
-</td>
-<td style="text-align:right;">
-2.040535e+00
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:10~15
+pasc_cognition
 </td>
 <td style="text-align:left;">
 sleep
 </td>
 <td style="text-align:right;">
-1.317691e+00
+1.318000e+00
 </td>
 <td style="text-align:right;">
-0.0802115
+0.080
 </td>
 <td style="text-align:right;">
-1.1394571
+1.139
 </td>
 <td style="text-align:right;">
-1.564945e+00
+1.565000e+00
+</td>
+<td style="text-align:right;">
+0.0005830
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Model:10~16
+Model:10~18
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-2.639305e+00
-</td>
-<td style="text-align:right;">
-0.3745333
-</td>
-<td style="text-align:right;">
-1.3004598
-</td>
-<td style="text-align:right;">
-5.721710e+00
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:10~16
+pasc_cognition
 </td>
 <td style="text-align:left;">
 dsm_depression
 </td>
 <td style="text-align:right;">
-1.666816e+00
+1.667000e+00
 </td>
 <td style="text-align:right;">
-0.2304869
+0.230
 </td>
 <td style="text-align:right;">
-1.0879641
+1.088
 </td>
 <td style="text-align:right;">
-2.713354e+00
+2.713000e+00
+</td>
+<td style="text-align:right;">
+0.0266450
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Model:10~17
+Model:10~19
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-2.048845e+00
-</td>
-<td style="text-align:right;">
-0.3269832
-</td>
-<td style="text-align:right;">
-1.0974364
-</td>
-<td style="text-align:right;">
-3.995375e+00
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:10~17
+pasc_cognition
 </td>
 <td style="text-align:left;">
 dsm_anxiety
 </td>
 <td style="text-align:right;">
-2.293589e+00
+2.294000e+00
 </td>
 <td style="text-align:right;">
-0.2605282
+0.261
 </td>
 <td style="text-align:right;">
-1.4623005
+1.462
 </td>
 <td style="text-align:right;">
-4.163801e+00
+4.164000e+00
+</td>
+<td style="text-align:right;">
+0.0014411
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Model:10~18
+Model:10~20
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-7.500000e+00
-</td>
-<td style="text-align:right;">
-0.4346088
-</td>
-<td style="text-align:right;">
-3.4617349
-</td>
-<td style="text-align:right;">
-1.961367e+01
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:10~18
+pasc_cognition
 </td>
 <td style="text-align:left;">
 language_secondary2
@@ -10370,73 +9323,68 @@ language_secondary2
 1.200000e+00
 </td>
 <td style="text-align:right;">
-0.6411477
+0.641
 </td>
 <td style="text-align:right;">
-0.3380227
+0.338
 </td>
 <td style="text-align:right;">
-4.433103e+00
+4.433000e+00
+</td>
+<td style="text-align:right;">
+0.7761288
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Model:10~18
+Model:10~20
+</td>
+<td style="text-align:left;">
+pasc_cognition
 </td>
 <td style="text-align:left;">
 language_secondary3
 </td>
 <td style="text-align:right;">
-2.095238e-01
+2.100000e-01
 </td>
 <td style="text-align:right;">
-0.6501162
+0.650
 </td>
 <td style="text-align:right;">
-0.0562258
+0.056
 </td>
 <td style="text-align:right;">
-7.461221e-01
+7.460000e-01
+</td>
+<td style="text-align:right;">
+0.0162141
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Model:10~19
+Model:10~21
 </td>
 <td style="text-align:left;">
-(Intercept)
-</td>
-<td style="text-align:right;">
-5.416567e+00
-</td>
-<td style="text-align:right;">
-0.5728076
-</td>
-<td style="text-align:right;">
-1.8779119
-</td>
-<td style="text-align:right;">
-1.810279e+01
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:10~19
+pasc_cognition
 </td>
 <td style="text-align:left;">
 vaccine
 </td>
 <td style="text-align:right;">
-1.012003e+00
+1.012000e+00
 </td>
 <td style="text-align:right;">
-0.1738235
+0.174
 </td>
 <td style="text-align:right;">
-0.7182032
+0.718
 </td>
 <td style="text-align:right;">
-1.427777e+00
+1.428000e+00
+</td>
+<td style="text-align:right;">
+0.9452739
 </td>
 </tr>
 </tbody>

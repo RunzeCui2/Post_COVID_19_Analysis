@@ -1,5 +1,6 @@
 library(tidyverse)
 library(broom)
+library(broom.helpers)
 library(readxl)
 library(kableExtra)
 
@@ -40,7 +41,7 @@ dat = left_join(primary_univariate, secondary_univariate, by = "record_id") %>%
 
 # Name of Covariates and outcomes:
 covnames = c("age", "sex", "race", "ethnicity", "language_primary", "education", 
-             "pmh_neuro", "pmh_enc_is_ich", "pmh_covid_severe", "steroids",
+             "pmh_neuro", "pmh_enc_is_ich", "pmh_covid_severe", "icu", "icu_2weeks", "steroids",
              "ad8_14", "ecog_15", "ucla", "stress", "sleep", "dsm_depression", 
              "dsm_anxiety", "language_secondary", "vaccine")
 outnames = c("memory_cs", "executive_cs", "processing_cs", "verbal_cs", 
@@ -58,19 +59,19 @@ logistic_models <- list()
 i_linear = c(1, 2, 3, 4, 5, 8, 9)
 for (i in i_linear) {
   
-  if (i > 5) {
-    j_all <- 1:19
-  } else if (i < 7) {
-    j_all <- c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 13, 14, 15, 16, 17, 18, 19)
+  if (i > 7) {
+    j_all <- c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 15, 16, 17, 18, 19, 20, 21)
+  } else {
+    j_all <- 1:21
   }
 
   
   for (j in j_all) {
   fm <- paste0(outnames[i], "~", covnames[j])
-  fm = as.formula(fm)
+  fm <- as.formula(fm)
   
   
-  linear_models[[paste0("Model:", i, "~", j)]] <- tidy(lm(fm, data = dat), conf.int = T)
+  linear_models[[paste0("Model:", i, "~", j)]] <- lm(fm, data = dat) %>% tidy_and_attach(conf.int = TRUE) %>% tidy_remove_intercept()
   }
 }
 
@@ -78,15 +79,18 @@ for (i in i_linear) {
   
   
 # Create a kable to show the outputs:
-linear_results_df <- data.frame(Model = character(), term = character(), estimate = numeric(), std.error = numeric(), 
-                         conf.low = numeric(), conf.high = numeric())
+linear_results_df <- data.frame(Model = character(), outcome = character(), covariate = character(), estimate = numeric(), std.error = numeric(), 
+                                conf.low = numeric(), conf.high = numeric(), p.value = numeric())
 for (model_name in names(linear_models)) {
   model <- linear_models[[model_name]]
+  i_name <- as.numeric(sub("Model:(\\d+)~.*", "\\1", model_name))
   linear_results_df <- rbind(linear_results_df, 
-                             data.frame(Model = model_name, term = model$term, estimate = model$estimate, std.error = model$std.error, 
-                                        conf.low = model$conf.low, conf.high = model$conf.high))
+                             data.frame(Model = model_name, outcome = outnames[i_name], covariate = model$term, 
+                                        estimate = model$estimate, std.error = model$std.error, 
+                                        conf.low = model$conf.low, conf.high = model$conf.high, p.value = model$p.value))
 }
 linear_table <- linear_results_df %>%
+  mutate_at(vars(estimate, std.error, conf.low, conf.high), round, digits = 3) %>%
   kable(format = "html", escape = FALSE, caption = "Linear Regression Outputs") %>%
   kable_styling(full_width = FALSE)
 
@@ -101,7 +105,7 @@ i_logistic = c(6, 7, 10)
 for (i in i_logistic) {
   
   if (i > 5) {
-    j_all <- 1:19
+    j_all <- 1:21
   }
   
   
@@ -110,7 +114,9 @@ for (i in i_logistic) {
     fm2 = as.formula(fm2)
     
     
-    logistic_models[[paste0("Model:", i, "~", j)]] <- tidy(glm(fm2, family = "binomial", data = dat), conf.int = T, exponentiate = T)
+    logistic_models[[paste0("Model:", i, "~", j)]] <- 
+      glm(fm2, family = "binomial", data = dat) %>% 
+      tidy_and_attach(conf.int = TRUE, exponentiate = TRUE) %>% tidy_remove_intercept()
   }
 }
 
@@ -118,15 +124,18 @@ for (i in i_logistic) {
 
 
 # Create a kable to show the outputs:
-logistic_results_df <- data.frame(Model = character(), term = character(), odds_ratio = numeric(), std.error = numeric(), 
-                                conf.low = numeric(), conf.high = numeric())
+logistic_results_df <- data.frame(Model = character(), outcome = character(), covariate = character(), odds.ratio = numeric(), std.error = numeric(), 
+                                  conf.low = numeric(), conf.high = numeric(), p.value = numeric())
 for (model_name in names(logistic_models)) {
   model <- logistic_models[[model_name]]
+  i_name <- as.numeric(sub("Model:(\\d+)~.*", "\\1", model_name))
   logistic_results_df <- rbind(logistic_results_df, 
-                             data.frame(Model = model_name, term = model$term, odds_ratio = model$estimate, std.error = model$std.error, 
-                                        conf.low = model$conf.low, conf.high = model$conf.high))
+                             data.frame(Model = model_name, outcome = outnames[i_name], covariate = model$term, odds.ratio = model$estimate, 
+                                        std.error = model$std.error, conf.low = model$conf.low, conf.high = model$conf.high, 
+                                        p.value = model$p.value))
 }
 logistic_table <- logistic_results_df %>%
+  mutate_at(vars(odds.ratio, std.error, conf.low, conf.high), round, digits = 3) %>%
   kable(format = "html", escape = FALSE, caption = "Logistic Regression Outputs") %>%
   kable_styling(full_width = FALSE)
 
