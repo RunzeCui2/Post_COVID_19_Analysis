@@ -21,6 +21,13 @@ dat = left_join(primary_univariate, secondary_univariate, by = "record_id") %>%
   mutate(mrs = case_when(
     mrs >= 0 & mrs <= 2 ~ 0,
     mrs >= 3 & mrs <= 6 ~ 1)) %>%
+  mutate(ethnicity = ifelse(ethnicity == 3, NA, ethnicity),
+         race = ifelse(race == 8, NA, race)) %>%
+  mutate(education = case_when(
+    education %in% c(0, 1, 2) ~ 1,
+    education == 3 ~ 2,
+    education == 4 ~ 3,
+    education %in% c(5, 6, 7) ~ 4)) %>% 
   mutate(sex = factor(sex),
          race = factor(race),
          ethnicity = factor(ethnicity),

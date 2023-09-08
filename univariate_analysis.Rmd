@@ -12,7 +12,36 @@ knitr::opts_chunk$set(echo = TRUE)
 source('backbone1.R')
 ```
 
-```{r}
+**NA issue:**
+
+- All records with pmh_covid_severe equals 0 also have a (95-100) barthel index (barthel = 1), and then we have a NA for conf.low.
+
+**Education Variable Groups:**
+
+- 1: Less than high school
+- 2: High School/GED
+- 3: Some college/AA degree/Technical school
+- 4: Bachelor's Degree + Master's Degree + Doctoral Degree
+
+**Reference Groups:**
+
+- sex1 (Man)
+- race1 (American Indian or Alaska Native)
+- ethnicity1 (Hispanic/Latinx)
+- language_primary1 (English)
+- education1 (less than high school)
+- pmh_neuro1 (No)
+- pmh_enc_is_ich0 (No)
+- pmh_covid_severe0 (No)
+- icu0 (No)
+- icu_2weeks0 (No)
+- steroids0 (No)
+- language_secondary1 (English)
+
+
+
+
+```{r echo=F}
 linear_table
 logistic_table
 ```

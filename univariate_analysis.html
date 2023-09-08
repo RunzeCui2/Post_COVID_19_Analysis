@@ -581,7 +581,33 @@ display: none;
 </div>
 
 
-<pre class="r"><code>linear_table</code></pre>
+<p><strong>NA issue:</strong></p>
+<ul>
+<li>All records with pmh_covid_severe equals 0 also have a (95-100)
+barthel index (barthel = 1), and then we have a NA for conf.low.</li>
+</ul>
+<p><strong>Education Variable Groups:</strong></p>
+<ul>
+<li>1: Less than high school</li>
+<li>2: High School/GED</li>
+<li>3: Some college/AA degree/Technical school</li>
+<li>4: Bachelor’s Degree + Master’s Degree + Doctoral Degree</li>
+</ul>
+<p><strong>Reference Groups:</strong></p>
+<ul>
+<li>sex1 (Man)</li>
+<li>race1 (American Indian or Alaska Native)</li>
+<li>ethnicity1 (Hispanic/Latinx)</li>
+<li>language_primary1 (English)</li>
+<li>education1 (less than high school)</li>
+<li>pmh_neuro1 (No)</li>
+<li>pmh_enc_is_ich0 (No)</li>
+<li>pmh_covid_severe0 (No)</li>
+<li>icu0 (No)</li>
+<li>icu_2weeks0 (No)</li>
+<li>steroids0 (No)</li>
+<li>language_secondary1 (English)</li>
+</ul>
 <table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <caption>
 Linear Regression Outputs
@@ -681,16 +707,16 @@ race2
 0.662
 </td>
 <td style="text-align:right;">
-0.554
+0.557
 </td>
 <td style="text-align:right;">
--0.433
+-0.439
 </td>
 <td style="text-align:right;">
-1.756
+1.762
 </td>
 <td style="text-align:right;">
-0.2343092
+0.2369024
 </td>
 </tr>
 <tr>
@@ -707,16 +733,16 @@ race3
 0.374
 </td>
 <td style="text-align:right;">
-0.484
+0.486
 </td>
 <td style="text-align:right;">
--0.581
+-0.587
 </td>
 <td style="text-align:right;">
-1.330
+1.335
 </td>
 <td style="text-align:right;">
-0.4399711
+0.4424985
 </td>
 </tr>
 <tr>
@@ -733,16 +759,16 @@ race5
 0.773
 </td>
 <td style="text-align:right;">
-0.497
+0.499
 </td>
 <td style="text-align:right;">
--0.208
+-0.214
 </td>
 <td style="text-align:right;">
-1.755
+1.760
 </td>
 <td style="text-align:right;">
-0.1215519
+0.1236244
 </td>
 </tr>
 <tr>
@@ -759,16 +785,16 @@ race6
 0.013
 </td>
 <td style="text-align:right;">
-0.473
+0.476
 </td>
 <td style="text-align:right;">
--0.922
+-0.927
 </td>
 <td style="text-align:right;">
-0.948
+0.953
 </td>
 <td style="text-align:right;">
-0.9780880
+0.9782088
 </td>
 </tr>
 <tr>
@@ -785,42 +811,16 @@ race7
 0.213
 </td>
 <td style="text-align:right;">
-0.541
+0.544
 </td>
 <td style="text-align:right;">
--0.856
+-0.862
 </td>
 <td style="text-align:right;">
-1.281
+1.287
 </td>
 <td style="text-align:right;">
-0.6945853
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:1~3
-</td>
-<td style="text-align:left;">
-memory_cs
-</td>
-<td style="text-align:left;">
-race8
-</td>
-<td style="text-align:right;">
-0.292
-</td>
-<td style="text-align:right;">
-0.604
-</td>
-<td style="text-align:right;">
--0.902
-</td>
-<td style="text-align:right;">
-1.487
-</td>
-<td style="text-align:right;">
-0.6295881
+0.6961859
 </td>
 </tr>
 <tr>
@@ -847,32 +847,6 @@ ethnicity2
 </td>
 <td style="text-align:right;">
 0.0001485
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:1~4
-</td>
-<td style="text-align:left;">
-memory_cs
-</td>
-<td style="text-align:left;">
-ethnicity3
-</td>
-<td style="text-align:right;">
-0.876
-</td>
-<td style="text-align:right;">
-0.672
-</td>
-<td style="text-align:right;">
--0.452
-</td>
-<td style="text-align:right;">
-2.204
-</td>
-<td style="text-align:right;">
-0.1945168
 </td>
 </tr>
 <tr>
@@ -909,48 +883,22 @@ Model:1~6
 memory_cs
 </td>
 <td style="text-align:left;">
-education1
-</td>
-<td style="text-align:right;">
-1.002
-</td>
-<td style="text-align:right;">
-0.623
-</td>
-<td style="text-align:right;">
--0.230
-</td>
-<td style="text-align:right;">
-2.233
-</td>
-<td style="text-align:right;">
-0.1101558
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:1~6
-</td>
-<td style="text-align:left;">
-memory_cs
-</td>
-<td style="text-align:left;">
 education2
 </td>
 <td style="text-align:right;">
-1.019
+0.687
 </td>
 <td style="text-align:right;">
-0.677
+0.156
 </td>
 <td style="text-align:right;">
--0.319
+0.380
 </td>
 <td style="text-align:right;">
-2.358
+0.995
 </td>
 <td style="text-align:right;">
-0.1343846
+0.0000193
 </td>
 </tr>
 <tr>
@@ -964,19 +912,19 @@ memory_cs
 education3
 </td>
 <td style="text-align:right;">
-1.646
+0.798
 </td>
 <td style="text-align:right;">
-0.611
+0.167
 </td>
 <td style="text-align:right;">
-0.439
+0.468
 </td>
 <td style="text-align:right;">
-2.854
+1.128
 </td>
 <td style="text-align:right;">
-0.0078794
+0.0000042
 </td>
 </tr>
 <tr>
@@ -990,97 +938,19 @@ memory_cs
 education4
 </td>
 <td style="text-align:right;">
-1.757
+1.107
 </td>
 <td style="text-align:right;">
-0.614
+0.162
 </td>
 <td style="text-align:right;">
-0.544
+0.786
 </td>
 <td style="text-align:right;">
-2.971
+1.428
 </td>
 <td style="text-align:right;">
-0.0048287
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:1~6
-</td>
-<td style="text-align:left;">
-memory_cs
-</td>
-<td style="text-align:left;">
-education5
-</td>
-<td style="text-align:right;">
-1.898
-</td>
-<td style="text-align:right;">
-0.616
-</td>
-<td style="text-align:right;">
-0.681
-</td>
-<td style="text-align:right;">
-3.116
-</td>
-<td style="text-align:right;">
-0.0024567
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:1~6
-</td>
-<td style="text-align:left;">
-memory_cs
-</td>
-<td style="text-align:left;">
-education6
-</td>
-<td style="text-align:right;">
-2.441
-</td>
-<td style="text-align:right;">
-0.633
-</td>
-<td style="text-align:right;">
-1.191
-</td>
-<td style="text-align:right;">
-3.691
-</td>
-<td style="text-align:right;">
-0.0001704
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:1~6
-</td>
-<td style="text-align:left;">
-memory_cs
-</td>
-<td style="text-align:left;">
-education7
-</td>
-<td style="text-align:right;">
-2.439
-</td>
-<td style="text-align:right;">
-0.742
-</td>
-<td style="text-align:right;">
-0.973
-</td>
-<td style="text-align:right;">
-3.905
-</td>
-<td style="text-align:right;">
-0.0012629
+0.0000000
 </td>
 </tr>
 <tr>
@@ -1565,16 +1435,16 @@ race2
 -0.306
 </td>
 <td style="text-align:right;">
-0.420
+0.422
 </td>
 <td style="text-align:right;">
--1.135
+-1.139
 </td>
 <td style="text-align:right;">
-0.524
+0.528
 </td>
 <td style="text-align:right;">
-0.4679880
+0.4698018
 </td>
 </tr>
 <tr>
@@ -1591,16 +1461,16 @@ race3
 -0.330
 </td>
 <td style="text-align:right;">
-0.367
+0.368
 </td>
 <td style="text-align:right;">
--1.054
+-1.057
 </td>
 <td style="text-align:right;">
-0.394
+0.397
 </td>
 <td style="text-align:right;">
-0.3693576
+0.3713112
 </td>
 </tr>
 <tr>
@@ -1617,16 +1487,16 @@ race5
 -0.166
 </td>
 <td style="text-align:right;">
-0.376
+0.378
 </td>
 <td style="text-align:right;">
--0.910
+-0.913
 </td>
 <td style="text-align:right;">
-0.578
+0.581
 </td>
 <td style="text-align:right;">
-0.6592749
+0.6605741
 </td>
 </tr>
 <tr>
@@ -1643,16 +1513,16 @@ race6
 0.017
 </td>
 <td style="text-align:right;">
-0.359
+0.360
 </td>
 <td style="text-align:right;">
--0.692
+-0.695
 </td>
 <td style="text-align:right;">
-0.726
+0.729
 </td>
 <td style="text-align:right;">
-0.9616968
+0.9618525
 </td>
 </tr>
 <tr>
@@ -1669,42 +1539,16 @@ race7
 -0.063
 </td>
 <td style="text-align:right;">
-0.410
+0.411
 </td>
 <td style="text-align:right;">
--0.872
+-0.876
 </td>
 <td style="text-align:right;">
-0.747
+0.751
 </td>
 <td style="text-align:right;">
-0.8789417
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:2~3
-</td>
-<td style="text-align:left;">
-executive_cs
-</td>
-<td style="text-align:left;">
-race8
-</td>
-<td style="text-align:right;">
--0.172
-</td>
-<td style="text-align:right;">
-0.458
-</td>
-<td style="text-align:right;">
--1.078
-</td>
-<td style="text-align:right;">
-0.733
-</td>
-<td style="text-align:right;">
-0.7076463
+0.8794303
 </td>
 </tr>
 <tr>
@@ -1731,32 +1575,6 @@ ethnicity2
 </td>
 <td style="text-align:right;">
 0.0000441
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:2~4
-</td>
-<td style="text-align:left;">
-executive_cs
-</td>
-<td style="text-align:left;">
-ethnicity3
-</td>
-<td style="text-align:right;">
--1.072
-</td>
-<td style="text-align:right;">
-0.485
-</td>
-<td style="text-align:right;">
--2.029
-</td>
-<td style="text-align:right;">
--0.115
-</td>
-<td style="text-align:right;">
-0.0284436
 </td>
 </tr>
 <tr>
@@ -1793,48 +1611,22 @@ Model:2~6
 executive_cs
 </td>
 <td style="text-align:left;">
-education1
-</td>
-<td style="text-align:right;">
-0.927
-</td>
-<td style="text-align:right;">
-0.513
-</td>
-<td style="text-align:right;">
--0.087
-</td>
-<td style="text-align:right;">
-1.942
-</td>
-<td style="text-align:right;">
-0.0729810
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:2~6
-</td>
-<td style="text-align:left;">
-executive_cs
-</td>
-<td style="text-align:left;">
 education2
 </td>
 <td style="text-align:right;">
-1.149
+0.039
 </td>
 <td style="text-align:right;">
-0.558
+0.127
 </td>
 <td style="text-align:right;">
-0.046
+-0.212
 </td>
 <td style="text-align:right;">
-2.251
+0.289
 </td>
 <td style="text-align:right;">
-0.0412159
+0.7610877
 </td>
 </tr>
 <tr>
@@ -1848,19 +1640,19 @@ executive_cs
 education3
 </td>
 <td style="text-align:right;">
-0.964
+-0.227
 </td>
 <td style="text-align:right;">
-0.504
+0.136
 </td>
 <td style="text-align:right;">
--0.031
+-0.496
 </td>
 <td style="text-align:right;">
-1.959
+0.042
 </td>
 <td style="text-align:right;">
-0.0574849
+0.0972029
 </td>
 </tr>
 <tr>
@@ -1874,97 +1666,19 @@ executive_cs
 education4
 </td>
 <td style="text-align:right;">
-0.698
+-0.206
 </td>
 <td style="text-align:right;">
-0.506
+0.132
 </td>
 <td style="text-align:right;">
--0.301
+-0.467
 </td>
 <td style="text-align:right;">
-1.698
+0.055
 </td>
 <td style="text-align:right;">
-0.1694577
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:2~6
-</td>
-<td style="text-align:left;">
-executive_cs
-</td>
-<td style="text-align:left;">
-education5
-</td>
-<td style="text-align:right;">
-0.681
-</td>
-<td style="text-align:right;">
-0.508
-</td>
-<td style="text-align:right;">
--0.322
-</td>
-<td style="text-align:right;">
-1.684
-</td>
-<td style="text-align:right;">
-0.1820098
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:2~6
-</td>
-<td style="text-align:left;">
-executive_cs
-</td>
-<td style="text-align:left;">
-education6
-</td>
-<td style="text-align:right;">
-0.873
-</td>
-<td style="text-align:right;">
-0.521
-</td>
-<td style="text-align:right;">
--0.157
-</td>
-<td style="text-align:right;">
-1.903
-</td>
-<td style="text-align:right;">
-0.0959622
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:2~6
-</td>
-<td style="text-align:left;">
-executive_cs
-</td>
-<td style="text-align:left;">
-education7
-</td>
-<td style="text-align:right;">
-0.435
-</td>
-<td style="text-align:right;">
-0.611
-</td>
-<td style="text-align:right;">
--0.773
-</td>
-<td style="text-align:right;">
-1.643
-</td>
-<td style="text-align:right;">
-0.4775471
+0.1212439
 </td>
 </tr>
 <tr>
@@ -2449,16 +2163,16 @@ race2
 -0.043
 </td>
 <td style="text-align:right;">
-0.385
+0.383
 </td>
 <td style="text-align:right;">
--0.804
+-0.800
 </td>
 <td style="text-align:right;">
-0.718
+0.714
 </td>
 <td style="text-align:right;">
-0.9114049
+0.9109148
 </td>
 </tr>
 <tr>
@@ -2475,16 +2189,16 @@ race3
 -0.308
 </td>
 <td style="text-align:right;">
-0.336
+0.334
 </td>
 <td style="text-align:right;">
--0.972
+-0.969
 </td>
 <td style="text-align:right;">
-0.357
+0.353
 </td>
 <td style="text-align:right;">
-0.3612326
+0.3585883
 </td>
 </tr>
 <tr>
@@ -2501,16 +2215,16 @@ race5
 -0.300
 </td>
 <td style="text-align:right;">
-0.345
+0.343
 </td>
 <td style="text-align:right;">
--0.983
+-0.979
 </td>
 <td style="text-align:right;">
-0.382
+0.378
 </td>
 <td style="text-align:right;">
-0.3859668
+0.3833486
 </td>
 </tr>
 <tr>
@@ -2527,16 +2241,16 @@ race6
 -0.074
 </td>
 <td style="text-align:right;">
-0.329
+0.327
 </td>
 <td style="text-align:right;">
--0.724
+-0.721
 </td>
 <td style="text-align:right;">
-0.576
+0.573
 </td>
 <td style="text-align:right;">
-0.8224289
+0.8214594
 </td>
 </tr>
 <tr>
@@ -2553,42 +2267,16 @@ race7
 -0.046
 </td>
 <td style="text-align:right;">
-0.376
+0.374
 </td>
 <td style="text-align:right;">
--0.789
+-0.785
 </td>
 <td style="text-align:right;">
-0.697
+0.693
 </td>
 <td style="text-align:right;">
-0.9024908
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:3~3
-</td>
-<td style="text-align:left;">
-processing_cs
-</td>
-<td style="text-align:left;">
-race8
-</td>
-<td style="text-align:right;">
-0.062
-</td>
-<td style="text-align:right;">
-0.420
-</td>
-<td style="text-align:right;">
--0.768
-</td>
-<td style="text-align:right;">
-0.893
-</td>
-<td style="text-align:right;">
-0.8820697
+0.9019519
 </td>
 </tr>
 <tr>
@@ -2615,32 +2303,6 @@ ethnicity2
 </td>
 <td style="text-align:right;">
 0.0220523
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:3~4
-</td>
-<td style="text-align:left;">
-processing_cs
-</td>
-<td style="text-align:left;">
-ethnicity3
-</td>
-<td style="text-align:right;">
--0.460
-</td>
-<td style="text-align:right;">
-0.461
-</td>
-<td style="text-align:right;">
--1.371
-</td>
-<td style="text-align:right;">
-0.450
-</td>
-<td style="text-align:right;">
-0.3193533
 </td>
 </tr>
 <tr>
@@ -2677,48 +2339,22 @@ Model:3~6
 processing_cs
 </td>
 <td style="text-align:left;">
-education1
-</td>
-<td style="text-align:right;">
-0.931
-</td>
-<td style="text-align:right;">
-0.460
-</td>
-<td style="text-align:right;">
-0.022
-</td>
-<td style="text-align:right;">
-1.840
-</td>
-<td style="text-align:right;">
-0.0448658
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:3~6
-</td>
-<td style="text-align:left;">
-processing_cs
-</td>
-<td style="text-align:left;">
 education2
 </td>
 <td style="text-align:right;">
-0.610
+0.148
 </td>
 <td style="text-align:right;">
-0.500
+0.117
 </td>
 <td style="text-align:right;">
--0.378
+-0.083
 </td>
 <td style="text-align:right;">
-1.598
+0.379
 </td>
 <td style="text-align:right;">
-0.2242243
+0.2075224
 </td>
 </tr>
 <tr>
@@ -2732,19 +2368,19 @@ processing_cs
 education3
 </td>
 <td style="text-align:right;">
-0.978
+-0.033
 </td>
 <td style="text-align:right;">
-0.451
+0.126
 </td>
 <td style="text-align:right;">
-0.087
+-0.281
 </td>
 <td style="text-align:right;">
-1.870
+0.215
 </td>
 <td style="text-align:right;">
-0.0317326
+0.7928835
 </td>
 </tr>
 <tr>
@@ -2758,97 +2394,19 @@ processing_cs
 education4
 </td>
 <td style="text-align:right;">
-0.797
+0.070
 </td>
 <td style="text-align:right;">
-0.453
+0.122
 </td>
 <td style="text-align:right;">
--0.099
+-0.171
 </td>
 <td style="text-align:right;">
-1.693
+0.311
 </td>
 <td style="text-align:right;">
-0.0807091
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:3~6
-</td>
-<td style="text-align:left;">
-processing_cs
-</td>
-<td style="text-align:left;">
-education5
-</td>
-<td style="text-align:right;">
-0.965
-</td>
-<td style="text-align:right;">
-0.455
-</td>
-<td style="text-align:right;">
-0.066
-</td>
-<td style="text-align:right;">
-1.863
-</td>
-<td style="text-align:right;">
-0.0355551
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:3~6
-</td>
-<td style="text-align:left;">
-processing_cs
-</td>
-<td style="text-align:left;">
-education6
-</td>
-<td style="text-align:right;">
-0.909
-</td>
-<td style="text-align:right;">
-0.467
-</td>
-<td style="text-align:right;">
--0.014
-</td>
-<td style="text-align:right;">
-1.831
-</td>
-<td style="text-align:right;">
-0.0535599
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:3~6
-</td>
-<td style="text-align:left;">
-processing_cs
-</td>
-<td style="text-align:left;">
-education7
-</td>
-<td style="text-align:right;">
--0.081
-</td>
-<td style="text-align:right;">
-0.548
-</td>
-<td style="text-align:right;">
--1.163
-</td>
-<td style="text-align:right;">
-1.001
-</td>
-<td style="text-align:right;">
-0.8828112
+0.5665731
 </td>
 </tr>
 <tr>
@@ -3342,7 +2900,7 @@ race2
 2.615
 </td>
 <td style="text-align:right;">
-0.0387465
+0.0388064
 </td>
 </tr>
 <tr>
@@ -3362,13 +2920,13 @@ race3
 0.562
 </td>
 <td style="text-align:right;">
-0.215
+0.214
 </td>
 <td style="text-align:right;">
 2.436
 </td>
 <td style="text-align:right;">
-0.0196633
+0.0197042
 </td>
 </tr>
 <tr>
@@ -3388,13 +2946,13 @@ race5
 0.577
 </td>
 <td style="text-align:right;">
-0.136
+0.135
 </td>
 <td style="text-align:right;">
 2.417
 </td>
 <td style="text-align:right;">
-0.0285745
+0.0286253
 </td>
 </tr>
 <tr>
@@ -3420,7 +2978,7 @@ race6
 1.564
 </td>
 <td style="text-align:right;">
-0.3873518
+0.3874605
 </td>
 </tr>
 <tr>
@@ -3440,39 +2998,13 @@ race7
 0.628
 </td>
 <td style="text-align:right;">
-0.128
+0.127
 </td>
 <td style="text-align:right;">
 2.611
 </td>
 <td style="text-align:right;">
-0.0309090
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:4~3
-</td>
-<td style="text-align:left;">
-verbal_cs
-</td>
-<td style="text-align:left;">
-race8
-</td>
-<td style="text-align:right;">
-0.307
-</td>
-<td style="text-align:right;">
-0.702
-</td>
-<td style="text-align:right;">
--1.081
-</td>
-<td style="text-align:right;">
-1.696
-</td>
-<td style="text-align:right;">
-0.6622635
+0.0309620
 </td>
 </tr>
 <tr>
@@ -3499,32 +3031,6 @@ ethnicity2
 </td>
 <td style="text-align:right;">
 0.0000000
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:4~4
-</td>
-<td style="text-align:left;">
-verbal_cs
-</td>
-<td style="text-align:left;">
-ethnicity3
-</td>
-<td style="text-align:right;">
-1.083
-</td>
-<td style="text-align:right;">
-0.726
-</td>
-<td style="text-align:right;">
--0.352
-</td>
-<td style="text-align:right;">
-2.517
-</td>
-<td style="text-align:right;">
-0.1380932
 </td>
 </tr>
 <tr>
@@ -3561,48 +3067,22 @@ Model:4~6
 verbal_cs
 </td>
 <td style="text-align:left;">
-education1
-</td>
-<td style="text-align:right;">
-0.321
-</td>
-<td style="text-align:right;">
-0.661
-</td>
-<td style="text-align:right;">
--0.986
-</td>
-<td style="text-align:right;">
-1.629
-</td>
-<td style="text-align:right;">
-0.6278480
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:4~6
-</td>
-<td style="text-align:left;">
-verbal_cs
-</td>
-<td style="text-align:left;">
 education2
 </td>
 <td style="text-align:right;">
-0.476
+0.664
 </td>
 <td style="text-align:right;">
-0.719
+0.168
 </td>
 <td style="text-align:right;">
--0.945
+0.331
 </td>
 <td style="text-align:right;">
-1.896
+0.997
 </td>
 <td style="text-align:right;">
-0.5091085
+0.0001229
 </td>
 </tr>
 <tr>
@@ -3616,19 +3096,19 @@ verbal_cs
 education3
 </td>
 <td style="text-align:right;">
-0.999
+1.304
 </td>
 <td style="text-align:right;">
-0.649
+0.181
 </td>
 <td style="text-align:right;">
--0.283
+0.947
 </td>
 <td style="text-align:right;">
-2.281
+1.661
 </td>
 <td style="text-align:right;">
-0.1257868
+0.0000000
 </td>
 </tr>
 <tr>
@@ -3642,97 +3122,19 @@ verbal_cs
 education4
 </td>
 <td style="text-align:right;">
-1.639
+1.615
 </td>
 <td style="text-align:right;">
-0.652
+0.176
 </td>
 <td style="text-align:right;">
-0.351
+1.268
 </td>
 <td style="text-align:right;">
-2.926
+1.962
 </td>
 <td style="text-align:right;">
-0.0130009
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:4~6
-</td>
-<td style="text-align:left;">
-verbal_cs
-</td>
-<td style="text-align:left;">
-education5
-</td>
-<td style="text-align:right;">
-1.695
-</td>
-<td style="text-align:right;">
-0.654
-</td>
-<td style="text-align:right;">
-0.403
-</td>
-<td style="text-align:right;">
-2.987
-</td>
-<td style="text-align:right;">
-0.0105035
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:4~6
-</td>
-<td style="text-align:left;">
-verbal_cs
-</td>
-<td style="text-align:left;">
-education6
-</td>
-<td style="text-align:right;">
-2.458
-</td>
-<td style="text-align:right;">
-0.671
-</td>
-<td style="text-align:right;">
-1.131
-</td>
-<td style="text-align:right;">
-3.784
-</td>
-<td style="text-align:right;">
-0.0003505
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:4~6
-</td>
-<td style="text-align:left;">
-verbal_cs
-</td>
-<td style="text-align:left;">
-education7
-</td>
-<td style="text-align:right;">
-2.851
-</td>
-<td style="text-align:right;">
-0.787
-</td>
-<td style="text-align:right;">
-1.295
-</td>
-<td style="text-align:right;">
-4.406
-</td>
-<td style="text-align:right;">
-0.0004037
+0.0000000
 </td>
 </tr>
 <tr>
@@ -4217,16 +3619,16 @@ race2
 0.414
 </td>
 <td style="text-align:right;">
-0.321
+0.323
 </td>
 <td style="text-align:right;">
--0.221
+-0.224
 </td>
 <td style="text-align:right;">
-1.049
+1.051
 </td>
 <td style="text-align:right;">
-0.1995501
+0.2014308
 </td>
 </tr>
 <tr>
@@ -4243,16 +3645,16 @@ race3
 0.265
 </td>
 <td style="text-align:right;">
-0.280
+0.282
 </td>
 <td style="text-align:right;">
--0.289
+-0.291
 </td>
 <td style="text-align:right;">
-0.820
+0.822
 </td>
 <td style="text-align:right;">
-0.3453356
+0.3473473
 </td>
 </tr>
 <tr>
@@ -4269,16 +3671,16 @@ race5
 0.396
 </td>
 <td style="text-align:right;">
-0.288
+0.289
 </td>
 <td style="text-align:right;">
--0.173
+-0.176
 </td>
 <td style="text-align:right;">
-0.965
+0.967
 </td>
 <td style="text-align:right;">
-0.1714762
+0.1732700
 </td>
 </tr>
 <tr>
@@ -4295,16 +3697,16 @@ race6
 0.108
 </td>
 <td style="text-align:right;">
-0.274
+0.276
 </td>
 <td style="text-align:right;">
--0.434
+-0.436
 </td>
 <td style="text-align:right;">
-0.651
+0.653
 </td>
 <td style="text-align:right;">
-0.6937035
+0.6949125
 </td>
 </tr>
 <tr>
@@ -4321,42 +3723,16 @@ race7
 0.368
 </td>
 <td style="text-align:right;">
-0.313
+0.315
 </td>
 <td style="text-align:right;">
--0.251
+-0.254
 </td>
 <td style="text-align:right;">
-0.988
+0.990
 </td>
 <td style="text-align:right;">
-0.2419558
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:5~3
-</td>
-<td style="text-align:left;">
-global_cs
-</td>
-<td style="text-align:left;">
-race8
-</td>
-<td style="text-align:right;">
-0.122
-</td>
-<td style="text-align:right;">
-0.350
-</td>
-<td style="text-align:right;">
--0.570
-</td>
-<td style="text-align:right;">
-0.815
-</td>
-<td style="text-align:right;">
-0.7272649
+0.2439233
 </td>
 </tr>
 <tr>
@@ -4383,32 +3759,6 @@ ethnicity2
 </td>
 <td style="text-align:right;">
 0.0005323
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:5~4
-</td>
-<td style="text-align:left;">
-global_cs
-</td>
-<td style="text-align:left;">
-ethnicity3
-</td>
-<td style="text-align:right;">
-0.107
-</td>
-<td style="text-align:right;">
-0.382
-</td>
-<td style="text-align:right;">
--0.648
-</td>
-<td style="text-align:right;">
-0.861
-</td>
-<td style="text-align:right;">
-0.7805816
 </td>
 </tr>
 <tr>
@@ -4445,48 +3795,22 @@ Model:5~6
 global_cs
 </td>
 <td style="text-align:left;">
-education1
-</td>
-<td style="text-align:right;">
-0.795
-</td>
-<td style="text-align:right;">
-0.340
-</td>
-<td style="text-align:right;">
-0.124
-</td>
-<td style="text-align:right;">
-1.466
-</td>
-<td style="text-align:right;">
-0.0205159
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:5~6
-</td>
-<td style="text-align:left;">
-global_cs
-</td>
-<td style="text-align:left;">
 education2
 </td>
 <td style="text-align:right;">
-0.813
+0.384
 </td>
 <td style="text-align:right;">
-0.369
+0.086
 </td>
 <td style="text-align:right;">
-0.084
+0.214
 </td>
 <td style="text-align:right;">
-1.543
+0.555
 </td>
 <td style="text-align:right;">
-0.0289995
+0.0000161
 </td>
 </tr>
 <tr>
@@ -4500,19 +3824,19 @@ global_cs
 education3
 </td>
 <td style="text-align:right;">
-1.147
+0.460
 </td>
 <td style="text-align:right;">
-0.333
+0.093
 </td>
 <td style="text-align:right;">
-0.489
+0.278
 </td>
 <td style="text-align:right;">
-1.805
+0.643
 </td>
 <td style="text-align:right;">
-0.0007458
+0.0000017
 </td>
 </tr>
 <tr>
@@ -4526,97 +3850,19 @@ global_cs
 education4
 </td>
 <td style="text-align:right;">
-1.223
-</td>
-<td style="text-align:right;">
-0.335
-</td>
-<td style="text-align:right;">
-0.562
-</td>
-<td style="text-align:right;">
-1.884
-</td>
-<td style="text-align:right;">
-0.0003567
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:5~6
-</td>
-<td style="text-align:left;">
-global_cs
-</td>
-<td style="text-align:left;">
-education5
-</td>
-<td style="text-align:right;">
-1.310
-</td>
-<td style="text-align:right;">
-0.336
-</td>
-<td style="text-align:right;">
 0.646
 </td>
 <td style="text-align:right;">
-1.973
+0.090
 </td>
 <td style="text-align:right;">
-0.0001447
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:5~6
-</td>
-<td style="text-align:left;">
-global_cs
-</td>
-<td style="text-align:left;">
-education6
+0.469
 </td>
 <td style="text-align:right;">
-1.670
+0.824
 </td>
 <td style="text-align:right;">
-0.345
-</td>
-<td style="text-align:right;">
-0.989
-</td>
-<td style="text-align:right;">
-2.351
-</td>
-<td style="text-align:right;">
-0.0000032
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:5~6
-</td>
-<td style="text-align:left;">
-global_cs
-</td>
-<td style="text-align:left;">
-education7
-</td>
-<td style="text-align:right;">
-1.411
-</td>
-<td style="text-align:right;">
-0.404
-</td>
-<td style="text-align:right;">
-0.612
-</td>
-<td style="text-align:right;">
-2.210
-</td>
-<td style="text-align:right;">
-0.0006348
+0.0000000
 </td>
 </tr>
 <tr>
@@ -5101,16 +4347,16 @@ race2
 -2.000
 </td>
 <td style="text-align:right;">
-2.216
+2.221
 </td>
 <td style="text-align:right;">
--6.380
+-6.390
 </td>
 <td style="text-align:right;">
-2.380
+2.390
 </td>
 <td style="text-align:right;">
-0.3682717
+0.3694110
 </td>
 </tr>
 <tr>
@@ -5127,16 +4373,16 @@ race3
 -2.759
 </td>
 <td style="text-align:right;">
-1.871
+1.875
 </td>
 <td style="text-align:right;">
--6.456
+-6.465
 </td>
 <td style="text-align:right;">
-0.939
+0.948
 </td>
 <td style="text-align:right;">
-0.1424692
+0.1434287
 </td>
 </tr>
 <tr>
@@ -5150,19 +4396,19 @@ ad8_28
 race5
 </td>
 <td style="text-align:right;">
--1.438
+-1.437
 </td>
 <td style="text-align:right;">
-1.919
+1.924
 </td>
 <td style="text-align:right;">
--5.230
+-5.240
 </td>
 <td style="text-align:right;">
-2.355
+2.365
 </td>
 <td style="text-align:right;">
-0.4550433
+0.4561140
 </td>
 </tr>
 <tr>
@@ -5179,16 +4425,16 @@ race6
 -1.516
 </td>
 <td style="text-align:right;">
-1.829
+1.833
 </td>
 <td style="text-align:right;">
--5.130
+-5.139
 </td>
 <td style="text-align:right;">
-2.098
+2.107
 </td>
 <td style="text-align:right;">
-0.4084256
+0.4095395
 </td>
 </tr>
 <tr>
@@ -5205,42 +4451,16 @@ race7
 -0.833
 </td>
 <td style="text-align:right;">
-2.089
+2.094
 </td>
 <td style="text-align:right;">
--4.963
+-4.973
 </td>
 <td style="text-align:right;">
-3.296
+3.306
 </td>
 <td style="text-align:right;">
-0.6905809
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:8~3
-</td>
-<td style="text-align:left;">
-ad8_28
-</td>
-<td style="text-align:left;">
-race8
-</td>
-<td style="text-align:right;">
--1.667
-</td>
-<td style="text-align:right;">
-2.336
-</td>
-<td style="text-align:right;">
--6.283
-</td>
-<td style="text-align:right;">
-2.950
-</td>
-<td style="text-align:right;">
-0.4766765
+0.6912754
 </td>
 </tr>
 <tr>
@@ -5267,32 +4487,6 @@ ethnicity2
 </td>
 <td style="text-align:right;">
 0.0378871
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:8~4
-</td>
-<td style="text-align:left;">
-ad8_28
-</td>
-<td style="text-align:left;">
-ethnicity3
-</td>
-<td style="text-align:right;">
-1.483
-</td>
-<td style="text-align:right;">
-2.556
-</td>
-<td style="text-align:right;">
--3.569
-</td>
-<td style="text-align:right;">
-6.534
-</td>
-<td style="text-align:right;">
-0.5627860
 </td>
 </tr>
 <tr>
@@ -5329,48 +4523,22 @@ Model:8~6
 ad8_28
 </td>
 <td style="text-align:left;">
-education1
-</td>
-<td style="text-align:right;">
-0.706
-</td>
-<td style="text-align:right;">
-2.586
-</td>
-<td style="text-align:right;">
--4.406
-</td>
-<td style="text-align:right;">
-5.818
-</td>
-<td style="text-align:right;">
-0.7853080
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:8~6
-</td>
-<td style="text-align:left;">
-ad8_28
-</td>
-<td style="text-align:left;">
 education2
 </td>
 <td style="text-align:right;">
-0.750
+-1.445
 </td>
 <td style="text-align:right;">
-2.810
+0.636
 </td>
 <td style="text-align:right;">
--4.804
+-2.701
 </td>
 <td style="text-align:right;">
-6.304
+-0.190
 </td>
 <td style="text-align:right;">
-0.7899433
+0.0243765
 </td>
 </tr>
 <tr>
@@ -5384,19 +4552,19 @@ ad8_28
 education3
 </td>
 <td style="text-align:right;">
--0.764
+-2.015
 </td>
 <td style="text-align:right;">
-2.536
+0.682
 </td>
 <td style="text-align:right;">
--5.777
+-3.362
 </td>
 <td style="text-align:right;">
-4.249
+-0.668
 </td>
 <td style="text-align:right;">
-0.7637867
+0.0036285
 </td>
 </tr>
 <tr>
@@ -5410,97 +4578,19 @@ ad8_28
 education4
 </td>
 <td style="text-align:right;">
--1.333
+-1.532
 </td>
 <td style="text-align:right;">
-2.548
+0.669
 </td>
 <td style="text-align:right;">
--6.370
+-2.853
 </td>
 <td style="text-align:right;">
-3.703
+-0.210
 </td>
 <td style="text-align:right;">
-0.6016121
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:8~6
-</td>
-<td style="text-align:left;">
-ad8_28
-</td>
-<td style="text-align:left;">
-education5
-</td>
-<td style="text-align:right;">
--1.407
-</td>
-<td style="text-align:right;">
-2.560
-</td>
-<td style="text-align:right;">
--6.467
-</td>
-<td style="text-align:right;">
-3.652
-</td>
-<td style="text-align:right;">
-0.5832830
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:8~6
-</td>
-<td style="text-align:left;">
-ad8_28
-</td>
-<td style="text-align:left;">
-education6
-</td>
-<td style="text-align:right;">
-0.091
-</td>
-<td style="text-align:right;">
-2.625
-</td>
-<td style="text-align:right;">
--5.098
-</td>
-<td style="text-align:right;">
-5.280
-</td>
-<td style="text-align:right;">
-0.9724246
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:8~6
-</td>
-<td style="text-align:left;">
-ad8_28
-</td>
-<td style="text-align:left;">
-education7
-</td>
-<td style="text-align:right;">
-1.500
-</td>
-<td style="text-align:right;">
-3.079
-</td>
-<td style="text-align:right;">
--4.585
-</td>
-<td style="text-align:right;">
-7.585
-</td>
-<td style="text-align:right;">
-0.6268184
+0.0233903
 </td>
 </tr>
 <tr>
@@ -5936,13 +5026,13 @@ race2
 0.701
 </td>
 <td style="text-align:right;">
--1.968
+-1.969
 </td>
 <td style="text-align:right;">
-0.803
+0.804
 </td>
 <td style="text-align:right;">
-0.4073006
+0.4077438
 </td>
 </tr>
 <tr>
@@ -5959,16 +5049,16 @@ race3
 -0.533
 </td>
 <td style="text-align:right;">
-0.592
+0.593
 </td>
 <td style="text-align:right;">
--1.704
+-1.705
 </td>
 <td style="text-align:right;">
-0.638
+0.639
 </td>
 <td style="text-align:right;">
-0.3698632
+0.3703167
 </td>
 </tr>
 <tr>
@@ -5985,16 +5075,16 @@ race5
 -0.379
 </td>
 <td style="text-align:right;">
-0.607
+0.608
 </td>
 <td style="text-align:right;">
--1.579
+-1.580
 </td>
 <td style="text-align:right;">
-0.821
+0.822
 </td>
 <td style="text-align:right;">
-0.5336234
+0.5340073
 </td>
 </tr>
 <tr>
@@ -6014,13 +5104,13 @@ race6
 0.579
 </td>
 <td style="text-align:right;">
--1.344
+-1.345
 </td>
 <td style="text-align:right;">
-0.944
+0.945
 </td>
 <td style="text-align:right;">
-0.7299526
+0.7301945
 </td>
 </tr>
 <tr>
@@ -6040,39 +5130,13 @@ race7
 0.661
 </td>
 <td style="text-align:right;">
--1.311
+-1.313
 </td>
 <td style="text-align:right;">
-1.301
+1.303
 </td>
 <td style="text-align:right;">
-0.9939732
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:9~3
-</td>
-<td style="text-align:left;">
-ecog_29
-</td>
-<td style="text-align:left;">
-race8
-</td>
-<td style="text-align:right;">
--0.495
-</td>
-<td style="text-align:right;">
-0.739
-</td>
-<td style="text-align:right;">
--1.955
-</td>
-<td style="text-align:right;">
-0.965
-</td>
-<td style="text-align:right;">
-0.5039263
+0.9939788
 </td>
 </tr>
 <tr>
@@ -6099,32 +5163,6 @@ ethnicity2
 </td>
 <td style="text-align:right;">
 0.2193214
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:9~4
-</td>
-<td style="text-align:left;">
-ecog_29
-</td>
-<td style="text-align:left;">
-ethnicity3
-</td>
-<td style="text-align:right;">
--0.164
-</td>
-<td style="text-align:right;">
-0.813
-</td>
-<td style="text-align:right;">
--1.770
-</td>
-<td style="text-align:right;">
-1.442
-</td>
-<td style="text-align:right;">
-0.8404019
 </td>
 </tr>
 <tr>
@@ -6161,48 +5199,22 @@ Model:9~6
 ecog_29
 </td>
 <td style="text-align:left;">
-education1
-</td>
-<td style="text-align:right;">
-0.204
-</td>
-<td style="text-align:right;">
-0.810
-</td>
-<td style="text-align:right;">
--1.397
-</td>
-<td style="text-align:right;">
-1.806
-</td>
-<td style="text-align:right;">
-0.8014286
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:9~6
-</td>
-<td style="text-align:left;">
-ecog_29
-</td>
-<td style="text-align:left;">
 education2
 </td>
 <td style="text-align:right;">
--0.215
+-0.544
 </td>
 <td style="text-align:right;">
-0.880
+0.200
 </td>
 <td style="text-align:right;">
--1.955
+-0.939
 </td>
 <td style="text-align:right;">
-1.525
+-0.149
 </td>
 <td style="text-align:right;">
-0.8073772
+0.0073350
 </td>
 </tr>
 <tr>
@@ -6216,19 +5228,19 @@ ecog_29
 education3
 </td>
 <td style="text-align:right;">
--0.425
+-0.667
 </td>
 <td style="text-align:right;">
-0.795
+0.216
 </td>
 <td style="text-align:right;">
--1.996
+-1.093
 </td>
 <td style="text-align:right;">
-1.146
+-0.241
 </td>
 <td style="text-align:right;">
-0.5935279
+0.0023768
 </td>
 </tr>
 <tr>
@@ -6242,97 +5254,19 @@ ecog_29
 education4
 </td>
 <td style="text-align:right;">
--0.549
+-0.430
 </td>
 <td style="text-align:right;">
-0.799
+0.209
 </td>
 <td style="text-align:right;">
--2.128
+-0.844
 </td>
 <td style="text-align:right;">
-1.031
+-0.017
 </td>
 <td style="text-align:right;">
-0.4933756
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:9~6
-</td>
-<td style="text-align:left;">
-ecog_29
-</td>
-<td style="text-align:left;">
-education5
-</td>
-<td style="text-align:right;">
--0.441
-</td>
-<td style="text-align:right;">
-0.802
-</td>
-<td style="text-align:right;">
--2.026
-</td>
-<td style="text-align:right;">
-1.144
-</td>
-<td style="text-align:right;">
-0.5833548
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:9~6
-</td>
-<td style="text-align:left;">
-ecog_29
-</td>
-<td style="text-align:left;">
-education6
-</td>
-<td style="text-align:right;">
--0.145
-</td>
-<td style="text-align:right;">
-0.822
-</td>
-<td style="text-align:right;">
--1.771
-</td>
-<td style="text-align:right;">
-1.480
-</td>
-<td style="text-align:right;">
-0.8598437
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:9~6
-</td>
-<td style="text-align:left;">
-ecog_29
-</td>
-<td style="text-align:left;">
-education7
-</td>
-<td style="text-align:right;">
-0.520
-</td>
-<td style="text-align:right;">
-0.964
-</td>
-<td style="text-align:right;">
--1.386
-</td>
-<td style="text-align:right;">
-2.426
-</td>
-<td style="text-align:right;">
-0.5905192
+0.0416077
 </td>
 </tr>
 <tr>
@@ -6701,7 +5635,6 @@ vaccine
 </tr>
 </tbody>
 </table>
-<pre class="r"><code>logistic_table</code></pre>
 <table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <caption>
 Logistic Regression Outputs
@@ -6746,7 +5679,7 @@ barthel
 age
 </td>
 <td style="text-align:right;">
-9.440000e-01
+0.944
 </td>
 <td style="text-align:right;">
 0.020
@@ -6772,7 +5705,7 @@ barthel
 sex2
 </td>
 <td style="text-align:right;">
-3.687000e+00
+3.687
 </td>
 <td style="text-align:right;">
 0.480
@@ -6798,7 +5731,7 @@ barthel
 race2
 </td>
 <td style="text-align:right;">
-1.000000e+00
+1.000
 </td>
 <td style="text-align:right;">
 5457.231
@@ -6807,7 +5740,7 @@ race2
 0.000
 </td>
 <td style="text-align:right;">
-5.081096e+56
+2.277341e+58
 </td>
 <td style="text-align:right;">
 1.0000000
@@ -6824,7 +5757,7 @@ barthel
 race3
 </td>
 <td style="text-align:right;">
-0.000000e+00
+0.000
 </td>
 <td style="text-align:right;">
 4612.202
@@ -6833,7 +5766,7 @@ race3
 NA
 </td>
 <td style="text-align:right;">
-7.704215e+305
+7.704093e+305
 </td>
 <td style="text-align:right;">
 0.9970666
@@ -6850,7 +5783,7 @@ barthel
 race5
 </td>
 <td style="text-align:right;">
-1.000000e+00
+1.000
 </td>
 <td style="text-align:right;">
 4910.064
@@ -6859,7 +5792,7 @@ race5
 0.000
 </td>
 <td style="text-align:right;">
-1.212448e+45
+1.239616e+52
 </td>
 <td style="text-align:right;">
 1.0000000
@@ -6876,7 +5809,7 @@ barthel
 race6
 </td>
 <td style="text-align:right;">
-0.000000e+00
+0.000
 </td>
 <td style="text-align:right;">
 4612.202
@@ -6885,7 +5818,7 @@ race6
 NA
 </td>
 <td style="text-align:right;">
-5.905823e+306
+5.905729e+306
 </td>
 <td style="text-align:right;">
 0.9970351
@@ -6902,7 +5835,7 @@ barthel
 race7
 </td>
 <td style="text-align:right;">
-0.000000e+00
+0.000
 </td>
 <td style="text-align:right;">
 4612.202
@@ -6911,36 +5844,10 @@ race7
 NA
 </td>
 <td style="text-align:right;">
-3.799802e+102
+2.323967e+104
 </td>
 <td style="text-align:right;">
 0.9970666
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:6~3
-</td>
-<td style="text-align:left;">
-barthel
-</td>
-<td style="text-align:left;">
-race8
-</td>
-<td style="text-align:right;">
-0.000000e+00
-</td>
-<td style="text-align:right;">
-4612.202
-</td>
-<td style="text-align:right;">
-NA
-</td>
-<td style="text-align:right;">
-1.519924e+102
-</td>
-<td style="text-align:right;">
-0.9969081
 </td>
 </tr>
 <tr>
@@ -6954,7 +5861,7 @@ barthel
 ethnicity2
 </td>
 <td style="text-align:right;">
-8.220000e-01
+0.822
 </td>
 <td style="text-align:right;">
 0.491
@@ -6971,32 +5878,6 @@ ethnicity2
 </tr>
 <tr>
 <td style="text-align:left;">
-Model:6~4
-</td>
-<td style="text-align:left;">
-barthel
-</td>
-<td style="text-align:left;">
-ethnicity3
-</td>
-<td style="text-align:right;">
-1.068460e+06
-</td>
-<td style="text-align:right;">
-1455.398
-</td>
-<td style="text-align:right;">
-0.000
-</td>
-<td style="text-align:right;">
-NA
-</td>
-<td style="text-align:right;">
-0.9923898
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
 Model:6~5
 </td>
 <td style="text-align:left;">
@@ -7006,7 +5887,7 @@ barthel
 language_primary2
 </td>
 <td style="text-align:right;">
-9.920000e-01
+0.992
 </td>
 <td style="text-align:right;">
 0.440
@@ -7029,48 +5910,22 @@ Model:6~6
 barthel
 </td>
 <td style="text-align:left;">
-education1
-</td>
-<td style="text-align:right;">
-5.086692e+07
-</td>
-<td style="text-align:right;">
-2399.545
-</td>
-<td style="text-align:right;">
-0.000
-</td>
-<td style="text-align:right;">
-NA
-</td>
-<td style="text-align:right;">
-0.9940997
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:6~6
-</td>
-<td style="text-align:left;">
-barthel
-</td>
-<td style="text-align:left;">
 education2
 </td>
 <td style="text-align:right;">
-4.695408e+07
+1.650
 </td>
 <td style="text-align:right;">
-2399.545
+0.593
 </td>
 <td style="text-align:right;">
-0.000
+0.493
 </td>
 <td style="text-align:right;">
-NA
+5.220000e+00
 </td>
 <td style="text-align:right;">
-0.9941263
+0.3985667
 </td>
 </tr>
 <tr>
@@ -7084,19 +5939,19 @@ barthel
 education3
 </td>
 <td style="text-align:right;">
-6.886599e+07
+4.125
 </td>
 <td style="text-align:right;">
-2399.545
+0.770
 </td>
 <td style="text-align:right;">
-0.000
+0.960
 </td>
 <td style="text-align:right;">
-NA
+2.160500e+01
 </td>
 <td style="text-align:right;">
-0.9939989
+0.0656954
 </td>
 </tr>
 <tr>
@@ -7110,97 +5965,19 @@ barthel
 education4
 </td>
 <td style="text-align:right;">
-1.721650e+08
+2.250
 </td>
 <td style="text-align:right;">
-2399.545
+0.651
 </td>
 <td style="text-align:right;">
-0.000
+0.617
 </td>
 <td style="text-align:right;">
-NA
+8.274000e+00
 </td>
 <td style="text-align:right;">
-0.9936943
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:6~6
-</td>
-<td style="text-align:left;">
-barthel
-</td>
-<td style="text-align:left;">
-education5
-</td>
-<td style="text-align:right;">
-7.512653e+07
-</td>
-<td style="text-align:right;">
-2399.545
-</td>
-<td style="text-align:right;">
-0.000
-</td>
-<td style="text-align:right;">
-NA
-</td>
-<td style="text-align:right;">
-0.9939700
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:6~6
-</td>
-<td style="text-align:left;">
-barthel
-</td>
-<td style="text-align:left;">
-education6
-</td>
-<td style="text-align:right;">
-1.565136e+08
-</td>
-<td style="text-align:right;">
-2399.545
-</td>
-<td style="text-align:right;">
-0.000
-</td>
-<td style="text-align:right;">
-NA
-</td>
-<td style="text-align:right;">
-0.9937260
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:6~6
-</td>
-<td style="text-align:left;">
-barthel
-</td>
-<td style="text-align:left;">
-education7
-</td>
-<td style="text-align:right;">
-2.449651e+14
-</td>
-<td style="text-align:right;">
-2938.830
-</td>
-<td style="text-align:right;">
-0.000
-</td>
-<td style="text-align:right;">
-NA
-</td>
-<td style="text-align:right;">
-0.9910049
+0.2127836
 </td>
 </tr>
 <tr>
@@ -7214,7 +5991,7 @@ barthel
 pmh_neuro1
 </td>
 <td style="text-align:right;">
-6.440000e-01
+0.644
 </td>
 <td style="text-align:right;">
 0.438
@@ -7240,7 +6017,7 @@ barthel
 pmh_enc_is_ich1
 </td>
 <td style="text-align:right;">
-5.520000e-01
+0.552
 </td>
 <td style="text-align:right;">
 0.446
@@ -7266,7 +6043,7 @@ barthel
 pmh_covid_severe1
 </td>
 <td style="text-align:right;">
-0.000000e+00
+0.000
 </td>
 <td style="text-align:right;">
 1044.458
@@ -7292,7 +6069,7 @@ barthel
 icu1
 </td>
 <td style="text-align:right;">
-6.140000e-01
+0.614
 </td>
 <td style="text-align:right;">
 0.445
@@ -7318,7 +6095,7 @@ barthel
 icu_2weeks1
 </td>
 <td style="text-align:right;">
-5.160000e-01
+0.516
 </td>
 <td style="text-align:right;">
 0.455
@@ -7344,7 +6121,7 @@ barthel
 steroids1
 </td>
 <td style="text-align:right;">
-7.050000e-01
+0.705
 </td>
 <td style="text-align:right;">
 0.443
@@ -7370,7 +6147,7 @@ barthel
 ad8_14
 </td>
 <td style="text-align:right;">
-8.580000e-01
+0.858
 </td>
 <td style="text-align:right;">
 0.088
@@ -7396,7 +6173,7 @@ barthel
 ecog_15
 </td>
 <td style="text-align:right;">
-4.640000e-01
+0.464
 </td>
 <td style="text-align:right;">
 0.262
@@ -7422,7 +6199,7 @@ barthel
 ucla
 </td>
 <td style="text-align:right;">
-9.680000e-01
+0.968
 </td>
 <td style="text-align:right;">
 0.013
@@ -7448,7 +6225,7 @@ barthel
 stress
 </td>
 <td style="text-align:right;">
-9.550000e-01
+0.955
 </td>
 <td style="text-align:right;">
 0.029
@@ -7474,7 +6251,7 @@ barthel
 sleep
 </td>
 <td style="text-align:right;">
-9.100000e-01
+0.910
 </td>
 <td style="text-align:right;">
 0.051
@@ -7500,7 +6277,7 @@ barthel
 dsm_depression
 </td>
 <td style="text-align:right;">
-7.160000e-01
+0.716
 </td>
 <td style="text-align:right;">
 0.169
@@ -7526,7 +6303,7 @@ barthel
 dsm_anxiety
 </td>
 <td style="text-align:right;">
-8.100000e-01
+0.810
 </td>
 <td style="text-align:right;">
 0.147
@@ -7552,7 +6329,7 @@ barthel
 language_secondary2
 </td>
 <td style="text-align:right;">
-7.160000e-01
+0.716
 </td>
 <td style="text-align:right;">
 0.582
@@ -7578,7 +6355,7 @@ barthel
 language_secondary3
 </td>
 <td style="text-align:right;">
-3.550000e-01
+0.355
 </td>
 <td style="text-align:right;">
 0.683
@@ -7604,7 +6381,7 @@ barthel
 vaccine
 </td>
 <td style="text-align:right;">
-1.122000e+00
+1.122
 </td>
 <td style="text-align:right;">
 0.174
@@ -7630,7 +6407,7 @@ mrs
 age
 </td>
 <td style="text-align:right;">
-1.071000e+00
+1.071
 </td>
 <td style="text-align:right;">
 0.015
@@ -7656,7 +6433,7 @@ mrs
 sex2
 </td>
 <td style="text-align:right;">
-6.030000e-01
+0.603
 </td>
 <td style="text-align:right;">
 0.326
@@ -7682,7 +6459,7 @@ mrs
 race2
 </td>
 <td style="text-align:right;">
-1.500000e+00
+1.500
 </td>
 <td style="text-align:right;">
 1.683
@@ -7708,7 +6485,7 @@ mrs
 race3
 </td>
 <td style="text-align:right;">
-1.308000e+00
+1.308
 </td>
 <td style="text-align:right;">
 1.461
@@ -7734,7 +6511,7 @@ mrs
 race5
 </td>
 <td style="text-align:right;">
-1.500000e+00
+1.500
 </td>
 <td style="text-align:right;">
 1.509
@@ -7760,7 +6537,7 @@ mrs
 race6
 </td>
 <td style="text-align:right;">
-6.910000e-01
+0.691
 </td>
 <td style="text-align:right;">
 1.430
@@ -7786,7 +6563,7 @@ mrs
 race7
 </td>
 <td style="text-align:right;">
-1.000000e+00
+1.000
 </td>
 <td style="text-align:right;">
 1.633
@@ -7803,32 +6580,6 @@ race7
 </tr>
 <tr>
 <td style="text-align:left;">
-Model:7~3
-</td>
-<td style="text-align:left;">
-mrs
-</td>
-<td style="text-align:left;">
-race8
-</td>
-<td style="text-align:right;">
-5.000000e-01
-</td>
-<td style="text-align:right;">
-1.871
-</td>
-<td style="text-align:right;">
-0.008
-</td>
-<td style="text-align:right;">
-2.355300e+01
-</td>
-<td style="text-align:right;">
-0.7110079
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
 Model:7~4
 </td>
 <td style="text-align:left;">
@@ -7838,7 +6589,7 @@ mrs
 ethnicity2
 </td>
 <td style="text-align:right;">
-2.480000e+00
+2.480
 </td>
 <td style="text-align:right;">
 0.386
@@ -7855,32 +6606,6 @@ ethnicity2
 </tr>
 <tr>
 <td style="text-align:left;">
-Model:7~4
-</td>
-<td style="text-align:left;">
-mrs
-</td>
-<td style="text-align:left;">
-ethnicity3
-</td>
-<td style="text-align:right;">
-3.064601e+06
-</td>
-<td style="text-align:right;">
-882.743
-</td>
-<td style="text-align:right;">
-0.000
-</td>
-<td style="text-align:right;">
-NA
-</td>
-<td style="text-align:right;">
-0.9865010
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
 Model:7~5
 </td>
 <td style="text-align:left;">
@@ -7890,7 +6615,7 @@ mrs
 language_primary2
 </td>
 <td style="text-align:right;">
-5.160000e-01
+0.516
 </td>
 <td style="text-align:right;">
 0.329
@@ -7913,48 +6638,22 @@ Model:7~6
 mrs
 </td>
 <td style="text-align:left;">
-education1
-</td>
-<td style="text-align:right;">
-0.000000e+00
-</td>
-<td style="text-align:right;">
-882.744
-</td>
-<td style="text-align:right;">
-NA
-</td>
-<td style="text-align:right;">
-9.770796e+71
-</td>
-<td style="text-align:right;">
-0.9873826
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:7~6
-</td>
-<td style="text-align:left;">
-mrs
-</td>
-<td style="text-align:left;">
 education2
 </td>
 <td style="text-align:right;">
-0.000000e+00
+0.376
 </td>
 <td style="text-align:right;">
-882.744
+0.519
 </td>
 <td style="text-align:right;">
-NA
+0.132
 </td>
 <td style="text-align:right;">
-1.043536e+71
+1.027000e+00
 </td>
 <td style="text-align:right;">
-0.9858419
+0.0592885
 </td>
 </tr>
 <tr>
@@ -7968,19 +6667,19 @@ mrs
 education3
 </td>
 <td style="text-align:right;">
-0.000000e+00
+0.774
 </td>
 <td style="text-align:right;">
-882.743
+0.547
 </td>
 <td style="text-align:right;">
-NA
+0.259
 </td>
 <td style="text-align:right;">
-3.310131e+71
+2.252000e+00
 </td>
 <td style="text-align:right;">
-0.9862827
+0.6392838
 </td>
 </tr>
 <tr>
@@ -7994,97 +6693,19 @@ mrs
 education4
 </td>
 <td style="text-align:right;">
-0.000000e+00
+0.692
 </td>
 <td style="text-align:right;">
-882.743
+0.532
 </td>
 <td style="text-align:right;">
-NA
+0.238
 </td>
 <td style="text-align:right;">
-6.664256e+71
+1.952000e+00
 </td>
 <td style="text-align:right;">
-0.9869353
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:7~6
-</td>
-<td style="text-align:left;">
-mrs
-</td>
-<td style="text-align:left;">
-education5
-</td>
-<td style="text-align:right;">
-0.000000e+00
-</td>
-<td style="text-align:right;">
-882.743
-</td>
-<td style="text-align:right;">
-NA
-</td>
-<td style="text-align:right;">
-4.127423e+71
-</td>
-<td style="text-align:right;">
-0.9865200
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:7~6
-</td>
-<td style="text-align:left;">
-mrs
-</td>
-<td style="text-align:left;">
-education6
-</td>
-<td style="text-align:right;">
-0.000000e+00
-</td>
-<td style="text-align:right;">
-882.744
-</td>
-<td style="text-align:right;">
-NA
-</td>
-<td style="text-align:right;">
-1.175212e+72
-</td>
-<td style="text-align:right;">
-0.9877212
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:7~6
-</td>
-<td style="text-align:left;">
-mrs
-</td>
-<td style="text-align:left;">
-education7
-</td>
-<td style="text-align:right;">
-0.000000e+00
-</td>
-<td style="text-align:right;">
-882.745
-</td>
-<td style="text-align:right;">
-NA
-</td>
-<td style="text-align:right;">
-2.027534e+69
-</td>
-<td style="text-align:right;">
-0.9868348
+0.4896227
 </td>
 </tr>
 <tr>
@@ -8098,7 +6719,7 @@ mrs
 pmh_neuro1
 </td>
 <td style="text-align:right;">
-1.556000e+00
+1.556
 </td>
 <td style="text-align:right;">
 0.328
@@ -8124,7 +6745,7 @@ mrs
 pmh_enc_is_ich1
 </td>
 <td style="text-align:right;">
-2.507000e+00
+2.507
 </td>
 <td style="text-align:right;">
 0.354
@@ -8150,7 +6771,7 @@ mrs
 pmh_covid_severe1
 </td>
 <td style="text-align:right;">
-2.875000e+00
+2.875
 </td>
 <td style="text-align:right;">
 0.402
@@ -8176,7 +6797,7 @@ mrs
 icu1
 </td>
 <td style="text-align:right;">
-2.062000e+00
+2.062
 </td>
 <td style="text-align:right;">
 0.345
@@ -8202,7 +6823,7 @@ mrs
 icu_2weeks1
 </td>
 <td style="text-align:right;">
-2.475000e+00
+2.475
 </td>
 <td style="text-align:right;">
 0.370
@@ -8228,7 +6849,7 @@ mrs
 steroids1
 </td>
 <td style="text-align:right;">
-2.045000e+00
+2.045
 </td>
 <td style="text-align:right;">
 0.339
@@ -8254,7 +6875,7 @@ mrs
 ad8_14
 </td>
 <td style="text-align:right;">
-1.263000e+00
+1.263
 </td>
 <td style="text-align:right;">
 0.068
@@ -8280,7 +6901,7 @@ mrs
 ecog_15
 </td>
 <td style="text-align:right;">
-2.229000e+00
+2.229
 </td>
 <td style="text-align:right;">
 0.231
@@ -8306,7 +6927,7 @@ mrs
 ucla
 </td>
 <td style="text-align:right;">
-1.017000e+00
+1.017
 </td>
 <td style="text-align:right;">
 0.010
@@ -8332,7 +6953,7 @@ mrs
 stress
 </td>
 <td style="text-align:right;">
-1.055000e+00
+1.055
 </td>
 <td style="text-align:right;">
 0.022
@@ -8358,7 +6979,7 @@ mrs
 sleep
 </td>
 <td style="text-align:right;">
-1.122000e+00
+1.122
 </td>
 <td style="text-align:right;">
 0.040
@@ -8384,7 +7005,7 @@ mrs
 dsm_depression
 </td>
 <td style="text-align:right;">
-1.398000e+00
+1.398
 </td>
 <td style="text-align:right;">
 0.128
@@ -8410,7 +7031,7 @@ mrs
 dsm_anxiety
 </td>
 <td style="text-align:right;">
-1.197000e+00
+1.197
 </td>
 <td style="text-align:right;">
 0.108
@@ -8436,7 +7057,7 @@ mrs
 language_secondary2
 </td>
 <td style="text-align:right;">
-4.090000e-01
+0.409
 </td>
 <td style="text-align:right;">
 0.410
@@ -8462,7 +7083,7 @@ mrs
 language_secondary3
 </td>
 <td style="text-align:right;">
-3.900000e-01
+0.390
 </td>
 <td style="text-align:right;">
 0.564
@@ -8488,7 +7109,7 @@ mrs
 vaccine
 </td>
 <td style="text-align:right;">
-1.129000e+00
+1.129
 </td>
 <td style="text-align:right;">
 0.128
@@ -8514,7 +7135,7 @@ pasc_cognition
 age
 </td>
 <td style="text-align:right;">
-9.980000e-01
+0.998
 </td>
 <td style="text-align:right;">
 0.019
@@ -8540,7 +7161,7 @@ pasc_cognition
 sex2
 </td>
 <td style="text-align:right;">
-1.436000e+00
+1.436
 </td>
 <td style="text-align:right;">
 0.515
@@ -8566,7 +7187,7 @@ pasc_cognition
 race2
 </td>
 <td style="text-align:right;">
-1.000000e+00
+1.000
 </td>
 <td style="text-align:right;">
 4333.778
@@ -8575,7 +7196,7 @@ race2
 0.000
 </td>
 <td style="text-align:right;">
-1.244446e+72
+2.179206e+31
 </td>
 <td style="text-align:right;">
 1.0000000
@@ -8592,7 +7213,7 @@ pasc_cognition
 race3
 </td>
 <td style="text-align:right;">
-0.000000e+00
+0.000
 </td>
 <td style="text-align:right;">
 3956.180
@@ -8618,7 +7239,7 @@ pasc_cognition
 race5
 </td>
 <td style="text-align:right;">
-0.000000e+00
+0.000
 </td>
 <td style="text-align:right;">
 3956.180
@@ -8627,7 +7248,7 @@ race5
 NA
 </td>
 <td style="text-align:right;">
-7.999537e+100
+Inf
 </td>
 <td style="text-align:right;">
 0.9969584
@@ -8644,7 +7265,7 @@ pasc_cognition
 race6
 </td>
 <td style="text-align:right;">
-0.000000e+00
+0.000
 </td>
 <td style="text-align:right;">
 3956.180
@@ -8670,7 +7291,7 @@ pasc_cognition
 race7
 </td>
 <td style="text-align:right;">
-1.000000e+00
+1.000
 </td>
 <td style="text-align:right;">
 4333.778
@@ -8679,36 +7300,10 @@ race7
 0.000
 </td>
 <td style="text-align:right;">
-1.435104e+53
+5.422985e+54
 </td>
 <td style="text-align:right;">
 1.0000000
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:10~3
-</td>
-<td style="text-align:left;">
-pasc_cognition
-</td>
-<td style="text-align:left;">
-race8
-</td>
-<td style="text-align:right;">
-0.000000e+00
-</td>
-<td style="text-align:right;">
-3956.180
-</td>
-<td style="text-align:right;">
-NA
-</td>
-<td style="text-align:right;">
-1.172133e+302
-</td>
-<td style="text-align:right;">
-0.9965971
 </td>
 </tr>
 <tr>
@@ -8722,7 +7317,7 @@ pasc_cognition
 ethnicity2
 </td>
 <td style="text-align:right;">
-1.011000e+00
+1.011
 </td>
 <td style="text-align:right;">
 0.571
@@ -8734,33 +7329,7 @@ ethnicity2
 3.387000e+00
 </td>
 <td style="text-align:right;">
-0.9845720
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:10~4
-</td>
-<td style="text-align:left;">
-pasc_cognition
-</td>
-<td style="text-align:left;">
-ethnicity3
-</td>
-<td style="text-align:right;">
-1.039605e+06
-</td>
-<td style="text-align:right;">
-1455.398
-</td>
-<td style="text-align:right;">
-0.000
-</td>
-<td style="text-align:right;">
-NA
-</td>
-<td style="text-align:right;">
-0.9924048
+0.9845707
 </td>
 </tr>
 <tr>
@@ -8774,7 +7343,7 @@ pasc_cognition
 language_primary2
 </td>
 <td style="text-align:right;">
-1.436000e+00
+1.436
 </td>
 <td style="text-align:right;">
 0.515
@@ -8797,48 +7366,22 @@ Model:10~6
 pasc_cognition
 </td>
 <td style="text-align:left;">
-education1
-</td>
-<td style="text-align:right;">
-0.000000e+00
-</td>
-<td style="text-align:right;">
-6522.639
-</td>
-<td style="text-align:right;">
-NA
-</td>
-<td style="text-align:right;">
-Inf
-</td>
-<td style="text-align:right;">
-0.9978489
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:10~6
-</td>
-<td style="text-align:left;">
-pasc_cognition
-</td>
-<td style="text-align:left;">
 education2
 </td>
 <td style="text-align:right;">
-1.000000e+00
+1.333
 </td>
 <td style="text-align:right;">
-7531.694
+0.784
 </td>
 <td style="text-align:right;">
-0.000
+0.250
 </td>
 <td style="text-align:right;">
-1.964003e+53
+5.958000e+00
 </td>
 <td style="text-align:right;">
-1.0000000
+0.7136465
 </td>
 </tr>
 <tr>
@@ -8852,19 +7395,19 @@ pasc_cognition
 education3
 </td>
 <td style="text-align:right;">
-0.000000e+00
+0.893
 </td>
 <td style="text-align:right;">
-6522.639
+0.774
 </td>
 <td style="text-align:right;">
-NA
+0.170
 </td>
 <td style="text-align:right;">
-Inf
+3.861000e+00
 </td>
 <td style="text-align:right;">
-0.9979337
+0.8836334
 </td>
 </tr>
 <tr>
@@ -8878,97 +7421,19 @@ pasc_cognition
 education4
 </td>
 <td style="text-align:right;">
-0.000000e+00
+4.000
 </td>
 <td style="text-align:right;">
-6522.639
+0.974
 </td>
 <td style="text-align:right;">
-NA
+0.594
 </td>
 <td style="text-align:right;">
-Inf
+3.333800e+01
 </td>
 <td style="text-align:right;">
-0.9978846
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:10~6
-</td>
-<td style="text-align:left;">
-pasc_cognition
-</td>
-<td style="text-align:left;">
-education5
-</td>
-<td style="text-align:right;">
-0.000000e+00
-</td>
-<td style="text-align:right;">
-6522.639
-</td>
-<td style="text-align:right;">
-NA
-</td>
-<td style="text-align:right;">
-Inf
-</td>
-<td style="text-align:right;">
-0.9980106
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:10~6
-</td>
-<td style="text-align:left;">
-pasc_cognition
-</td>
-<td style="text-align:left;">
-education6
-</td>
-<td style="text-align:right;">
-1.000000e+00
-</td>
-<td style="text-align:right;">
-6841.001
-</td>
-<td style="text-align:right;">
-Inf
-</td>
-<td style="text-align:right;">
-Inf
-</td>
-<td style="text-align:right;">
-1.0000000
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Model:10~6
-</td>
-<td style="text-align:left;">
-pasc_cognition
-</td>
-<td style="text-align:left;">
-education7
-</td>
-<td style="text-align:right;">
-1.000000e+00
-</td>
-<td style="text-align:right;">
-7988.568
-</td>
-<td style="text-align:right;">
-0.000
-</td>
-<td style="text-align:right;">
-3.870345e+103
-</td>
-<td style="text-align:right;">
-1.0000000
+0.1544813
 </td>
 </tr>
 <tr>
@@ -8982,7 +7447,7 @@ pasc_cognition
 pmh_neuro1
 </td>
 <td style="text-align:right;">
-9.270000e-01
+0.927
 </td>
 <td style="text-align:right;">
 0.515
@@ -9008,7 +7473,7 @@ pasc_cognition
 pmh_enc_is_ich1
 </td>
 <td style="text-align:right;">
-1.061000e+00
+1.061
 </td>
 <td style="text-align:right;">
 0.542
@@ -9034,7 +7499,7 @@ pasc_cognition
 pmh_covid_severe1
 </td>
 <td style="text-align:right;">
-1.026000e+00
+1.026
 </td>
 <td style="text-align:right;">
 0.616
@@ -9060,7 +7525,7 @@ pasc_cognition
 icu1
 </td>
 <td style="text-align:right;">
-1.206000e+00
+1.206
 </td>
 <td style="text-align:right;">
 0.541
@@ -9086,7 +7551,7 @@ pasc_cognition
 icu_2weeks1
 </td>
 <td style="text-align:right;">
-1.206000e+00
+1.206
 </td>
 <td style="text-align:right;">
 0.568
@@ -9112,7 +7577,7 @@ pasc_cognition
 steroids1
 </td>
 <td style="text-align:right;">
-1.030000e+00
+1.030
 </td>
 <td style="text-align:right;">
 0.525
@@ -9138,7 +7603,7 @@ pasc_cognition
 ad8_14
 </td>
 <td style="text-align:right;">
-1.800000e+00
+1.800
 </td>
 <td style="text-align:right;">
 0.164
@@ -9164,7 +7629,7 @@ pasc_cognition
 ecog_15
 </td>
 <td style="text-align:right;">
-2.796200e+01
+27.962
 </td>
 <td style="text-align:right;">
 0.996
@@ -9190,7 +7655,7 @@ pasc_cognition
 ucla
 </td>
 <td style="text-align:right;">
-1.027000e+00
+1.027
 </td>
 <td style="text-align:right;">
 0.019
@@ -9216,7 +7681,7 @@ pasc_cognition
 stress
 </td>
 <td style="text-align:right;">
-1.087000e+00
+1.087
 </td>
 <td style="text-align:right;">
 0.036
@@ -9242,7 +7707,7 @@ pasc_cognition
 sleep
 </td>
 <td style="text-align:right;">
-1.318000e+00
+1.318
 </td>
 <td style="text-align:right;">
 0.080
@@ -9268,7 +7733,7 @@ pasc_cognition
 dsm_depression
 </td>
 <td style="text-align:right;">
-1.667000e+00
+1.667
 </td>
 <td style="text-align:right;">
 0.230
@@ -9294,7 +7759,7 @@ pasc_cognition
 dsm_anxiety
 </td>
 <td style="text-align:right;">
-2.294000e+00
+2.294
 </td>
 <td style="text-align:right;">
 0.261
@@ -9320,7 +7785,7 @@ pasc_cognition
 language_secondary2
 </td>
 <td style="text-align:right;">
-1.200000e+00
+1.200
 </td>
 <td style="text-align:right;">
 0.641
@@ -9346,7 +7811,7 @@ pasc_cognition
 language_secondary3
 </td>
 <td style="text-align:right;">
-2.100000e-01
+0.210
 </td>
 <td style="text-align:right;">
 0.650
@@ -9372,7 +7837,7 @@ pasc_cognition
 vaccine
 </td>
 <td style="text-align:right;">
-1.012000e+00
+1.012
 </td>
 <td style="text-align:right;">
 0.174
