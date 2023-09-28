@@ -76,7 +76,7 @@ for (i in i_linear) {
   if (i > 5) {
     j_all <- c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 16, 17, 18, 19, 20, 21, 22)
   } else {
-    j_all <- 1:21
+    j_all <- 1:22
   }
   
   
@@ -119,7 +119,7 @@ i_logistic = c(6, 9)
 for (i in i_logistic) {
   
   if (i > 5) {
-    j_all <- 1:21
+    j_all <- 1:22
   }
   
   
