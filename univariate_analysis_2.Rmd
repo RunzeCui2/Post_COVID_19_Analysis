@@ -1,0 +1,40 @@
+---
+title: "univariate_analysis_2"
+author: "Runze Cui"
+date: "2023-09-28"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+source('backbone2.R')
+```
+
+**Issues:**
+
+- Since we only have 1 record for ethnicity = 3, we remove this record. Otherwise, it might cause a problem in the logistic regression. 
+- For the updated dataset, education is all 8. So we just use the education variable in previous version of dataset and recode *up to high school/GED* as 8 and *Some college and up* as 9. 
+
+
+**Reference Groups:**
+
+- sex1 (Man)
+- ethnicity1 (Hispanic/Latinx)
+- language_primary1 (English)
+- education1 (less than high school)
+- pmh_neuro0 (No)
+- pmh_enc_is_ich0 (No)
+- pmh_covid_severe0 (No)
+- icu0 (No)
+- steroids0 (No)
+- language_secondary1 (English)
+
+
+
+```{r echo=F}
+linear_table
+logistic_table
+```
+
